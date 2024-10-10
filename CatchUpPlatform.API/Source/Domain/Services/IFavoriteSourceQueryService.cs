@@ -1,7 +1,7 @@
-﻿using CatchUpPlatform.API.News.Domain.Model.Aggregates;
-using CatchUpPlatform.API.News.Domain.Model.Queries;
+﻿using CatchUpPlatform.API.Source.Domain.Model.Aggregates;
+using CatchUpPlatform.API.Source.Domain.Model.Queries;
 
-namespace CatchUpPlatform.API.News.Domain.Services
+namespace CatchUpPlatform.API.Source.Domain.Services
 {
     public interface IFavoriteSourceQueryService
     {
