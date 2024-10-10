@@ -1,2 +1,2 @@
 # Catchup-Platform
-Catchup-Platform es una plataforma diseñada para facilitar la gestión de fuentes de contenido favoritas para los usuarios. Permite a los usuarios agregar, visualizar, y administrar sus fuentes favoritas de forma centralizada y eficiente. La arquitectura está basada en los principios de Clean Architecture para asegurar escalabilidad y facilidad de mantenimiento.
+Catchup-Platform is a platform designed to facilitate the management of users' favorite content sources. It allows users to add, view, and manage their favorite sources in a centralized and efficient way. The architecture is based on Clean Architecture principles to ensure scalability and ease of maintenance.
