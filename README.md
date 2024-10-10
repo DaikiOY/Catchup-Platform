@@ -41,4 +41,4 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/Catchup-Platform.git
+   git clone [https://github.com/your-username/Catchup-Platform.git](https://github.com/DaikiOY/Catchup-Platform.git)
