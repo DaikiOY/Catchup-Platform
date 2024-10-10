@@ -1,4 +1,4 @@
-namespace CatchupPlatform.Core.Entities
+namespace CatchupPlatform.Core
 {
     public class FavoriteSource
     {
