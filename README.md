@@ -51,7 +51,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
   <tr>
     <td colspan="2"></td>
-    <td><b>MyFitnessPal</b></td>
+    <td><b>NutriPlan</b></td>
     <td><b>Yazio</b></td>
     <td><b>Noom</b></td>
     <td><b>Lifesum</b></td>
@@ -60,7 +60,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td rowspan="2"><b>Perfil</b></td>
     <td><b>Overview</b></td>
     <td>
-      Plataforma de seguimiento nutricional con base de datos de alimentos, recetas y control de calorías.
+      Plataforma de planificación de comidas y recetas saludables, con enfoque personalizado y educación nutricional accesible.
     </td>
     <td>
       App de planificación nutricional que ofrece seguimiento de comidas y macronutrientes con recetas saludables.
@@ -75,7 +75,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
     <td>
-      Amplia base de datos de alimentos, integración con apps de fitness, comunidad activa.
+      Planificación de menús adaptada a gustos y objetivos, interfaz amigable, enfoque educativo y accesible para todos.
     </td>
     <td>
       Recetas visuales, fácil seguimiento de objetivos, buena interfaz y enfoque saludable europeo.
@@ -91,7 +91,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td rowspan="2"><b>Perfil de Marketing</b></td>
     <td><b>Mercado objetivo</b></td>
     <td>
-      Personas interesadas en el conteo de calorías, pérdida de peso, o control nutricional.
+      Familias, jóvenes y adultos que buscan comer mejor sin complicaciones, interesados en salud preventiva y recetas prácticas.
     </td>
     <td>
       Usuarios que desean una alimentación balanceada, basada en recetas y control de macronutrientes.
@@ -106,7 +106,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Estrategias de marketing</b></td>
     <td>
-      Alianzas con marcas fitness, marketing de contenido, presencia en redes sociales.
+      Contenido educativo en redes sociales, colaboraciones con nutricionistas, modelo freemium con opción premium accesible.
     </td>
     <td>
       Promociones freemium, marketing de influencers, campañas en Instagram y TikTok.
@@ -122,7 +122,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td rowspan="3"><b>Perfil de Producto</b></td>
     <td><b>Productos y Servicios</b></td>
     <td>
-      Seguimiento de alimentos, escáner de códigos de barras, contador de calorías, integración con apps.
+      Recetas interactivas, planes semanales de comida, escáner de ingredientes, historial nutricional y consejos saludables.
     </td>
     <td>
       Seguimiento de comidas, planes de dieta, recetas saludables, estadísticas de macronutrientes.
@@ -137,7 +137,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Precios y Costos</b></td>
     <td>
-      Versión gratuita con opciones premium mensuales o anuales.
+      Freemium con funciones básicas gratis y planes mensuales o anuales económicos.
     </td>
     <td>
       Modelo freemium con suscripción premium para acceso completo.
@@ -152,7 +152,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Canales de distribución (Web y/o móvil)</b></td>
     <td>
-      Web y app móvil (iOS/Android), integración con dispositivos wearable.
+      Web y app móvil (iOS/Android), versión web responsive y posibilidad de integración futura con dispositivos.
     </td>
     <td>
       App móvil con presencia fuerte en redes sociales y comunidad de usuarios.
@@ -173,7 +173,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Fortalezas</b></td>
     <td>
-      Base de datos masiva, integración con múltiples plataformas, reconocimiento de marca.
+      Enfoque inclusivo, recetas regionales adaptadas, facilidad de uso, personalización inteligente.
     </td>
     <td>
       Diseño intuitivo, enfoque en recetas, análisis nutricional completo.
@@ -188,7 +188,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Debilidades</b></td>
     <td>
-      Menor enfoque en personalización profunda, interfaz algo anticuada.
+      Escasa notoriedad de marca al inicio, sin integración aún con wearables.
     </td>
     <td>
       Limitado para usuarios que buscan coaching más avanzado o control conductual.
@@ -203,7 +203,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Oportunidades</b></td>
     <td>
-      Integración con wearables, tendencia al autocuidado, mayor interés en salud digital.
+      Alianzas con supermercados, integración con nutricionistas, entrada a programas educativos y corporativos.
     </td>
     <td>
       Expansión a planes familiares y mercado corporativo wellness.
@@ -218,7 +218,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td><b>Amenazas</b></td>
     <td>
-      Competencia feroz de nuevas apps, cambios en regulaciones de salud digital.
+      Alta competencia de apps posicionadas, dependencia del marketing digital para crecer.
     </td>
     <td>
       Saturación del mercado de apps nutricionales, dificultad para destacar sin diferenciación clara.
@@ -231,7 +231,6 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     </td>
   </tr>
 </table>
-
 
 
 
