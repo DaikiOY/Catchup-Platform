@@ -39,32 +39,9 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 
 ## Installation and Usage
 
-## Segmento 1: Usuarios Generales
-
-| **Tarea**                                | **Frecuencia**    | **Importancia**   |
-|------------------------------------------|-------------------|-------------------|
-| Ingresar alimentos y hacer seguimiento de calorías | Diaria            | Alta              |
-| Seguir plan nutricional personalizado     | Diaria            | Alta              |
-| Consultar recetas rápidas y fáciles      | Semanal           | Media             |
-| Realizar ajustes a la dieta (como cambiar recetas o ingredientes) | Semanal           | Media             |
-| Consultar el progreso del peso o salud   | Semanal           | Alta              |
-| Recibir recordatorios de comidas o ejercicios | Diario            | Alta              |
-| Acceder a recomendaciones sobre hábitos saludables | Semanal           | Baja              |
-
----
-
-## Segmento 2: Nutricionistas
-
-| **Tarea**                                | **Frecuencia**    | **Importancia**   |
-|------------------------------------------|-------------------|-------------------|
-| Crear y personalizar planes nutricionales para pacientes | Diario            | Alta              |
-| Realizar seguimiento del progreso de los pacientes | Semanal           | Alta              |
-| Proveer consultas y asesoramiento a pacientes | Semanal           | Alta              |
-| Ajustar planes nutricionales basados en el progreso del paciente | Semanal           | Alta              |
-| Gestionar el historial de pacientes       | Semanal           | Alta              |
-| Acceder a recursos educativos sobre nutrición | Mensual           | Media             |
-| Mantener comunicación con los pacientes (a través de la app o reuniones) | Semanal           | Alta              |
-
+| Entrevistado   | Análisis de la entrevista                                                                                                                                                                                                                                                                                                      |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ernesto Ruiz   | Según el entrevistado del segmento de usuarios generales, la motivación principal para mejorar su alimentación está en alcanzar una vida más saludable, tener más energía y prevenir enfermedades a futuro, junto con un interés estético por controlar el peso. Su mayor desafío radica en la falta de tiempo para planificar comidas y la confusión ante tanta información sobre nutrición. Ha utilizado aplicaciones como Yazio y FatSecret, pero las considera poco personalizadas y difíciles de mantener a largo plazo. Espera que una app de nutrición ofrezca menús adaptados, recomendaciones claras y herramientas visuales para seguir su progreso. Destaca como funciones imprescindibles una interfaz sencilla, metas personalizables, recordatorios y recetas rápidas que se alineen con sus objetivos. |
 
 
 
