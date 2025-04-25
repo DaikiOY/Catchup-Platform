@@ -43,34 +43,100 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 
 ## 2.4. Ubiquitous Language
 
-A continuación, se presentan los términos clave utilizados en el dominio de negocio de **NutriPlan**, con el objetivo de unificar el lenguaje entre el equipo de desarrollo, los usuarios y los profesionales involucrados.
+<br>
 
-- **User (usuario general):** Persona que utiliza la aplicación con el objetivo de mejorar su alimentación mediante planes personalizados y seguimiento de hábitos.
+<table align="center" border="1" width="90%" style="text-align:center">
+    <tr>
+       <td colspan="1"><b>Sprint #</b></td>
+       <td colspan="7"><b>Sprint 1</b></td>
+     </tr>
+     <tr>
+       <td colspan="2"><b>User Story</b></td>
+       <td colspan="6"><b>Work-Item / Task</b></td>
+     </tr>
+     <tr>
+       <td><b>Id</b></td>
+       <td><b>Title</b></td>
+       <td><b>Id</b></td>
+       <td><b>Title</b></td>
+       <td><b>Description</b></td>
+       <td><b>Estimation(Hours)</b></td>
+       <td><b>Assigned To</b></td>
+       <td><b>Status (To-do / In-Process / To-Review / Done)</b></td>
+     </tr>
+     <tr>
+       <td rowspan="2">HU01</td>
+       <td rowspan="2">Landing Page informativa de FinTeca</td>
+       <td>T01</td>
+       <td>Diseño inicial de la landing</td>
+       <td>Definir estructura visual y secciones principales de la página</td>
+       <td>3</td>
+       <td>Javier Murillo</td>
+       <td>Done</td>
+    </tr>
+    <tr>
+       <td>T02</td>
+       <td>Implementación HTML/CSS</td>
+       <td>Codificar la landing con estructura y estilos principales</td>
+       <td>4</td>
+       <td>Javier Murillo</td>
+       <td>In-Process</td>
+    </tr>
+    <tr>
+       <td rowspan="2">HU02</td>
+       <td rowspan="2">Navbar funcional y adaptable</td>
+       <td>T03</td>
+       <td>Codificación del Navbar</td>
+       <td>Crear menú de navegación con enlaces a secciones</td>
+       <td>3</td>
+       <td>Russell Romero</td>
+       <td>Done</td>
+    </tr>
+    <tr>
+       <td>T04</td>
+       <td>Estilos y responsive</td>
+       <td>Aplicar estilos y ajustes responsivos al navbar</td>
+       <td>3</td>
+       <td>Russell Romero</td>
+       <td>To-Review</td>
+    </tr>
+    <tr>
+       <td rowspan="2">HU03</td>
+       <td rowspan="2">Presentar beneficios de FinTeca</td>
+       <td>T05</td>
+       <td>Contenido visual</td>
+       <td>Diseñar e integrar imágenes o íconos representativos</td>
+       <td>2</td>
+       <td>Daiki Oshiro</td>
+       <td>In-Process</td>
+    </tr>
+    <tr>
+       <td>T06</td>
+       <td>Redacción de textos</td>
+       <td>Escribir beneficios claros y atractivos para los usuarios</td>
+       <td>2</td>
+       <td>Mathias</td>
+       <td>To-do</td>
+    </tr>
+    <tr>
+       <td rowspan="2">HU04</td>
+       <td rowspan="2">Landing responsiva y adaptable</td>
+       <td>T07</td>
+       <td>Media queries generales</td>
+       <td>Ajustar diseño para dispositivos móviles</td>
+       <td>4</td>
+       <td>Sergio Aguirre</td>
+       <td>To-do</td>
+    </tr>
+    <tr>
+       <td>T08</td>
+       <td>Pruebas en móviles</td>
+       <td>Verificar visualización y navegación en distintos dispositivos</td>
+       <td>2</td>
+       <td>Luis Montañez</td>
+       <td>To-do</td>
+    </tr>
+</table>
 
-- **Nutritionist (nutricionista):** Profesional de la salud que diseña, adapta y supervisa los planes alimenticios de los usuarios a través de la plataforma.
-
-- **Meal plan (plan nutricional):** Conjunto de recomendaciones alimenticias diarias personalizadas según las metas, preferencias y estado de salud del usuario.
-
-- **Progress tracking (seguimiento de progreso):** Funcionalidad que permite al usuario y al nutricionista visualizar avances relacionados al peso, hábitos y cumplimiento del plan.
-
-- **Reminder (recordatorio):** Notificaciones automáticas que motivan al usuario a mantener la constancia en sus comidas, hidratación o consultas.
-
-- **Healthy recipes (recetas saludables):** Preparaciones sugeridas por la app, sencillas y alineadas con el objetivo nutricional del usuario.
-
-- **Food log (historial alimenticio):** Registro diario de alimentos consumidos por el usuario, utilizado para evaluación y ajustes del plan.
-
-- **Professional dashboard (panel del profesional):** Interfaz exclusiva para nutricionistas, donde gestionan usuarios, visualizan métricas y dan seguimiento a planes.
-
-- **Initial assessment (evaluación inicial):** Formulario al inicio del uso de la app donde el usuario detalla su estilo de vida, hábitos y metas.
-
-- **Nutritional goal (objetivo nutricional):** Meta definida por el usuario, como perder peso, ganar masa muscular o mantener una dieta equilibrada.
-
-- **Feedback (comentario):** Opiniones o sugerencias que el usuario deja en la plataforma sobre su experiencia, planes o funcionalidades.
-
-- **Onboarding (proceso de incorporación):** Etapas iniciales para guiar al nuevo usuario en el uso de NutriPlan, como crear su perfil y recibir su primer plan.
-
-- **Metrics (métricas):** Datos cuantificables como peso, IMC, calorías diarias y nivel de adherencia al plan, que se usan para evaluar el progreso del usuario.
-
-- **Customization (personalización):** Adaptación del contenido de la app a las necesidades individuales de cada usuario.
 
 
