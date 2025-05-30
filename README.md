@@ -37,106 +37,100 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
 
-## Installation and Usage
+<table align="center" border="1" width="95%" style="text-align:center">
+  <tr>
+    <td><b>Sprint #</b></td>
+    <td colspan="8"><b>Sprint 2</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>User Story</b></td>
+    <td colspan="7"><b>Work-Item / Task</b></td>
+  </tr>
+  <tr>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Description</b></td>
+    <td><b>Estimation (Hours)</b></td>
+    <td><b>Assigned To</b></td>
+    <td><b>Student Code</b></td>
+    <td><b>Status</b></td>
+  </tr>
 
-
-
-## 2.4. Ubiquitous Language
-
-<br>
-
-<table align="center" border="1" width="90%" style="text-align:center">
-    <tr>
-       <td colspan="1"><b>Sprint #</b></td>
-       <td colspan="7"><b>Sprint 1</b></td>
-     </tr>
-     <tr>
-       <td colspan="2"><b>User Story</b></td>
-       <td colspan="6"><b>Work-Item / Task</b></td>
-     </tr>
-     <tr>
-       <td><b>Id</b></td>
-       <td><b>Title</b></td>
-       <td><b>Id</b></td>
-       <td><b>Title</b></td>
-       <td><b>Description</b></td>
-       <td><b>Estimation(Hours)</b></td>
-       <td><b>Assigned To</b></td>
-       <td><b>Status (To-do / In-Process / To-Review / Done)</b></td>
-     </tr>
-     <tr>
-       <td rowspan="2">HU01</td>
-       <td rowspan="2">Landing Page informativa de FinTeca</td>
-       <td>T01</td>
-       <td>Diseño inicial de la landing</td>
-       <td>Definir estructura visual y secciones principales de la página</td>
-       <td>3</td>
-       <td>Javier Murillo</td>
-       <td>Done</td>
-    </tr>
-    <tr>
-       <td>T02</td>
-       <td>Implementación HTML/CSS</td>
-       <td>Codificar la landing con estructura y estilos principales</td>
-       <td>4</td>
-       <td>Javier Murillo</td>
-       <td>In-Process</td>
-    </tr>
-    <tr>
-       <td rowspan="2">HU02</td>
-       <td rowspan="2">Navbar funcional y adaptable</td>
-       <td>T03</td>
-       <td>Codificación del Navbar</td>
-       <td>Crear menú de navegación con enlaces a secciones</td>
-       <td>3</td>
-       <td>Russell Romero</td>
-       <td>Done</td>
-    </tr>
-    <tr>
-       <td>T04</td>
-       <td>Estilos y responsive</td>
-       <td>Aplicar estilos y ajustes responsivos al navbar</td>
-       <td>3</td>
-       <td>Russell Romero</td>
-       <td>To-Review</td>
-    </tr>
-    <tr>
-       <td rowspan="2">HU03</td>
-       <td rowspan="2">Presentar beneficios de FinTeca</td>
-       <td>T05</td>
-       <td>Contenido visual</td>
-       <td>Diseñar e integrar imágenes o íconos representativos</td>
-       <td>2</td>
-       <td>Daiki Oshiro</td>
-       <td>In-Process</td>
-    </tr>
-    <tr>
-       <td>T06</td>
-       <td>Redacción de textos</td>
-       <td>Escribir beneficios claros y atractivos para los usuarios</td>
-       <td>2</td>
-       <td>Mathias</td>
-       <td>To-do</td>
-    </tr>
-    <tr>
-       <td rowspan="2">HU04</td>
-       <td rowspan="2">Landing responsiva y adaptable</td>
-       <td>T07</td>
-       <td>Media queries generales</td>
-       <td>Ajustar diseño para dispositivos móviles</td>
-       <td>4</td>
-       <td>Sergio Aguirre</td>
-       <td>To-do</td>
-    </tr>
-    <tr>
-       <td>T08</td>
-       <td>Pruebas en móviles</td>
-       <td>Verificar visualización y navegación en distintos dispositivos</td>
-       <td>2</td>
-       <td>Luis Montañez</td>
-       <td>To-do</td>
-    </tr>
+  <tr>
+    <td>HU01</td>
+    <td>Registrar un profesional</td>
+    <td>TS101</td>
+    <td>Registro de profesionales</td>
+    <td>Permitir el registro de consultores para ofrecer sus servicios.</td>
+    <td>4</td>
+    <td>Javier Murillo Mathias</td>
+    <td>U202022211</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>HU02</td>
+    <td>Registrar un cliente</td>
+    <td>TS102</td>
+    <td>Registro de clientes</td>
+    <td>Habilitar el registro de clientes para agendar sesiones.</td>
+    <td>4</td>
+    <td>Javier Murillo Mathias</td>
+    <td>U202022211</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>HU03</td>
+    <td>Buscar profesionales disponibles</td>
+    <td>TS201</td>
+    <td>Filtros de búsqueda</td>
+    <td>Filtrar consultores por disponibilidad, especialidad y calificación.</td>
+    <td>5</td>
+    <td>Aguirre Castillo Sergio Cesar</td>
+    <td>U202310425</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>HU04</td>
+    <td>Notificaciones de disponibilidad</td>
+    <td>TS202</td>
+    <td>Enviar notificaciones</td>
+    <td>Notificar a los clientes cuando un consultor actualiza su disponibilidad.</td>
+    <td>4</td>
+    <td>Romero Qwistgaard Russel Stephen</td>
+    <td>U202211043</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="3">HU10</td>
+    <td rowspan="3">Crear y gestionar servicios de profesional</td>
+    <td>TS401</td>
+    <td>Agenda de disponibilidad</td>
+    <td>Configurar y actualizar la disponibilidad del consultor.</td>
+    <td>6</td>
+    <td>Oshiro Yamashita Daiki Oscar</td>
+    <td>U20201F846</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TS402</td>
+    <td>Agendamiento de sesiones</td>
+    <td>Permitir a los clientes reservar sesiones con consultores.</td>
+    <td>5</td>
+    <td>Oshiro Yamashita Daiki Oscar</td>
+    <td>U20201F846</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TS403</td>
+    <td>Confirmación de sesiones</td>
+    <td>Habilitar que el consultor acepte o rechace sesiones programadas.</td>
+    <td>4</td>
+    <td>Oshiro Yamashita Daiki Oscar</td>
+    <td>U20201F846</td>
+    <td>Done</td>
+  </tr>
 </table>
-
 
 
