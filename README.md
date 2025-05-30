@@ -37,10 +37,12 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
 
+<br>
+
 <table align="center" border="1" width="95%" style="text-align:center">
   <tr>
-    <td><b>Sprint #</b></td>
-    <td colspan="8"><b>Sprint 2</b></td>
+    <td colspan="1"><b>Sprint #</b></td>
+    <td colspan="8"><b>Sprint 1</b></td>
   </tr>
   <tr>
     <td colspan="2"><b>User Story</b></td>
@@ -58,86 +60,66 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td><b>Status</b></td>
   </tr>
 
-  <!-- US01: Registrar un profesional -->
   <tr>
-    <td rowspan="1">US01</td>
-    <td rowspan="1">Registrar un profesional</td>
+    <td rowspan="2">HU15</td>
+    <td rowspan="2">Visualizar página informativa</td>
     <td>T01</td>
-    <td>Registro de profesionales</td>
-    <td>Formulario y lógica para registro de consultores.</td>
+    <td>Maquetación HTML inicial</td>
+    <td>Diseñar la estructura base de la página informativa</td>
     <td>4</td>
-    <td>Javier Murillo Mathias</td>
+    <td>Javier Murillo, Mathias</td>
     <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US02: Registrar un cliente -->
-  <tr>
-    <td rowspan="1">US02</td>
-    <td rowspan="1">Registrar un cliente</td>
-    <td>T01</td>
-    <td>Registro de clientes</td>
-    <td>Formulario y validaciones para registrar usuarios cliente.</td>
-    <td>4</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US03: Buscar profesionales -->
-  <tr>
-    <td rowspan="1">US03</td>
-    <td rowspan="1">Buscar profesionales disponibles</td>
-    <td>T01</td>
-    <td>Filtros de búsqueda</td>
-    <td>Filtrar consultores por disponibilidad, especialidad y calificación.</td>
-    <td>5</td>
-    <td>Sergio Aguirre Castillo</td>
-    <td>U202310425</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US04: Notificaciones -->
-  <tr>
-    <td rowspan="1">US04</td>
-    <td rowspan="1">Recibir notificaciones de disponibilidad</td>
-    <td>T01</td>
-    <td>Notificaciones de disponibilidad</td>
-    <td>Enviar notificaciones cuando un profesional actualiza su agenda.</td>
-    <td>4</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US10: Crear y gestionar servicios -->
-  <tr>
-    <td rowspan="3">US10</td>
-    <td rowspan="3">Crear y gestionar servicios</td>
-    <td>T01</td>
-    <td>Agenda de disponibilidad</td>
-    <td>Configurar y actualizar la disponibilidad de los consultores.</td>
-    <td>6</td>
-    <td>Oshiro Yamashita Daiki Oscar</td>
-    <td>U20201F846</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>T02</td>
-    <td>Agendamiento de sesiones</td>
-    <td>Permitir a los clientes reservar sesiones.</td>
-    <td>5</td>
-    <td>Oshiro Yamashita Daiki Oscar</td>
+    <td>Estilización general</td>
+    <td>Aplicar estilos CSS básicos a toda la landing page</td>
+    <td>4</td>
+    <td>Oshiro Yamashita, Daiki Oscar</td>
     <td>U20201F846</td>
     <td>Done</td>
   </tr>
+
   <tr>
-    <td>T03</td>
-    <td>Confirmación de sesiones</td>
-    <td>Permitir a los consultores aceptar o rechazar sesiones.</td>
+    <td rowspan="2">HU17</td>
+    <td rowspan="2">Landing Page intuitiva</td>
+    <td>T10</td>
+    <td>Diseño de navegación</td>
+    <td>Crear menú de navegación con enlaces funcionales</td>
     <td>4</td>
-    <td>Oshiro Yamashita Daiki Oscar</td>
-    <td>U20201F846</td>
+    <td>Aguirre Castillo, Sergio Cesar</td>
+    <td>U202310425</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T11</td>
+    <td>Personalización del Navbar</td>
+    <td>Estilizar el menú con identidad visual adecuada</td>
+    <td>4</td>
+    <td>Russell Stephen Romero Qwistgaard</td>
+    <td>U202211043</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">HU18</td>
+    <td rowspan="2">Landing Page responsiva</td>
+    <td>T12</td>
+    <td>Adaptar contenido principal</td>
+    <td>Incluir media queries para responsividad en el contenido</td>
+    <td>4</td>
+    <td>Luis Angel Montañez Moreno</td>
+    <td>U202223811</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T13</td>
+    <td>Navbar adaptable</td>
+    <td>Hacer el menú de navegación compatible con dispositivos móviles</td>
+    <td>4</td>
+    <td>Javier Murillo, Mathias</td>
+    <td>U202022211</td>
     <td>Done</td>
   </tr>
 </table>
