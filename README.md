@@ -58,125 +58,90 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td><b>Status</b></td>
   </tr>
 
-  <!-- HU01: Registrar un profesional -->
+  <!-- US01: Registrar un profesional -->
   <tr>
-    <td rowspan="2">US01</td>
-    <td rowspan="2">Registrar un profesional</td>
-    <td>TS101</td>
-    <td>Formulario de registro</td>
-    <td>Implementar formulario y lógica POST para crear consultores.</td>
-    <td>3</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>TS104</td>
-    <td>Validación de datos</td>
-    <td>Verificar campos requeridos y mensajes de error en tiempo real.</td>
-    <td>2</td>
+    <td rowspan="1">US01</td>
+    <td rowspan="1">Registrar un profesional</td>
+    <td>T01</td>
+    <td>Registro de profesionales</td>
+    <td>Formulario y lógica para registro de consultores.</td>
+    <td>4</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
 
-  <!-- HU02: Registrar un cliente -->
+  <!-- US02: Registrar un cliente -->
   <tr>
-    <td rowspan="2">US02</td>
-    <td rowspan="2">Registrar un cliente</td>
-    <td>TS102</td>
-    <td>Formulario cliente</td>
-    <td>Diseñar e implementar formulario para nuevos clientes.</td>
-    <td>3</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>TS105</td>
-    <td>Confirmación de registro</td>
-    <td>Mostrar mensaje al finalizar registro y redirigir a inicio.</td>
-    <td>1</td>
+    <td rowspan="1">US02</td>
+    <td rowspan="1">Registrar un cliente</td>
+    <td>T01</td>
+    <td>Registro de clientes</td>
+    <td>Formulario y validaciones para registrar usuarios cliente.</td>
+    <td>4</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
 
-  <!-- HU03: Buscar profesionales -->
+  <!-- US03: Buscar profesionales -->
   <tr>
-    <td rowspan="2">US03</td>
-    <td rowspan="2">Buscar profesionales disponibles</td>
-    <td>TS201</td>
+    <td rowspan="1">US03</td>
+    <td rowspan="1">Buscar profesionales disponibles</td>
+    <td>T01</td>
     <td>Filtros de búsqueda</td>
-    <td>Permitir filtrado por especialidad, horario y tarifa.</td>
+    <td>Filtrar consultores por disponibilidad, especialidad y calificación.</td>
     <td>5</td>
     <td>Sergio Aguirre Castillo</td>
     <td>U202310425</td>
     <td>Done</td>
   </tr>
-  <tr>
-    <td>TS204</td>
-    <td>Resultados dinámicos</td>
-    <td>Actualizar listado de resultados en tiempo real según filtros.</td>
-    <td>3</td>
-    <td>Sergio Aguirre Castillo</td>
-    <td>U202310425</td>
-    <td>Done</td>
-  </tr>
 
-  <!-- HU04: Notificaciones -->
+  <!-- US04: Notificaciones -->
   <tr>
-    <td rowspan="2">US04</td>
-    <td rowspan="2">Recibir notificaciones</td>
-    <td>TS202</td>
-    <td>Enviar notificaciones</td>
-    <td>Enviar correo o push cuando hay disponibilidad nueva.</td>
+    <td rowspan="1">US04</td>
+    <td rowspan="1">Recibir notificaciones de disponibilidad</td>
+    <td>T01</td>
+    <td>Notificaciones de disponibilidad</td>
+    <td>Enviar notificaciones cuando un profesional actualiza su agenda.</td>
     <td>4</td>
     <td>Russell Romero Qwistgaard</td>
     <td>U202211043</td>
     <td>Done</td>
   </tr>
-  <tr>
-    <td>TS205</td>
-    <td>Configuración de notificaciones</td>
-    <td>Permitir activar/desactivar notificaciones en el perfil.</td>
-    <td>2</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
 
-  <!-- HU10: Gestión de servicios -->
+  <!-- US10: Crear y gestionar servicios -->
   <tr>
     <td rowspan="3">US10</td>
     <td rowspan="3">Crear y gestionar servicios</td>
-    <td>TS401</td>
+    <td>T01</td>
     <td>Agenda de disponibilidad</td>
-    <td>Implementar calendario para horarios del profesional.</td>
+    <td>Configurar y actualizar la disponibilidad de los consultores.</td>
     <td>6</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>TS402</td>
+    <td>T02</td>
     <td>Agendamiento de sesiones</td>
-    <td>Permitir a clientes seleccionar fecha y hora disponible.</td>
+    <td>Permitir a los clientes reservar sesiones.</td>
     <td>5</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>TS403</td>
+    <td>T03</td>
     <td>Confirmación de sesiones</td>
-    <td>Profesional acepta o rechaza sesión agendada.</td>
+    <td>Permitir a los consultores aceptar o rechazar sesiones.</td>
     <td>4</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
     <td>Done</td>
   </tr>
 </table>
+
 
 
 
