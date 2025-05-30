@@ -37,7 +37,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
 
-<br>
+
 
 <table align="center" border="1" width="95%" style="text-align:center">
   <tr>
