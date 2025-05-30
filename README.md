@@ -60,65 +60,68 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td><b>Status</b></td>
   </tr>
 
+  <!-- US15 -->
   <tr>
-    <td rowspan="2">HU15</td>
+    <td rowspan="2">US15</td>
     <td rowspan="2">Visualizar página informativa</td>
     <td>T01</td>
     <td>Maquetación HTML inicial</td>
-    <td>Diseñar la estructura base de la página informativa</td>
+    <td>Diseñar la estructura base en HTML para la landing page.</td>
     <td>4</td>
-    <td>Javier Murillo, Mathias</td>
+    <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>T02</td>
     <td>Estilización general</td>
-    <td>Aplicar estilos CSS básicos a toda la landing page</td>
+    <td>Aplicar estilos CSS para definir la apariencia general.</td>
     <td>4</td>
-    <td>Oshiro Yamashita, Daiki Oscar</td>
+    <td>Daiki Oscar Oshiro Yamashita</td>
     <td>U20201F846</td>
     <td>Done</td>
   </tr>
 
+  <!-- US17 -->
   <tr>
-    <td rowspan="2">HU17</td>
+    <td rowspan="2">US17</td>
     <td rowspan="2">Landing Page intuitiva</td>
-    <td>T10</td>
+    <td>T01</td>
     <td>Diseño de navegación</td>
-    <td>Crear menú de navegación con enlaces funcionales</td>
+    <td>Crear menú de navegación con enlaces funcionales.</td>
     <td>4</td>
-    <td>Aguirre Castillo, Sergio Cesar</td>
+    <td>Sergio Cesar Aguirre Castillo</td>
     <td>U202310425</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>T11</td>
+    <td>T02</td>
     <td>Personalización del Navbar</td>
-    <td>Estilizar el menú con identidad visual adecuada</td>
+    <td>Aplicar diseño e identidad visual al menú de navegación.</td>
     <td>4</td>
     <td>Russell Stephen Romero Qwistgaard</td>
     <td>U202211043</td>
     <td>Done</td>
   </tr>
 
+  <!-- US18 -->
   <tr>
-    <td rowspan="2">HU18</td>
+    <td rowspan="2">US18</td>
     <td rowspan="2">Landing Page responsiva</td>
-    <td>T12</td>
+    <td>T01</td>
     <td>Adaptar contenido principal</td>
-    <td>Incluir media queries para responsividad en el contenido</td>
+    <td>Aplicar media queries para que el contenido se adapte a distintos dispositivos.</td>
     <td>4</td>
     <td>Luis Angel Montañez Moreno</td>
     <td>U202223811</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>T13</td>
+    <td>T02</td>
     <td>Navbar adaptable</td>
-    <td>Hacer el menú de navegación compatible con dispositivos móviles</td>
+    <td>Hacer que el menú de navegación funcione correctamente en pantallas móviles.</td>
     <td>4</td>
-    <td>Javier Murillo, Mathias</td>
+    <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
