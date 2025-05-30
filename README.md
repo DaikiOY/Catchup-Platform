@@ -59,30 +59,50 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
 
   <tr>
-    <td>HU01</td>
-    <td>Registrar un profesional</td>
+    <td rowspan="2">HU01</td>
+    <td rowspan="2">Registrar un profesional</td>
     <td>TS101</td>
-    <td>Registro de profesionales</td>
-    <td>Permitir el registro de consultores para ofrecer sus servicios.</td>
-    <td>4</td>
+    <td>Formulario de registro</td>
+    <td>Diseñar e implementar el formulario de registro para consultores.</td>
+    <td>3</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>HU02</td>
-    <td>Registrar un cliente</td>
+    <td>TS104</td>
+    <td>Validación de datos</td>
+    <td>Agregar validaciones de campos (correo, contraseña, etc.).</td>
+    <td>2</td>
+    <td>Javier Murillo Mathias</td>
+    <td>U202022211</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">HU02</td>
+    <td rowspan="2">Registrar un cliente</td>
     <td>TS102</td>
-    <td>Registro de clientes</td>
-    <td>Habilitar el registro de clientes para agendar sesiones.</td>
-    <td>4</td>
+    <td>Formulario de cliente</td>
+    <td>Diseñar el formulario para registrar nuevos clientes.</td>
+    <td>3</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>HU03</td>
-    <td>Buscar profesionales disponibles</td>
+    <td>TS105</td>
+    <td>Confirmación de registro</td>
+    <td>Mostrar mensaje de confirmación tras registro exitoso.</td>
+    <td>1</td>
+    <td>Javier Murillo Mathias</td>
+    <td>U202022211</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">HU03</td>
+    <td rowspan="2">Buscar profesionales disponibles</td>
     <td>TS201</td>
     <td>Filtros de búsqueda</td>
     <td>Filtrar consultores por disponibilidad, especialidad y calificación.</td>
@@ -92,19 +112,39 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr>
-    <td>HU04</td>
-    <td>Notificaciones de disponibilidad</td>
+    <td>TS204</td>
+    <td>Resultados dinámicos</td>
+    <td>Actualizar la lista de resultados en tiempo real.</td>
+    <td>3</td>
+    <td>Aguirre Castillo Sergio Cesar</td>
+    <td>U202310425</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">HU04</td>
+    <td rowspan="2">Recibir notificaciones</td>
     <td>TS202</td>
     <td>Enviar notificaciones</td>
-    <td>Notificar a los clientes cuando un consultor actualiza su disponibilidad.</td>
+    <td>Notificar a clientes sobre disponibilidad de consultores.</td>
     <td>4</td>
     <td>Romero Qwistgaard Russel Stephen</td>
     <td>U202211043</td>
     <td>Done</td>
   </tr>
   <tr>
+    <td>TS205</td>
+    <td>Configuración de notificaciones</td>
+    <td>Permitir al usuario activar/desactivar notificaciones.</td>
+    <td>2</td>
+    <td>Romero Qwistgaard Russel Stephen</td>
+    <td>U202211043</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
     <td rowspan="3">HU10</td>
-    <td rowspan="3">Crear y gestionar servicios de profesional</td>
+    <td rowspan="3">Crear y gestionar servicios</td>
     <td>TS401</td>
     <td>Agenda de disponibilidad</td>
     <td>Configurar y actualizar la disponibilidad del consultor.</td>
@@ -132,5 +172,6 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 </table>
+
 
 
