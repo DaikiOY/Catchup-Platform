@@ -58,12 +58,13 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td><b>Status</b></td>
   </tr>
 
+  <!-- HU01: Registrar un profesional -->
   <tr>
-    <td rowspan="2">HU01</td>
+    <td rowspan="2">US01</td>
     <td rowspan="2">Registrar un profesional</td>
     <td>TS101</td>
     <td>Formulario de registro</td>
-    <td>Diseñar e implementar el formulario de registro para consultores.</td>
+    <td>Implementar formulario y lógica POST para crear consultores.</td>
     <td>3</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
@@ -72,19 +73,20 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td>TS104</td>
     <td>Validación de datos</td>
-    <td>Agregar validaciones de campos (correo, contraseña, etc.).</td>
+    <td>Verificar campos requeridos y mensajes de error en tiempo real.</td>
     <td>2</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
 
+  <!-- HU02: Registrar un cliente -->
   <tr>
-    <td rowspan="2">HU02</td>
+    <td rowspan="2">US02</td>
     <td rowspan="2">Registrar un cliente</td>
     <td>TS102</td>
-    <td>Formulario de cliente</td>
-    <td>Diseñar el formulario para registrar nuevos clientes.</td>
+    <td>Formulario cliente</td>
+    <td>Diseñar e implementar formulario para nuevos clientes.</td>
     <td>3</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
@@ -93,61 +95,64 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td>TS105</td>
     <td>Confirmación de registro</td>
-    <td>Mostrar mensaje de confirmación tras registro exitoso.</td>
+    <td>Mostrar mensaje al finalizar registro y redirigir a inicio.</td>
     <td>1</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
     <td>Done</td>
   </tr>
 
+  <!-- HU03: Buscar profesionales -->
   <tr>
-    <td rowspan="2">HU03</td>
+    <td rowspan="2">US03</td>
     <td rowspan="2">Buscar profesionales disponibles</td>
     <td>TS201</td>
     <td>Filtros de búsqueda</td>
-    <td>Filtrar consultores por disponibilidad, especialidad y calificación.</td>
+    <td>Permitir filtrado por especialidad, horario y tarifa.</td>
     <td>5</td>
-    <td>Aguirre Castillo Sergio Cesar</td>
+    <td>Sergio Aguirre Castillo</td>
     <td>U202310425</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TS204</td>
     <td>Resultados dinámicos</td>
-    <td>Actualizar la lista de resultados en tiempo real.</td>
+    <td>Actualizar listado de resultados en tiempo real según filtros.</td>
     <td>3</td>
-    <td>Aguirre Castillo Sergio Cesar</td>
+    <td>Sergio Aguirre Castillo</td>
     <td>U202310425</td>
     <td>Done</td>
   </tr>
 
+  <!-- HU04: Notificaciones -->
   <tr>
-    <td rowspan="2">HU04</td>
+    <td rowspan="2">US04</td>
     <td rowspan="2">Recibir notificaciones</td>
     <td>TS202</td>
     <td>Enviar notificaciones</td>
-    <td>Notificar a clientes sobre disponibilidad de consultores.</td>
+    <td>Enviar correo o push cuando hay disponibilidad nueva.</td>
     <td>4</td>
-    <td>Romero Qwistgaard Russel Stephen</td>
+    <td>Russell Romero Qwistgaard</td>
     <td>U202211043</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>TS205</td>
     <td>Configuración de notificaciones</td>
-    <td>Permitir al usuario activar/desactivar notificaciones.</td>
+    <td>Permitir activar/desactivar notificaciones en el perfil.</td>
     <td>2</td>
-    <td>Romero Qwistgaard Russel Stephen</td>
+    <td>Russell Romero Qwistgaard</td>
     <td>U202211043</td>
     <td>Done</td>
   </tr>
 
+  <!-- HU10: Gestión de servicios -->
   <tr>
-    <td rowspan="3">HU10</td>
+    <td rowspan="3">US10</td>
     <td rowspan="3">Crear y gestionar servicios</td>
     <td>TS401</td>
     <td>Agenda de disponibilidad</td>
-    <td>Configurar y actualizar la disponibilidad del consultor.</td>
+    <td>Implementar calendario para horarios del profesional.</td>
     <td>6</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
@@ -156,7 +161,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td>TS402</td>
     <td>Agendamiento de sesiones</td>
-    <td>Permitir a los clientes reservar sesiones con consultores.</td>
+    <td>Permitir a clientes seleccionar fecha y hora disponible.</td>
     <td>5</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
@@ -165,7 +170,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   <tr>
     <td>TS403</td>
     <td>Confirmación de sesiones</td>
-    <td>Habilitar que el consultor acepte o rechace sesiones programadas.</td>
+    <td>Profesional acepta o rechaza sesión agendada.</td>
     <td>4</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
