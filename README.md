@@ -37,17 +37,17 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
 
-<table align="center" border="1" width="90%" style="text-align:center;">
+<table align="center" border="1" width="100%" style="text-align:center;">
   <tr align="left">
-    <td><b>User Story</b></td>
-    <td><b>Work-Item / Task</b></td>
-    <td><b>Id</b></td>
-    <td><b>Title</b></td>
-    <td><b>Description</b></td>
-    <td><b>Estimation (Hours)</b></td>
-    <td><b>Assigned To</b></td>
-    <td><b>Student Code</b></td>
-    <td><b>Status</b></td>
+    <th>User Story</th>
+    <th>Work-Item / Task</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Student Code</th>
+    <th>Status</th>
   </tr>
 
   <tr align="left">
@@ -75,7 +75,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
 
   <tr align="left">
-    <td rowspan="2">US02</td>
+    <td rowspan="3">US02</td>
     <td>Registrar un cliente</td>
     <td>T01</td>
     <td>Registro de cliente</td>
@@ -86,17 +86,28 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td>Correcciones del sprint anterior</td>
+    <td></td>
     <td>T02</td>
+    <td>Correcciones del sprint anterior</td>
     <td>Refactor de errores previos y ajustes de bugs reportados.</td>
     <td>3</td>
     <td>Equipo</td>
     <td>-</td>
     <td>Done</td>
   </tr>
+  <tr align="left">
+    <td></td>
+    <td>T03</td>
+    <td>Desarrollo del Backend</td>
+    <td>Integración de funcionalidades clave (servicios, sesiones, perfiles).</td>
+    <td>6</td>
+    <td>Russell Romero Qwistgaard</td>
+    <td>U202211043</td>
+    <td>Done</td>
+  </tr>
 
   <tr align="left">
-    <td rowspan="2">US04</td>
+    <td rowspan="1">US04</td>
     <td>Recibir notificaciones de disponibilidad</td>
     <td>T01</td>
     <td>Notificaciones de disponibilidad</td>
@@ -106,18 +117,9 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>U202211043</td>
     <td>Done</td>
   </tr>
-  <tr align="left">
-    <td>Desarrollo del Backend</td>
-    <td>T03</td>
-    <td>Integración de funcionalidades clave (servicios, sesiones, perfiles).</td>
-    <td>6</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
 
   <tr align="left">
-    <td rowspan="2">US08</td>
+    <td rowspan="3">US08</td>
     <td>Actualizar perfil de usuario</td>
     <td>T01</td>
     <td>Actualizar perfil</td>
@@ -128,9 +130,20 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td>Hacer el Landing Page responsiva</td>
+    <td></td>
     <td>T02</td>
+    <td>Hacer el Landing Page responsiva</td>
     <td>Ajustes de estilo y diseño adaptable para la página principal.</td>
+    <td>3</td>
+    <td>Oshiro Yamashita Daiki Oscar</td>
+    <td>U20201F846</td>
+    <td>Done</td>
+  </tr>
+  <tr align="left">
+    <td></td>
+    <td>T03</td>
+    <td>Agregar las secciones faltantes al Landing Page</td>
+    <td>Completar contenido y estructura de la landing page con base en requerimientos iniciales.</td>
     <td>3</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
     <td>U20201F846</td>
@@ -138,7 +151,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
 
   <tr align="left">
-    <td rowspan="2">US07</td>
+    <td rowspan="1">US07</td>
     <td>Calificar a un profesional</td>
     <td>T01</td>
     <td>Calificar un profesional</td>
@@ -148,15 +161,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>U202211043</td>
     <td>Done</td>
   </tr>
-  <tr align="left">
-    <td>Agregar secciones faltantes al Landing Page</td>
-    <td>T03</td>
-    <td>Completar contenido y estructura de la landing page con base en requerimientos iniciales.</td>
-    <td>3</td>
-    <td>Oshiro Yamashita Daiki Oscar</td>
-    <td>U20201F846</td>
-    <td>Done</td>
-  </tr>
 </table>
+
 
 
