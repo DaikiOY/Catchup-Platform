@@ -37,96 +37,128 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
 
-
-
-<table align="center" border="1" width="95%" style="text-align:center">
-  <tr>
-    <td colspan="1"><b>Sprint #</b></td>
-    <td colspan="8"><b>Sprint 1</b></td>
-  </tr>
-  <tr>
-    <td colspan="2"><b>User Story</b></td>
-    <td colspan="7"><b>Work-Item / Task</b></td>
-  </tr>
-  <tr>
-    <td><b>Id</b></td>
-    <td><b>Title</b></td>
-    <td><b>Id</b></td>
-    <td><b>Title</b></td>
-    <td><b>Description</b></td>
-    <td><b>Estimation (Hours)</b></td>
-    <td><b>Assigned To</b></td>
-    <td><b>Student Code</b></td>
-    <td><b>Status</b></td>
-  </tr>
-
-  <!-- US15 -->
-  <tr>
-    <td rowspan="2">US15</td>
-    <td rowspan="2">Visualizar página informativa</td>
-    <td>T01</td>
-    <td>Maquetación HTML inicial</td>
-    <td>Diseñar la estructura base en HTML para la landing page.</td>
-    <td>4</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>T02</td>
-    <td>Estilización general</td>
-    <td>Aplicar estilos CSS para definir la apariencia general.</td>
-    <td>4</td>
-    <td>Daiki Oscar Oshiro Yamashita</td>
-    <td>U20201F846</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US17 -->
-  <tr>
-    <td rowspan="2">US17</td>
-    <td rowspan="2">Landing Page intuitiva</td>
-    <td>T01</td>
-    <td>Diseño de navegación</td>
-    <td>Crear menú de navegación con enlaces funcionales.</td>
-    <td>4</td>
-    <td>Sergio Cesar Aguirre Castillo</td>
-    <td>U202310425</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>T02</td>
-    <td>Personalización del Navbar</td>
-    <td>Aplicar diseño e identidad visual al menú de navegación.</td>
-    <td>4</td>
-    <td>Russell Stephen Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US18 -->
-  <tr>
-    <td rowspan="2">US18</td>
-    <td rowspan="2">Landing Page responsiva</td>
-    <td>T01</td>
-    <td>Adaptar contenido principal</td>
-    <td>Aplicar media queries para que el contenido se adapte a distintos dispositivos.</td>
-    <td>4</td>
-    <td>Luis Angel Montañez Moreno</td>
-    <td>U202223811</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>T02</td>
-    <td>Navbar adaptable</td>
-    <td>Hacer que el menú de navegación funcione correctamente en pantallas móviles.</td>
-    <td>4</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
+<table align="center" border="1" width="90%" style="text-align:center;">
+    <tr align="left">
+        <td><b>User Story</b></td>
+        <td><b>Work-Item / Task</b></td>
+        <td><b>Id</b></td>
+        <td><b>Title</b></td>
+        <td><b>Description</b></td>
+        <td><b>Estimation (Hours)</b></td>
+        <td><b>Assigned To</b></td>
+        <td><b>Student Code</b></td>
+        <td><b>Status</b></td>
+    </tr>
+    <tr align="left">
+        <td>US03</td>
+        <td>Buscar profesionales disponibles</td>
+        <td>T01</td>
+        <td>Búsqueda de servicios</td>
+        <td>Implementar búsqueda y filtros de disponibilidad para encontrar profesionales.</td>
+        <td>5</td>
+        <td>Sergio Aguirre Castillo</td>
+        <td>U202310425</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td>US01</td>
+        <td>Registrar un profesional</td>
+        <td>T01</td>
+        <td>Registro de profesional</td>
+        <td>Formulario y lógica de backend para registro de consultores.</td>
+        <td>4</td>
+        <td>Javier Murillo Mathias</td>
+        <td>U202022211</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td>US02</td>
+        <td>Registrar un cliente</td>
+        <td>T01</td>
+        <td>Registro de cliente</td>
+        <td>Registro de nuevos clientes con validaciones de email duplicado y datos requeridos.</td>
+        <td>4</td>
+        <td>Javier Murillo Mathias</td>
+        <td>U202022211</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td></td>
+        <td></td>
+        <td>T02</td>
+        <td>Correcciones del sprint anterior</td>
+        <td>Refactor de errores previos y ajustes de bugs reportados.</td>
+        <td>3</td>
+        <td>Equipo</td>
+        <td>-</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td></td>
+        <td></td>
+        <td>T03</td>
+        <td>Desarrollo del Backend</td>
+        <td>Integración de funcionalidades clave (servicios, sesiones, perfiles).</td>
+        <td>6</td>
+        <td>Russell Romero Qwistgaard</td>
+        <td>U202211043</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td>US04</td>
+        <td>Recibir notificaciones de disponibilidad</td>
+        <td>T01</td>
+        <td>Notificaciones de disponibilidad</td>
+        <td>Envío de alertas a usuarios cuando los profesionales actualizan su disponibilidad.</td>
+        <td>4</td>
+        <td>Russell Romero Qwistgaard</td>
+        <td>U202211043</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td>US08</td>
+        <td>Actualizar perfil de usuario</td>
+        <td>T01</td>
+        <td>Actualizar perfil</td>
+        <td>Permitir a usuarios editar sus datos personales y preferencias.</td>
+        <td>4</td>
+        <td>Sergio Aguirre Castillo</td>
+        <td>U202310425</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td></td>
+        <td></td>
+        <td>T02</td>
+        <td>Hacer el Landing Page responsiva</td>
+        <td>Ajustes de estilo y diseño adaptable para la página principal.</td>
+        <td>3</td>
+        <td>Oshiro Yamashita Daiki Oscar</td>
+        <td>U20201F846</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td></td>
+        <td></td>
+        <td>T03</td>
+        <td>Agregar las secciones faltantes al Landing Page</td>
+        <td>Completar contenido y estructura de la landing page con base en requerimientos iniciales.</td>
+        <td>3</td>
+        <td>Oshiro Yamashita Daiki Oscar</td>
+        <td>U20201F846</td>
+        <td>Done</td>
+    </tr>
+    <tr align="left">
+        <td>US07</td>
+        <td>Calificar a un profesional</td>
+        <td>T01</td>
+        <td>Calificar un profesional</td>
+        <td>Implementar sistema de puntuación y comentarios post-sesión.</td>
+        <td>3</td>
+        <td>Russell Romero Qwistgaard</td>
+        <td>U202211043</td>
+        <td>Done</td>
+    </tr>
 </table>
-
-
 
 
