@@ -51,18 +51,6 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
 
   <tr align="left">
-    <td rowspan="1">US03</td>
-    <td>Buscar profesionales disponibles</td>
-    <td>T01</td>
-    <td>Búsqueda de servicios</td>
-    <td>Implementar búsqueda y filtros de disponibilidad para encontrar profesionales.</td>
-    <td>5</td>
-    <td>Sergio Aguirre Castillo</td>
-    <td>U202310425</td>
-    <td>Done</td>
-  </tr>
-
-  <tr align="left">
     <td rowspan="1">US01</td>
     <td>Registrar un profesional</td>
     <td>T01</td>
@@ -105,12 +93,36 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
 
   <tr align="left">
+    <td rowspan="1">US03</td>
+    <td>Buscar profesionales disponibles</td>
+    <td>T01</td>
+    <td>Búsqueda de servicios</td>
+    <td>Implementar búsqueda y filtros de disponibilidad para encontrar profesionales.</td>
+    <td>5</td>
+    <td>Sergio Aguirre Castillo</td>
+    <td>U202310425</td>
+    <td>Done</td>
+  </tr>
+
+  <tr align="left">
     <td rowspan="1">US04</td>
     <td>Recibir notificaciones de disponibilidad</td>
     <td>T01</td>
     <td>Notificaciones de disponibilidad</td>
     <td>Envío de alertas a usuarios cuando los profesionales actualizan su disponibilidad.</td>
     <td>4</td>
+    <td>Russell Romero Qwistgaard</td>
+    <td>U202211043</td>
+    <td>Done</td>
+  </tr>
+
+  <tr align="left">
+    <td rowspan="1">US07</td>
+    <td>Calificar a un profesional</td>
+    <td>T01</td>
+    <td>Calificar un profesional</td>
+    <td>Implementar sistema de puntuación y comentarios post-sesión.</td>
+    <td>3</td>
     <td>Russell Romero Qwistgaard</td>
     <td>U202211043</td>
     <td>Done</td>
@@ -146,18 +158,6 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>4</td>
     <td>Javier Murillo Mathias</td>
     <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-
-  <tr align="left">
-    <td rowspan="1">US07</td>
-    <td>Calificar a un profesional</td>
-    <td>T01</td>
-    <td>Calificar un profesional</td>
-    <td>Implementar sistema de puntuación y comentarios post-sesión.</td>
-    <td>3</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
     <td>Done</td>
   </tr>
 </table>
