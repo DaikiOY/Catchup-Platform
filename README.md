@@ -50,6 +50,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <th>Status</th>
   </tr>
 
+  <!-- US01 -->
   <tr align="left">
     <td rowspan="1">US01</td>
     <td>Registrar un profesional</td>
@@ -62,6 +63,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 
+  <!-- US02 -->
   <tr align="left">
     <td rowspan="3">US02</td>
     <td rowspan="3">Registrar un cliente</td>
@@ -92,6 +94,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 
+  <!-- US03 -->
   <tr align="left">
     <td rowspan="1">US03</td>
     <td>Buscar profesionales disponibles</td>
@@ -104,6 +107,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 
+  <!-- US04 -->
   <tr align="left">
     <td rowspan="1">US04</td>
     <td>Recibir notificaciones de disponibilidad</td>
@@ -116,6 +120,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 
+  <!-- US07 -->
   <tr align="left">
     <td rowspan="1">US07</td>
     <td>Calificar a un profesional</td>
@@ -128,6 +133,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 
+  <!-- US08 -->
   <tr align="left">
     <td rowspan="1">US08</td>
     <td>Actualizar perfil de usuario</td>
@@ -140,6 +146,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 
+  <!-- US09 -->
   <tr align="left">
     <td rowspan="2">US09</td>
     <td rowspan="2">Gestión de sesiones</td>
@@ -161,4 +168,5 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 </table>
+
 
