@@ -117,8 +117,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
   </tr>
 
   <tr align="left">
-    <td rowspan="3">US08</td>
-    <td rowspan="3">Actualizar perfil de usuario</td>
+    <td rowspan="1">US08</td>
+    <td>Actualizar perfil de usuario</td>
     <td>T01</td>
     <td>Actualizar perfil</td>
     <td>Permitir a usuarios editar sus datos personales y preferencias.</td>
@@ -127,22 +127,25 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>U202310425</td>
     <td>Done</td>
   </tr>
+
   <tr align="left">
-    <td>T02</td>
-    <td>Hacer el Landing Page responsiva</td>
-    <td>Ajustes de estilo y diseño adaptable para la página principal.</td>
-    <td>3</td>
-    <td>Oshiro Yamashita Daiki Oscar</td>
-    <td>U20201F846</td>
+    <td rowspan="2">US09</td>
+    <td rowspan="2">Gestión de sesiones</td>
+    <td>T01</td>
+    <td>Generar una reserva</td>
+    <td>Permitir que el cliente seleccione una sesión disponible y la reserve.</td>
+    <td>4</td>
+    <td>Russell Romero Qwistgaard</td>
+    <td>U202211043</td>
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td>T03</td>
-    <td>Agregar las secciones faltantes al Landing Page</td>
-    <td>Completar contenido y estructura de la landing page con base en requerimientos iniciales.</td>
-    <td>3</td>
-    <td>Oshiro Yamashita Daiki Oscar</td>
-    <td>U20201F846</td>
+    <td>T02</td>
+    <td>Crear sesión del profesional</td>
+    <td>Permitir a los profesionales crear sus horarios de disponibilidad para sesiones.</td>
+    <td>4</td>
+    <td>Javier Murillo Mathias</td>
+    <td>U202022211</td>
     <td>Done</td>
   </tr>
 
@@ -158,3 +161,4 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 </table>
+
