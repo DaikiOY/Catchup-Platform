@@ -62,9 +62,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     </tr>
     <tr align="left">
         <td>US01</td>
-        <td>Registrar un profesional</td>
-        <td>T01</td>
-        <td>Registro de profesional</td>
+        <td colspan="3">Registrar un profesional – Registro de profesional</td>
         <td>Formulario y lógica de backend para registro de consultores.</td>
         <td>4</td>
         <td>Javier Murillo Mathias</td>
@@ -73,9 +71,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     </tr>
     <tr align="left">
         <td>US02</td>
-        <td>Registrar un cliente</td>
-        <td>T01</td>
-        <td>Registro de cliente</td>
+        <td colspan="3">Registrar un cliente – Registro de cliente</td>
         <td>Registro de nuevos clientes con validaciones de email duplicado y datos requeridos.</td>
         <td>4</td>
         <td>Javier Murillo Mathias</td>
@@ -117,9 +113,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     </tr>
     <tr align="left">
         <td>US08</td>
-        <td>Actualizar perfil de usuario</td>
-        <td>T01</td>
-        <td>Actualizar perfil</td>
+        <td colspan="3">Actualizar perfil de usuario – Actualizar perfil</td>
         <td>Permitir a usuarios editar sus datos personales y preferencias.</td>
         <td>4</td>
         <td>Sergio Aguirre Castillo</td>
