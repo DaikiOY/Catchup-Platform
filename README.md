@@ -86,9 +86,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td></td>
-    <td>T02</td>
     <td>Correcciones del sprint anterior</td>
+    <td>T02</td>
     <td>Refactor de errores previos y ajustes de bugs reportados.</td>
     <td>3</td>
     <td>Equipo</td>
@@ -96,9 +95,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td></td>
-    <td>T03</td>
     <td>Desarrollo del Backend</td>
+    <td>T03</td>
     <td>Integración de funcionalidades clave (servicios, sesiones, perfiles).</td>
     <td>6</td>
     <td>Russell Romero Qwistgaard</td>
@@ -130,9 +128,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td></td>
-    <td>T02</td>
     <td>Hacer el Landing Page responsiva</td>
+    <td>T02</td>
     <td>Ajustes de estilo y diseño adaptable para la página principal.</td>
     <td>3</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
@@ -140,9 +137,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
   <tr align="left">
-    <td></td>
-    <td>T03</td>
     <td>Agregar las secciones faltantes al Landing Page</td>
+    <td>T03</td>
     <td>Completar contenido y estructura de la landing page con base en requerimientos iniciales.</td>
     <td>3</td>
     <td>Oshiro Yamashita Daiki Oscar</td>
@@ -162,6 +158,5 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td>Done</td>
   </tr>
 </table>
-
 
 
