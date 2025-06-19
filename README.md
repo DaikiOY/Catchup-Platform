@@ -37,136 +37,81 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
 
-<table align="center" border="1" width="100%" style="text-align:center;">
-  <tr align="left">
-    <th>User Story</th>
-    <th>Work-Item / Task</th>
-    <th>Id</th>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Estimation (Hours)</th>
-    <th>Assigned To</th>
-    <th>Student Code</th>
-    <th>Status</th>
-  </tr>
-
-  <!-- US01 -->
-  <tr align="left">
-    <td rowspan="1">US01</td>
-    <td>Registrar un profesional</td>
-    <td>T01</td>
-    <td>Registro de profesional</td>
-    <td>Formulario y lógica de backend para registro de consultores.</td>
-    <td>4</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US02 -->
-  <tr align="left">
-    <td rowspan="3">US02</td>
-    <td rowspan="3">Registrar un cliente</td>
-    <td>T01</td>
-    <td>Registro de cliente</td>
-    <td>Registro de nuevos clientes con validaciones de email duplicado y datos requeridos.</td>
-    <td>4</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
-  <tr align="left">
-    <td>T02</td>
-    <td>Correcciones del sprint anterior</td>
-    <td>Refactor de errores previos y ajustes de bugs reportados.</td>
-    <td>3</td>
-    <td>Equipo</td>
-    <td>-</td>
-    <td>Done</td>
-  </tr>
-  <tr align="left">
-    <td>T03</td>
-    <td>Desarrollo del Backend</td>
-    <td>Integración de funcionalidades clave (servicios, sesiones, perfiles).</td>
-    <td>6</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US03 -->
-  <tr align="left">
-    <td rowspan="1">US03</td>
-    <td>Buscar profesionales disponibles</td>
-    <td>T01</td>
-    <td>Búsqueda de servicios</td>
-    <td>Implementar búsqueda y filtros de disponibilidad para encontrar profesionales.</td>
-    <td>5</td>
-    <td>Sergio Aguirre Castillo</td>
-    <td>U202310425</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US04 -->
-  <tr align="left">
-    <td rowspan="1">US04</td>
-    <td>Recibir notificaciones de disponibilidad</td>
-    <td>T01</td>
-    <td>Notificaciones de disponibilidad</td>
-    <td>Envío de alertas a usuarios cuando los profesionales actualizan su disponibilidad.</td>
-    <td>4</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US07 -->
-  <tr align="left">
-    <td rowspan="1">US07</td>
-    <td>Calificar a un profesional</td>
-    <td>T01</td>
-    <td>Calificar un profesional</td>
-    <td>Implementar sistema de puntuación y comentarios post-sesión.</td>
-    <td>3</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US08 -->
-  <tr align="left">
-    <td rowspan="1">US08</td>
-    <td>Actualizar perfil de usuario</td>
-    <td>T01</td>
-    <td>Actualizar perfil</td>
-    <td>Permitir a usuarios editar sus datos personales y preferencias.</td>
-    <td>4</td>
-    <td>Sergio Aguirre Castillo</td>
-    <td>U202310425</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US09 -->
-  <tr align="left">
-    <td rowspan="2">US09</td>
-    <td rowspan="2">Gestión de sesiones</td>
-    <td>T01</td>
-    <td>Generar una reserva</td>
-    <td>Permitir que el cliente seleccione una sesión disponible y la reserve.</td>
-    <td>4</td>
-    <td>Russell Romero Qwistgaard</td>
-    <td>U202211043</td>
-    <td>Done</td>
-  </tr>
-  <tr align="left">
-    <td>T02</td>
-    <td>Crear sesión del profesional</td>
-    <td>Permitir a los profesionales crear sus horarios de disponibilidad para sesiones.</td>
-    <td>4</td>
-    <td>Javier Murillo Mathias</td>
-    <td>U202022211</td>
-    <td>Done</td>
-  </tr>
+<table>
+  <thead>
+    <tr>
+      <th>Team Member</th>
+      <th>Github Username</th>
+      <th>Sprint 3</th>
+      <th>Validation Interviews</th>
+      <th>Heuristic Evaluations</th>
+      <th>Video About-the-Team</th>
+      <th>Video About-the-Product</th>
+      <th>Backend</th>
+      <th>Session Management</th>
+      <th>Notifications</th>
+      <th>Sidebar Search</th>
+      <th>Profiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Javier Murillo Mathias</td>
+      <td>K1ngHulk</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Oshiro Yamashita Daiki Oscar</td>
+      <td>DaikiOY</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Aguirre Castillo Sergio Cesar</td>
+      <td>Aguirrat157</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Romero Qwistgaard Russel Stephen</td>
+      <td>RussellUPC</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+  </tbody>
 </table>
 
 
