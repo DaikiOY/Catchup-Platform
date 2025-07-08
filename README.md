@@ -36,7 +36,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 - Gabriel Alejandro Rivera Ayala
 - Karito Dianeth Medina Chocce
 - Yair Christofer Aru Acevedo
-  <img src="img/About Us-Mock.png" width="100%" height="100%">
+  <img src="img/About Us-Mock.png" alt="About Us" style="width: 100%; height: auto; display: block; max-width: 800px; margin: 0 auto;">
 
-<img src="img/About Us-Mock.png" width="100%" height="100%">
+<img src="img/About Us-Mock.png" alt="About Us" style="width: 100%; height: auto; display: block; max-width: 800px; margin: 0 auto;">
 
