@@ -62,9 +62,9 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Actualizar perfil de usuario</td>
     <td>T01</td>
     <td colspan="2">Ver, editar y eliminar perfil</td>
-    <td colspan="3">Como usuario, quiero actualizar mi perfil para mantener mi información personal al día.</td>
+    <td colspan="3">Actualizar el endpoint de gestión de perfiles.</td>
     <td>3</td>
-    <td colspan="2">Gonzalo Carhuancote</td>
+    <td colspan="2">Sergio Aguirre Castillo</td>
     <td>Done</td>
   </tr>
 
@@ -73,9 +73,9 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Integrar Frontend con Backend</td>
     <td>T01</td>
     <td colspan="2">Desplegar backend en Azure</td>
-    <td colspan="3">Como desarrollador, quiero desplegar el backend en Azure para que sea accesible en producción.</td>
+    <td colspan="3">Publicar el despliegue del backend en Azure para que sea accesible en producción.</td>
     <td>3</td>
-    <td colspan="2">Salvador Chamorro</td>
+    <td colspan="2">Russell Romero Qwistgaard</td>
     <td>Done</td>
   </tr>
 
@@ -84,9 +84,9 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2"></td>
     <td>T02</td>
     <td colspan="2">Actualizar endpoints del backend</td>
-    <td colspan="3">Como desarrollador, quiero actualizar y corregir los endpoints para mejorar la integridad y funcionalidad.</td>
+    <td colspan="3">Modificar y actualizar los endpoints para mejorar la integridad y funcionalidad.</td>
     <td>4</td>
-    <td colspan="2">Russell Romero</td>
+    <td colspan="2">Russell Romero Qwistgaard</td>
     <td>Done</td>
   </tr>
 
@@ -94,10 +94,10 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td></td>
     <td colspan="2"></td>
     <td>T03</td>
-    <td colspan="2">Probar conexión Frontend - Backend</td>
+    <td colspan="2">Comprobar conexión Frontend - Backend</td>
     <td colspan="3">Validar desde el frontend que los endpoints desplegados funcionen correctamente.</td>
     <td>2</td>
-    <td colspan="2">Daiki Oshiro</td>
+    <td colspan="2">Javier Kenyi Mendoza</td>
     <td>Done</td>
   </tr>
 
@@ -108,7 +108,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Actualizar Frontend</td>
     <td colspan="3">Modificar vistas del frontend para que consuman los datos del backend desplegado.</td>
     <td>3</td>
-    <td colspan="2">Sergio Aguirre</td>
+    <td colspan="2">Salvador Chamorro Acero</td>
     <td>Done</td>
   </tr>
 
@@ -119,7 +119,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Desplegar frontend</td>
     <td colspan="3">Publicar el frontend en Vercel para que sea accesible a los usuarios finales.</td>
     <td>2</td>
-    <td colspan="2">Gonzalo Carhuancote</td>
+    <td colspan="2">Gonzalo Carhuancote Dominguez</td>
     <td>Done</td>
   </tr>
 
@@ -130,7 +130,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Editar información del equipo y proyecto</td>
     <td colspan="3">Actualizar la sección del equipo y enlaces del sistema en la landing page.</td>
     <td>2</td>
-    <td colspan="2">Javier Kenyi Mendoza</td>
+    <td colspan="2">Daiki Oshiro Yamashita</td>
     <td>Done</td>
   </tr>
 
@@ -141,7 +141,7 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Ajustes de diseño y navegación</td>
     <td colspan="3">Aplicar mejoras de diseño para una experiencia más intuitiva y fluida.</td>
     <td>3</td>
-    <td colspan="2">Salvador Chamorro</td>
+    <td colspan="2">Daiki Oshiro Yamashita</td>
     <td>Done</td>
   </tr>
 
