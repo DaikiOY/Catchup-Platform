@@ -40,21 +40,22 @@ These operations are implemented following the **CQRS** (Command Query Responsib
 
 <table border="1" width="100%" style="border-collapse: collapse; text-align: center;">
   <tr style="background-color: #f0f0f0;">
-    <th colspan="13">Sprint Backlog - Sprint 4</th>
+    <th colspan="14">Sprint Backlog - Sprint 4</th>
   </tr>
   <tr style="background-color: #e0e0e0;">
     <th colspan="3">User Story</th>
-    <th colspan="10">Work-Item / Task</th>
+    <th colspan="11">Work-Item / Task</th>
   </tr>
   <tr style="background-color: #e8e8e8;">
     <th>Id</th>
-    <th colspan="2">Título</th>
+    <th colspan="2">Title</th>
     <th>Id</th>
-    <th colspan="2">Título del Task</th>
-    <th colspan="3">Descripción</th>
-    <th>Estimación (hrs)</th>
-    <th colspan="2">Asignado a</th>
-    <th>Estado</th>
+    <th colspan="2">Title</th>
+    <th colspan="3">Description</th>
+    <th>Estimation (Hours)</th>
+    <th colspan="1">Assigned To</th>
+    <th>Student Code</th>
+    <th>Status</th>
   </tr>
 
   <tr>
@@ -64,7 +65,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Ver, editar y eliminar perfil</td>
     <td colspan="3">Actualizar el endpoint de gestión de perfiles.</td>
     <td>3</td>
-    <td colspan="2">Sergio Aguirre Castillo</td>
+    <td>Sergio Aguirre Castillo</td>
+    <td>U202310425</td>
     <td>Done</td>
   </tr>
 
@@ -75,7 +77,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Desplegar backend en Azure</td>
     <td colspan="3">Publicar el despliegue del backend en Azure para que sea accesible en producción.</td>
     <td>3</td>
-    <td colspan="2">Russell Romero Qwistgaard</td>
+    <td>Russell Romero Qwistgaard</td>
+    <td>U202211043</td>
     <td>Done</td>
   </tr>
 
@@ -86,7 +89,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Actualizar endpoints del backend</td>
     <td colspan="3">Modificar y actualizar los endpoints para mejorar la integridad y funcionalidad.</td>
     <td>4</td>
-    <td colspan="2">Russell Romero Qwistgaard</td>
+    <td>Russell Romero Qwistgaard</td>
+    <td>U202211043</td>
     <td>Done</td>
   </tr>
 
@@ -97,7 +101,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Comprobar conexión Frontend - Backend</td>
     <td colspan="3">Validar desde el frontend que los endpoints desplegados funcionen correctamente.</td>
     <td>2</td>
-    <td colspan="2">Javier Kenyi Mendoza</td>
+    <td>Javier Kenyi Mendoza</td>
+    <td>U201824550</td>
     <td>Done</td>
   </tr>
 
@@ -108,7 +113,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Actualizar Frontend</td>
     <td colspan="3">Modificar vistas del frontend para que consuman los datos del backend desplegado.</td>
     <td>3</td>
-    <td colspan="2">Salvador Chamorro Acero</td>
+    <td>Salvador Chamorro Acero</td>
+    <td>U201914367</td>
     <td>Done</td>
   </tr>
 
@@ -119,7 +125,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Desplegar frontend</td>
     <td colspan="3">Publicar el frontend en Vercel para que sea accesible a los usuarios finales.</td>
     <td>2</td>
-    <td colspan="2">Gonzalo Carhuancote Dominguez</td>
+    <td>Gonzalo Carhuancote Dominguez</td>
+    <td>U202210720</td>
     <td>Done</td>
   </tr>
 
@@ -130,7 +137,8 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Editar información del equipo y proyecto</td>
     <td colspan="3">Actualizar la sección del equipo y enlaces del sistema en la landing page.</td>
     <td>2</td>
-    <td colspan="2">Daiki Oshiro Yamashita</td>
+    <td>Daiki Oshiro Yamashita</td>
+    <td>U20201F846</td>
     <td>Done</td>
   </tr>
 
@@ -141,11 +149,13 @@ These operations are implemented following the **CQRS** (Command Query Responsib
     <td colspan="2">Ajustes de diseño y navegación</td>
     <td colspan="3">Aplicar mejoras de diseño para una experiencia más intuitiva y fluida.</td>
     <td>3</td>
-    <td colspan="2">Daiki Oshiro Yamashita</td>
+    <td>Daiki Oshiro Yamashita</td>
+    <td>U20201F846</td>
     <td>Done</td>
   </tr>
 
 </table>
+
 
 
 
