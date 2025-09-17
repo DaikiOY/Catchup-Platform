@@ -8,93 +8,93 @@
   </tr>
   <tr>
     <td colspan="2"></td>
+    <td><b>InventaTrack</b></td>
     <td><b>Toast POS</b></td>
     <td><b>MarketMan</b></td>
     <td><b>BlueCart</b></td>
-    <td><b>FreshOps</b></td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
     <td><b>Overview</b></td>
-    <td>POS y gestión de inventarios para restaurantes con control de alimentos perecederos y reportes.</td>
-    <td>Software para gestión de inventarios y compras en restaurantes y cadenas alimenticias.</td>
-    <td>Plataforma de gestión de pedidos y control de inventarios para restaurantes y supermercados.</td>
-    <td>Software de gestión para supermercados enfocado en perecederos y reducción de desperdicios.</td>
+    <td>Plataforma web para gestión de inventarios de alimentos perecederos, con alertas automáticas y reportes para PYMEs.</td>
+    <td>Plataforma todo-en-uno para restaurantes con gestión de inventarios, punto de venta y pedidos.</td>
+    <td>Software especializado en gestión de inventarios y compras para restaurantes y proveedores.</td>
+    <td>Solución para la gestión de inventarios y pedidos para restaurantes, hoteles y supermercados.</td>
   </tr>
   <tr>
     <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
-    <td>Integración completa con punto de venta y analíticas en tiempo real.</td>
-    <td>Optimización de compras y control en tiempo real con enfoque en proveedores.</td>
-    <td>Facilita el manejo de órdenes y reduce desperdicio mediante reportes inteligentes.</td>
-    <td>Fuerte enfoque en control de calidad y trazabilidad, reducción de mermas.</td>
+    <td>Fácil uso, accesibilidad, reducción de mermas y desperdicios, enfoque PYME.</td>
+    <td>Integración completa con punto de venta y operaciones.</td>
+    <td>Optimización de compras y control de costos.</td>
+    <td>Control móvil y digitalización de pedidos.</td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil de Marketing</b></td>
     <td><b>Mercado objetivo</b></td>
-    <td>Restaurantes medianos y grandes.</td>
-    <td>Restaurantes, cadenas y food service.</td>
-    <td>Restaurantes y supermercados pequeños-medianos.</td>
-    <td>Supermercados y tiendas de alimentos perecederos.</td>
+    <td>PYMEs de alimentos perecederos: restaurantes, hoteles, supermercados.</td>
+    <td>Restaurantes de todos tamaños.</td>
+    <td>Restaurantes y proveedores.</td>
+    <td>Restaurantes, hoteles y supermercados.</td>
   </tr>
   <tr>
     <td><b>Estrategias de marketing</b></td>
-    <td>Eventos del sector, webinars, asociaciones con distribuidores.</td>
-    <td>Marketing digital, contenido educativo, alianzas con proveedores.</td>
-    <td>Publicidad digital, demostraciones y soporte cercano.</td>
-    <td>Campañas dirigidas a supermercados, enfoque en sostenibilidad.</td>
+    <td>Marketing digital, demostraciones gratuitas, alianzas con cámaras de comercio.</td>
+    <td>Publicidad digital, ferias, soporte dedicado.</td>
+    <td>Webinars, marketing directo, alianzas estratégicas.</td>
+    <td>Campañas en redes sociales y asesoría personalizada.</td>
   </tr>
   <tr>
     <td rowspan="3"><b>Perfil de Producto</b></td>
     <td><b>Productos y Servicios</b></td>
-    <td>POS, control inventarios, reportes, alertas de caducidad.</td>
-    <td>Gestión de inventarios, compras, reportes y control de proveedores.</td>
-    <td>Pedidos digitales, control inventarios, reportes de desperdicio.</td>
-    <td>Control de inventarios, trazabilidad, reportes de calidad.</td>
+    <td>Registro digital, alertas de caducidad, reportes de consumo y mermas.</td>
+    <td>Gestión de inventarios, ventas y clientes integrada.</td>
+    <td>Gestión de inventarios, órdenes y proveedores.</td>
+    <td>Control de inventarios, pedidos y alertas en app móvil.</td>
   </tr>
   <tr>
     <td><b>Precios y Costos</b></td>
-    <td>Desde $79/mes, planes escalables según tamaño.</td>
-    <td>Planes desde $100/mes, personalizado para cadenas.</td>
-    <td>Modelos de suscripción mensual, precios variables.</td>
-    <td>Precios personalizados según cliente y volumen.</td>
+    <td>Precio accesible para PYMEs, suscripción mensual.</td>
+    <td>Modelo SaaS con suscripción mensual según tamaño del negocio.</td>
+    <td>Precios personalizados según volumen y características.</td>
+    <td>Planes escalables y suscripción flexible.</td>
   </tr>
   <tr>
     <td><b>Canales de distribución (Web y/o móvil)</b></td>
-    <td>App móvil y plataforma web.</td>
     <td>Plataforma web y app móvil.</td>
     <td>App móvil y plataforma web.</td>
-    <td>Plataforma web y app móvil.</td>
+    <td>App móvil y plataforma web.</td>
+    <td>App móvil y plataforma web.</td>
   </tr>
   <tr>
     <td rowspan="5"><b>Análisis SWOT</b></td>
-    <td colspan="5">Análisis de fortalezas, debilidades, oportunidades y amenazas para estas plataformas y su impacto en el mercado.</td>
+    <td colspan="5">Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva.</td>
   </tr>
   <tr>
     <td><b>Fortalezas</b></td>
-    <td>Integración con POS, análisis en tiempo real.</td>
-    <td>Control en tiempo real, integración con proveedores.</td>
-    <td>Facilidad de uso, reducción efectiva de desperdicios.</td>
-    <td>Especialización en trazabilidad y control de calidad.</td>
+    <td>Facilidad de uso, accesibilidad, enfoque PYME.</td>
+    <td>Integración total con operaciones de restaurante.</td>
+    <td>Optimización de compras y control de costos.</td>
+    <td>Control móvil y digitalización rápida.</td>
   </tr>
   <tr>
     <td><b>Debilidades</b></td>
+    <td>Menor alcance, funciones más básicas.</td>
     <td>Precio elevado para PYMEs pequeñas.</td>
-    <td>Complejidad en implementación para negocios pequeños.</td>
-    <td>Menor alcance en grandes cadenas.</td>
-    <td>Menor reconocimiento en mercados globales.</td>
+    <td>Implementación y curva de aprendizaje.</td>
+    <td>Menor penetración en mercados grandes.</td>
   </tr>
   <tr>
     <td><b>Oportunidades</b></td>
-    <td>Creciente digitalización en restauración.</td>
-    <td>Expansión hacia cadenas medianas y grandes.</td>
-    <td>Demanda creciente en supermercados pequeños.</td>
-    <td>Interés en sostenibilidad y reducción de desperdicios.</td>
+    <td>Crecimiento de digitalización en PYMEs alimentarias.</td>
+    <td>Expansión en el mercado de restaurantes.</td>
+    <td>Demanda creciente de optimización en compras.</td>
+    <td>Digitalización en hoteles y restaurantes.</td>
   </tr>
   <tr>
     <td><b>Amenazas</b></td>
-    <td>Competencia de plataformas integradas como Square.</td>
-    <td>Competencia de startups con precios bajos.</td>
-    <td>Regulaciones cambiantes en manejo de alimentos.</td>
-    <td>Dependencia de infraestructura tecnológica.</td>
+    <td>Competencia de grandes softwares integrados.</td>
+    <td>Competencia de soluciones emergentes y startups.</td>
+    <td>Cambios regulatorios en la industria alimentaria.</td>
+    <td>Dependencia de conectividad y adopción tecnológica.</td>
   </tr>
 </table>
