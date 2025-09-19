@@ -28,7 +28,7 @@
     <td>Diseñar la estructura base en HTML para la landing page.</td>
     <td>4</td>
     <td>Gonzalo Carhuancote</td>
-    <td>U202200111</td>
+    <td>U202210720</td>
     <td>Done</td>
   </tr>
   <tr>
@@ -37,7 +37,7 @@
     <td>Aplicar estilos CSS para definir la apariencia general.</td>
     <td>4</td>
     <td>Juan Carlos Alvarado</td>
-    <td>U202200222</td>
+    <td>U202216150</td>
     <td>Done</td>
   </tr>
 
@@ -50,7 +50,7 @@
     <td>Crear menú de navegación con enlaces funcionales.</td>
     <td>4</td>
     <td>Joan Teves</td>
-    <td>U202200333</td>
+    <td>U202117303</td>
     <td>Done</td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@
     <td>Aplicar diseño e identidad visual al menú de navegación.</td>
     <td>4</td>
     <td>Antonio Duran</td>
-    <td>U202200444</td>
+    <td>U202215721</td>
     <td>Done</td>
   </tr>
 
@@ -81,7 +81,7 @@
     <td>Hacer que el menú de navegación funcione correctamente en pantallas móviles.</td>
     <td>4</td>
     <td>Gonzalo Carhuancote</td>
-    <td>U202200111</td>
-    <td>In Progress</td>
+    <td>U202210720</td>
+    <td>Done</td>
   </tr>
 </table>
