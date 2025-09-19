@@ -1,103 +1,87 @@
-#### 5.2.1.1 Sprint planning 1
+<table align="center" border="1" width="95%" style="text-align:center">
+  <tr>
+    <td colspan="1"><b>Sprint #</b></td>
+    <td colspan="8"><b>Sprint 1</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>User Story</b></td>
+    <td colspan="7"><b>Work-Item / Task</b></td>
+  </tr>
+  <tr>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Description</b></td>
+    <td><b>Estimation (Hours)</b></td>
+    <td><b>Assigned To</b></td>
+    <td><b>Student Code</b></td>
+    <td><b>Status</b></td>
+  </tr>
 
-<table align="center" border="1" width="90%" style="text-align:center;">
-    <tr align="left">
-        <td>
-            <b>Sprint #</b>
-        </td>
-        <td>
-            <b>Sprint 1</b>           
-        </td>
-    </tr>
-    <tr align="left">
-        <td colspan="2">
-            <b>Sprint Planning Background</b>
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Date</b>
-        </td>
-        <td>
-            19/09/25         
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Time</b>
-        </td>
-        <td>
-            10:00         
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Location</b>
-        </td>
-        <td>
-            Modalidad Remota por Discord
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Prepared By</b>
-        </td>
-        <td>
-            Equipo InventaTech    
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Attendees (to planning meeting)</b>
-        </td>
-        <td>
-            - Gonzalo Carhuancote <br>
-            - Juan Carlos Alvarado <br>
-            - Joan Teves <br>
-            - Antonio Duran <br>
-            - Daiki Oshiro <br>
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Sprint n - 1</b> <br>
-            <b>Review Summary</b>
-        </td>
-        <td>
-            No existe un sprint anterior para realizar el review, siendo este el primer sprint a desarrollar para InventaTrack.  
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Sprint n - 1</b> <br>
-            <b>Retrospective Summary</b>
-        </td>
-        <td>
-            No existe un sprint anterior para realizar una retrospectiva. Sin embargo, basándonos en lo avanzado, debemos priorizar la correcta definición y desarrollo de las User Stories y una planificación eficiente del Product Backlog.
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Sprint 1 Goal</b>
-        </td>
-        <td>
-            El objetivo del sprint es desarrollar la landing page de InventaTrack con un diseño moderno, claro e intuitivo, que comunique eficazmente la propuesta de valor de la plataforma: facilitar la gestión digital de inventarios de alimentos perecederos para negocios, mejorando el control, reduciendo pérdidas y optimizando la operación diaria.
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Sprint 1 Velocity</b>
-        </td>
-        <td>
-            8
-        </td>
-    </tr>
-    <tr align="left">
-        <td>
-            <b>Sum of Story Points</b>
-        </td>
-        <td>
-            8
-        </td>
-    </tr>
+  <!-- US01 -->
+  <tr>
+    <td rowspan="2">US01</td>
+    <td rowspan="2">Registro de Ideas</td>
+    <td>T01</td>
+    <td>Diseño de formulario</td>
+    <td>Maquetar el formulario para ingresar nuevas ideas en InventaTrack.</td>
+    <td>5</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202200111</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Validaciones de entrada</td>
+    <td>Implementar validaciones para asegurar la calidad de los datos ingresados.</td>
+    <td>4</td>
+    <td>Juan Carlos Alvarado</td>
+    <td>U202200222</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US02 -->
+  <tr>
+    <td rowspan="2">US02</td>
+    <td rowspan="2">Gestión de Categorías</td>
+    <td>T01</td>
+    <td>Creación de estructura de categorías</td>
+    <td>Definir y configurar las categorías para clasificar las ideas.</td>
+    <td>4</td>
+    <td>Joan Teves</td>
+    <td>U202200333</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Interfaz de selección</td>
+    <td>Diseñar un menú desplegable que permita elegir categorías.</td>
+    <td>3</td>
+    <td>Antonio Duran</td>
+    <td>U202200444</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US03 -->
+  <tr>
+    <td rowspan="2">US03</td>
+    <td rowspan="2">Visualización de Ideas</td>
+    <td>T01</td>
+    <td>Diseño de listado</td>
+    <td>Maquetar la sección para visualizar las ideas registradas.</td>
+    <td>4</td>
+    <td>Daiki Oshiro</td>
+    <td>U20201F846</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Filtros y búsqueda</td>
+    <td>Implementar opciones de filtrado y búsqueda por categorías o palabras clave.</td>
+    <td>5</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202200111</td>
+    <td>In Progress</td>
+  </tr>
 </table>
