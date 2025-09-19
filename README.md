@@ -81,7 +81,7 @@
             <b>Sprint 1 Goal</b>
         </td>
         <td>
-            El objetivo del sprint es desarrollar las funcionalidades básicas para el registro y control de inventario en InventaTrack, asegurando una interfaz sencilla, intuitiva y funcional para los usuarios operativos y gerenciales.
+            El objetivo del sprint es desarrollar la landing page de InventaTrack con un diseño moderno, claro e intuitivo, que comunique eficazmente la propuesta de valor de la plataforma: facilitar la gestión digital de inventarios de alimentos perecederos para negocios, mejorando el control, reduciendo pérdidas y optimizando la operación diaria.
         </td>
     </tr>
     <tr align="left">
