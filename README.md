@@ -1,5 +1,7 @@
-#### 5.2.1.5. Execution Evidence for Sprint Review
+En esta categoría se incluyen las herramientas que el equipo de **InventaTrack** emplea para identificar, documentar y representar de forma visual los requisitos del sistema, asegurando claridad y entendimiento común entre todos los miembros del proyecto.  
 
-Durante el primer sprint, se lograron varios hitos importantes en el desarrollo de la landing page para InventaTrack. A continuación, se presenta un resumen de los logros alcanzados:
-
-* **Establecimiento de repositorios:** Se crearon y configuraron repositorios en GitHub para gestionar el código y las pruebas, asegurando una correcta organización y control de versiones.
+| **Herramienta** | **Propósito**                                                                 | **Enlace de referencia**                |
+|------------------|-------------------------------------------------------------------------------|-----------------------------------------|
+| Miro             | Creación de diagramas de flujo, mapas mentales y esquemas de procesos para analizar requisitos funcionales y no funcionales. | [https://miro.com](https://miro.com)   |
+| Canva            | Elaboración de presentaciones visuales e infografías que resumen requisitos y necesidades de usuarios y stakeholders. | [https://www.canva.com](https://www.canva.com) |
+| Figma            | Prototipado y diseño de interfaces, convirtiendo requisitos en wireframes y mockups interactivos como base para el desarrollo. | [https://www.figma.com](https://www.figma.com) |
