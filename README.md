@@ -19,9 +19,9 @@
     <td><b>Status</b></td>
   </tr>
 
-  <!-- US15 -->
+  <!-- US11 -->
   <tr>
-    <td rowspan="2">US15</td>
+    <td rowspan="2">US11</td>
     <td rowspan="2">Visualizar página informativa</td>
     <td>T01</td>
     <td>Maquetación HTML inicial</td>
@@ -41,9 +41,9 @@
     <td>Done</td>
   </tr>
 
-  <!-- US17 -->
+  <!-- US12 -->
   <tr>
-    <td rowspan="2">US17</td>
+    <td rowspan="2">US12</td>
     <td rowspan="2">Landing Page intuitiva</td>
     <td>T01</td>
     <td>Diseño de navegación</td>
@@ -65,7 +65,7 @@
 
   <!-- US14 -->
   <tr>
-    <td rowspan="2">US18</td>
+    <td rowspan="2">US14</td>
     <td rowspan="2">Landing Page responsiva</td>
     <td>T01</td>
     <td>Adaptar contenido principal</td>
