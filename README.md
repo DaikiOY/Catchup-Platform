@@ -1,27 +1,27 @@
-### Deployment Activities
+### Actividades de Despliegue
 
-During this Sprint, the following activities were carried out in relation to the deployment of the project’s products, including the Landing Page and other web applications.  
+Durante este Sprint se llevaron a cabo las siguientes actividades relacionadas con el despliegue de los productos del proyecto, incluyendo la **Landing Page** y otras aplicaciones web.  
 
-#### Introduction
-The Sprint focused on establishing a reliable deployment process to ensure that the Landing Page and related components were properly hosted and accessible.  
+#### Introducción
+El Sprint se centró en establecer un proceso de despliegue confiable que garantice que la Landing Page y los componentes relacionados estén correctamente alojados y accesibles.  
 
-#### Creation of Repositories and GitHub Configuration
-- Repositories were created in GitHub to manage source code and track changes, covering the Landing Page and other project components.  
-- Each repository was configured to enable deployment through GitHub Pages.  
+#### Creación de Repositorios y Configuración en GitHub
+- Se crearon repositorios en **GitHub** para gestionar el código fuente y realizar el seguimiento de cambios, incluyendo la Landing Page y otros componentes del proyecto.  
+- Los repositorios fueron configurados para habilitar el despliegue mediante **GitHub Pages**.  
 
-#### Deployment Process Configuration
-- **GitHub Pages**: GitHub Pages was set up to deploy the Landing Page, providing a straightforward hosting solution directly from the GitHub repository.  
+#### Configuración del Proceso de Despliegue
+- **GitHub Pages**: Se configuró GitHub Pages para desplegar la Landing Page, ofreciendo una solución sencilla de alojamiento directamente desde el repositorio en GitHub.  
 
-#### Deployment Process
-- **Landing Page Deployment**:  
-  - The Landing Page code was uploaded to the corresponding GitHub repository.  
-  - GitHub Pages was configured to publish the site online, including domain setup and homepage customization.  
+#### Proceso de Despliegue
+- **Despliegue de la Landing Page**:  
+  - Se subió el código de la Landing Page al repositorio correspondiente en GitHub.  
+  - Se configuró GitHub Pages para publicar el sitio en línea, incluyendo la personalización de la página de inicio.  
 
-- **Deployment Verification**:  
-  - A thorough review of the published site on GitHub Pages was performed to ensure that all Landing Page elements worked correctly.  
-  - Functionality tests were conducted to verify proper loading and error-free deployment.  
+- **Verificación del Despliegue**:  
+  - Se realizó una revisión exhaustiva del sitio publicado en GitHub Pages para asegurar que todos los elementos funcionaran correctamente.  
+  - Se ejecutaron pruebas de funcionalidad para verificar la correcta carga del sitio y la ausencia de errores en el contenido desplegado.  
 
-#### Conclusion
-The deployment process during this Sprint established a solid foundation for managing and publishing the project. GitHub Pages optimized deployment and guaranteed effective continuous integration, facilitating future updates of the web application.  
+#### Conclusión
+El proceso de despliegue realizado durante este Sprint permitió establecer una base sólida para la gestión y publicación del proyecto. La configuración de GitHub Pages optimizó el despliegue y garantizó una integración continua efectiva, facilitando futuras actualizaciones de la aplicación web.  
 
-**Landing Page Link**: [https://k1nghulk.github.io/202510_1ASI0729_LandingPage_InventaTrack/](https://k1nghulk.github.io/202510_1ASI0729_LandingPage_InventaTrack/)  
+**Enlace de la Landing Page**: [https://k1nghulk.github.io/202510_1ASI0729_LandingPage_InventaTrack/](https://k1nghulk.github.io/202510_1ASI0729_LandingPage_InventaTrack/)  
