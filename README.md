@@ -1,27 +1,46 @@
-### Actividades de Despliegue
+### Convenciones y Buenas Prácticas en InventaTrack
 
-Durante este Sprint se llevaron a cabo las siguientes actividades relacionadas con el despliegue de los productos del proyecto, incluyendo la **Landing Page** y otras aplicaciones web.  
+#### HTML5
+En **InventaTrack**, el uso de HTML5 constituye la base para estructurar el contenido de la Landing Page y las vistas del sistema de inventario. Para mantener un código ordenado y accesible se aplican las siguientes prácticas:
 
-#### Introducción
-El Sprint se centró en establecer un proceso de despliegue confiable que garantice que la Landing Page y los componentes relacionados estén correctamente alojados y accesibles.  
+- Usar etiquetas en **minúsculas** para mantener uniformidad y facilitar la lectura.  
+- Cerrar correctamente todas las etiquetas, garantizando compatibilidad entre navegadores.  
+- Documentar con **comentarios breves y claros** cada sección del código.  
+- Mantener un formato limpio evitando líneas demasiado extensas o espacios innecesarios.  
+- Incluir elementos esenciales como `<title>`, `<html>`, `<head>` y `<body>`.  
+- Definir el idioma del contenido con el atributo `lang` en la etiqueta `<html>`.  
+- Añadir atributos como `alt`, `width` y `height` en imágenes para mejorar la accesibilidad y la experiencia de usuario.  
+- Usar la metaetiqueta `<meta name="viewport">` para asegurar la correcta visualización en dispositivos móviles.  
 
-#### Creación de Repositorios y Configuración en GitHub
-- Se crearon repositorios en **GitHub** para gestionar el código fuente y realizar el seguimiento de cambios, incluyendo la Landing Page y otros componentes del proyecto.  
-- Los repositorios fueron configurados para habilitar el despliegue mediante **GitHub Pages**.  
+#### CSS (Cascading Style Sheets)
+CSS en **InventaTrack** se utiliza para dar un diseño moderno y profesional, priorizando la usabilidad y la experiencia del usuario. Las convenciones aplicadas incluyen:  
 
-#### Configuración del Proceso de Despliegue
-- **GitHub Pages**: Se configuró GitHub Pages para desplegar la Landing Page, ofreciendo una solución sencilla de alojamiento directamente desde el repositorio en GitHub.  
+- Nomenclatura clara y coherente para clases e identificadores, lo que facilita la colaboración.  
+- Indentación uniforme y uso de espacios adecuados para mantener un código legible.  
+- Comentarios que expliquen la lógica de bloques de estilos o secciones clave.  
+- Agrupar propiedades relacionadas para mantener orden en las hojas de estilo.  
+- Evitar selectores demasiado específicos que dificulten la escalabilidad del proyecto.  
+- Probar los estilos en distintos navegadores y dispositivos para asegurar consistencia visual.  
+- Optimizar el código reduciendo duplicidades y validarlo con herramientas como el validador de **W3C**.  
 
-#### Proceso de Despliegue
-- **Despliegue de la Landing Page**:  
-  - Se subió el código de la Landing Page al repositorio correspondiente en GitHub.  
-  - Se configuró GitHub Pages para publicar el sitio en línea, incluyendo la personalización de la página de inicio.  
+#### JavaScript
+JavaScript en **InventaTrack** permite implementar las funcionalidades dinámicas del sistema, como alertas de vencimiento o validaciones en formularios. Las buenas prácticas adoptadas son:  
 
-- **Verificación del Despliegue**:  
-  - Se realizó una revisión exhaustiva del sitio publicado en GitHub Pages para asegurar que todos los elementos funcionaran correctamente.  
-  - Se ejecutaron pruebas de funcionalidad para verificar la correcta carga del sitio y la ausencia de errores en el contenido desplegado.  
+- Usar una nomenclatura consistente para variables, funciones y objetos.  
+- Aplicar una indentación clara y usar espacios adecuados después de palabras clave (`if`, `for`, `function`).  
+- Incluir comentarios que describan la lógica de cada sección del código.  
+- Minimizar el uso de variables globales, favoreciendo el uso de contextos locales.  
+- Implementar mecanismos de manejo de errores (`try-catch`) para garantizar robustez.  
+- Optimizar el rendimiento con técnicas como caché y minimización de scripts.  
+- Realizar pruebas cruzadas en diferentes navegadores y dispositivos.  
 
-#### Conclusión
-El proceso de despliegue realizado durante este Sprint permitió establecer una base sólida para la gestión y publicación del proyecto. La configuración de GitHub Pages optimizó el despliegue y garantizó una integración continua efectiva, facilitando futuras actualizaciones de la aplicación web.  
+#### Gherkin
+Para las pruebas de comportamiento de **InventaTrack**, se utiliza el lenguaje **Gherkin**, asegurando que los escenarios sean claros y entendibles por todo el equipo:  
 
-**Enlace de la Landing Page**: [https://k1nghulk.github.io/202510_1ASI0729_LandingPage_InventaTrack/](https://k1nghulk.github.io/202510_1ASI0729_LandingPage_InventaTrack/)  
+- Redactar escenarios simples y legibles, alineados con los requisitos del negocio.  
+- Mantener la estructura estandarizada con palabras clave como `Feature`, `Scenario`, `Given`, `When`, `Then` y `And`.  
+- Especificar claramente el **estado inicial**, las acciones y los resultados esperados.  
+- Reutilizar pasos comunes con `And` para evitar redundancias.  
+- Mantener escenarios enfocados en una funcionalidad concreta.  
+- Usar comentarios solo cuando sea necesario para añadir contexto adicional.  
+- Revisar escenarios en equipo para validar su alineación con los objetivos de InventaTrack.  
