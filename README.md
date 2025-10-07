@@ -19,7 +19,7 @@
     <td><b>Status</b></td>
   </tr>
 
-  <!-- US-Inicio Sesión -->
+  <!-- US03 - Inicio de sesión -->
   <tr>
     <td rowspan="2">US03</td>
     <td rowspan="2">Inicio de sesión</td>
@@ -34,14 +34,14 @@
   <tr>
     <td>T02</td>
     <td>Validaciones y estilo</td>
-    <td>Aplicar CSS y validaciones de frontend para credenciales.</td>
+    <td>Aplicar CSS y validaciones para credenciales correctas/incorrectas.</td>
     <td>4</td>
     <td>Juan Carlos Alvarado</td>
     <td>U202216150</td>
     <td>To Do</td>
   </tr>
 
-  <!-- US-Perfil -->
+  <!-- USXX - Perfil de usuario -->
   <tr>
     <td rowspan="2">USXX</td>
     <td rowspan="2">Perfil de usuario</td>
@@ -63,7 +63,7 @@
     <td>To Do</td>
   </tr>
 
-  <!-- US-Inventario -->
+  <!-- US07 - Inventario -->
   <tr>
     <td rowspan="3">US07</td>
     <td rowspan="3">Inventario</td>
@@ -78,7 +78,7 @@
   <tr>
     <td>T02</td>
     <td>Búsqueda y filtros</td>
-    <td>Implementar búsqueda por nombre y filtro por fechas en el frontend.</td>
+    <td>Implementar búsqueda por nombre y filtro por fechas en frontend.</td>
     <td>5</td>
     <td>Gonzalo Carhuancote</td>
     <td>U202210720</td>
@@ -94,7 +94,7 @@
     <td>To Do</td>
   </tr>
 
-  <!-- US-Reportes -->
+  <!-- US14 - Reportes -->
   <tr>
     <td rowspan="2">US14</td>
     <td rowspan="2">Reportes</td>
@@ -116,12 +116,12 @@
     <td>To Do</td>
   </tr>
 
-  <!-- US-Agregar Producto -->
+  <!-- US05 - Agregar producto -->
   <tr>
     <td rowspan="2">US05</td>
     <td rowspan="2">Agregar nuevo producto</td>
     <td>T01</td>
-    <td>Formulario de registro de producto</td>
+    <td>Formulario de registro</td>
     <td>Maquetar formulario HTML para añadir un nuevo insumo.</td>
     <td>4</td>
     <td>Daiki Oshiro</td>
