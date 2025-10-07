@@ -19,69 +19,92 @@
     <td><b>Status</b></td>
   </tr>
 
-  <!-- US11 -->
+  <!-- US01 -->
   <tr>
-    <td rowspan="2">US11</td>
-    <td rowspan="2">Visualizar página informativa</td>
+    <td rowspan="2">US01</td>
+    <td rowspan="2">Registro de usuarios operativos</td>
     <td>T01</td>
-    <td>Maquetación HTML inicial</td>
-    <td>Diseñar la estructura base en HTML para la landing page.</td>
-    <td>3</td>
+    <td>Formulario de registro</td>
+    <td>Maquetar formulario HTML y campos obligatorios.</td>
+    <td>4</td>
     <td>Gonzalo Carhuancote</td>
     <td>U202210720</td>
-    <td>Done</td>
+    <td>In Progress</td>
   </tr>
   <tr>
     <td>T02</td>
-    <td>Estilización general</td>
-    <td>Aplicar estilos CSS para definir la apariencia general.</td>
-    <td>3</td>
+    <td>Validaciones y estilo</td>
+    <td>Aplicar CSS y validaciones de frontend para el registro.</td>
+    <td>4</td>
     <td>Juan Carlos Alvarado</td>
     <td>U202216150</td>
-    <td>Done</td>
+    <td>In Progress</td>
+  </tr>
+
+  <!-- US03 -->
+  <tr>
+    <td rowspan="2">US03</td>
+    <td rowspan="2">Inicio de sesión seguro</td>
+    <td>T01</td>
+    <td>Formulario de login</td>
+    <td>Diseñar pantalla de inicio de sesión según roles.</td>
+    <td>4</td>
+    <td>Joan Teves</td>
+    <td>U202117303</td>
+    <td>To Do</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Validación de credenciales</td>
+    <td>Integrar validaciones frontend y mensajes de error.</td>
+    <td>4</td>
+    <td>Antonio Duran</td>
+    <td>U202215721</td>
+    <td>To Do</td>
+  </tr>
+
+  <!-- US07 -->
+  <tr>
+    <td rowspan="2">US07</td>
+    <td rowspan="2">Visualizar stock</td>
+    <td>T01</td>
+    <td>Maquetación de tabla de stock</td>
+    <td>Crear tabla HTML con columnas de insumo, cantidad y estado.</td>
+    <td>4</td>
+    <td>Daiki Oshiro</td>
+    <td>U20201F846</td>
+    <td>To Do</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Estilos y adaptabilidad</td>
+    <td>Aplicar CSS y media queries para dispositivos móviles.</td>
+    <td>4</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
+    <td>To Do</td>
   </tr>
 
   <!-- US12 -->
   <tr>
     <td rowspan="2">US12</td>
-    <td rowspan="2">Landing Page intuitiva</td>
+    <td rowspan="2">Historial de movimientos</td>
     <td>T01</td>
-    <td>Diseño de navegación</td>
-    <td>Crear menú de navegación con enlaces funcionales.</td>
-    <td>3</td>
+    <td>Tabla de historial</td>
+    <td>Maquetar sección para visualizar entradas y salidas.</td>
+    <td>4</td>
+    <td>Juan Carlos Alvarado</td>
+    <td>U202216150</td>
+    <td>To Do</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Filtros y estilo</td>
+    <td>Aplicar filtros frontend y estilos responsivos.</td>
+    <td>4</td>
     <td>Joan Teves</td>
     <td>U202117303</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>T02</td>
-    <td>Personalización del Navbar</td>
-    <td>Aplicar diseño e identidad visual al menú de navegación.</td>
-    <td>3</td>
-    <td>Antonio Duran</td>
-    <td>U202215721</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US14 -->
-  <tr>
-    <td rowspan="2">US14</td>
-    <td rowspan="2">Landing Page responsiva</td>
-    <td>T01</td>
-    <td>Adaptar contenido principal</td>
-    <td>Aplicar media queries para que el contenido se adapte a distintos dispositivos.</td>
-    <td>3</td>
-    <td>Daiki Oshiro</td>
-    <td>U20201F846</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>T02</td>
-    <td>Navbar adaptable</td>
-    <td>Hacer que el menú de navegación funcione correctamente en pantallas móviles.</td>
-    <td>3</td>
-    <td>Gonzalo Carhuancote</td>
-    <td>U202210720</td>
-    <td>Done</td>
+    <td>To Do</td>
   </tr>
 </table>
+
