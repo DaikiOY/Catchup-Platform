@@ -1,61 +1,87 @@
-<table align="center" border="1" width="95%" style="text-align:center;">
-    <tr align="left">
-        <td><b>Sprint #</b></td>
-        <td><b>Sprint 1</b></td>
-    </tr>
-    <tr align="left">
-        <td colspan="2"><b>Sprint Planning Background</b></td>
-    </tr>
-    <tr align="left">
-        <td><b>Date</b></td>
-        <td>28/09/2025</td>
-    </tr>
-    <tr align="left">
-        <td><b>Time</b></td>
-        <td>19:00</td>
-    </tr>
-    <tr align="left">
-        <td><b>Location</b></td>
-        <td>Modalidad remota vía Google Meet</td>
-    </tr>
-    <tr align="left">
-        <td><b>Prepared By</b></td>
-        <td>Equipo InventaTrack</td>
-    </tr>
-    <tr align="left">
-        <td><b>Attendees (to planning meeting)</b></td>
-        <td>
-            - Gonzalo Carhuancote – U202210720 <br>
-            - Juan Carlos Alvarado – U202216150 <br>
-            - Joan Teves – U202117303 <br>
-            - Antonio Durán – U202215721 <br>
-            - Daiki Oshiro – U20201F846
-        </td>
-    </tr>
-    <tr align="left">
-        <td><b>Sprint 0</b> <br><b>Review Summary</b></td>
-        <td>
-            En el Sprint 0 se establecieron los objetivos iniciales del proyecto, se definió la arquitectura básica del entorno de desarrollo y se configuraron los repositorios en GitHub. Además, se seleccionaron las herramientas de diseño y se preparó la estructura base del proyecto para iniciar el desarrollo del Sprint 1.
-        </td>
-    </tr>
-    <tr align="left">
-        <td><b>Sprint 0</b> <br><b>Retrospective Summary</b></td>
-        <td>
-            El equipo logró una correcta planificación técnica y coordinación inicial, aunque se identificó la necesidad de mejorar la distribución de tareas y documentación de avances. Para el Sprint 1, se acordó implementar reuniones breves de seguimiento para garantizar el cumplimiento de los entregables y mejorar la comunicación interna.
-        </td>
-    </tr>
-    <tr align="left">
-        <td><b>Sprint 1 Goal</b></td>
-        <td>
-            Desarrollar la <b>Landing Page informativa de InventaTrack</b>, implementando una estructura HTML base, estilos CSS coherentes con la identidad visual del proyecto, un menú de navegación funcional y un diseño completamente responsivo que se adapte a distintos dispositivos.
-        </td>
-    </tr>
-    <tr align="left">
-        <td><b>Sprint 1 Velocity</b></td>
-        <td>6</td>
-    </tr>
-    <tr align="left">
-        <td><b>Sum of Story Points</b></td>
-        <td>20</td>
-    </tr>
+<table align="center" border="1" width="95%" style="text-align:center">
+  <tr>
+    <td><b>Sprint #</b></td>
+    <td colspan="8"><b>Sprint 1</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>User Story</b></td>
+    <td colspan="7"><b>Work-Item / Task</b></td>
+  </tr>
+  <tr>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Description</b></td>
+    <td><b>Estimation (Hours)</b></td>
+    <td><b>Assigned To</b></td>
+    <td><b>Student Code</b></td>
+    <td><b>Status</b></td>
+  </tr>
+
+  <!-- US11 -->
+  <tr>
+    <td rowspan="2">US11</td>
+    <td rowspan="2">Visualizar página informativa</td>
+    <td>T01</td>
+    <td>Maquetación HTML inicial</td>
+    <td>Diseñar la estructura base en HTML para la landing page.</td>
+    <td>3</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Estilización general</td>
+    <td>Aplicar estilos CSS para definir la apariencia general.</td>
+    <td>3</td>
+    <td>Juan Carlos Alvarado</td>
+    <td>U202216150</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US12 -->
+  <tr>
+    <td rowspan="2">US12</td>
+    <td rowspan="2">Landing Page intuitiva</td>
+    <td>T01</td>
+    <td>Diseño de navegación</td>
+    <td>Crear menú de navegación con enlaces funcionales.</td>
+    <td>3</td>
+    <td>Joan Teves</td>
+    <td>U202117303</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Personalización del Navbar</td>
+    <td>Aplicar diseño e identidad visual al menú de navegación.</td>
+    <td>3</td>
+    <td>Antonio Duran</td>
+    <td>U202215721</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US14 -->
+  <tr>
+    <td rowspan="2">US14</td>
+    <td rowspan="2">Landing Page responsiva</td>
+    <td>T01</td>
+    <td>Adaptar contenido principal</td>
+    <td>Aplicar media queries para que el contenido se adapte a distintos dispositivos.</td>
+    <td>3</td>
+    <td>Daiki Oshiro</td>
+    <td>U20201F846</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Navbar adaptable</td>
+    <td>Hacer que el menú de navegación funcione correctamente en pantallas móviles.</td>
+    <td>3</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
+    <td>Done</td>
+  </tr>
 </table>
