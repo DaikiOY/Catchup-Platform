@@ -1,33 +1,101 @@
-## Configuraciones de Despliegue del Proyecto
+# 🏁 Sprint Backlog — Sprint 1
 
-Para la publicación en línea de **InventaTrack**, se implementó un proceso de despliegue moderno y automatizado utilizando **Netlify** como plataforma principal de hosting y **GitHub** como gestor central del código fuente. Esta configuración permite mantener un flujo de integración y entrega continua (CI/CD) que asegura la disponibilidad y actualización constante de los productos digitales del proyecto.
+<p align="center">
+  <img src="assets/Trello1.png" width="100%" height="100%">
+</p>
 
-### Proceso de Despliegue
+<table align="center" border="1" width="95%" style="text-align:center">
+  <tr>
+    <td colspan="1"><b>Sprint #</b></td>
+    <td colspan="8"><b>Sprint 1</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>User Story</b></td>
+    <td colspan="7"><b>Work-Item / Task</b></td>
+  </tr>
+  <tr>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Id</b></td>
+    <td><b>Title</b></td>
+    <td><b>Description</b></td>
+    <td><b>Estimation (Hours)</b></td>
+    <td><b>Assigned To</b></td>
+    <td><b>Student Code</b></td>
+    <td><b>Status</b></td>
+  </tr>
 
-1. **Integración con Repositorios Git**  
-   Los repositorios de **InventaTrack** están alojados en GitHub. Netlify se enlaza directamente con estos repositorios, lo que permite que, cada vez que se registra un nuevo commit o se actualiza una rama, se inicie automáticamente el proceso de construcción del sitio.
+  <!-- US11 -->
+  <tr>
+    <td rowspan="2">US11</td>
+    <td rowspan="2">Visualizar página informativa</td>
+    <td>T01</td>
+    <td>Maquetación HTML inicial</td>
+    <td>Diseñar la estructura base en HTML para la landing page.</td>
+    <td>3</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
+    <td>✅ Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Estilización general</td>
+    <td>Aplicar estilos CSS para definir la apariencia general.</td>
+    <td>3</td>
+    <td>Juan Carlos Alvarado</td>
+    <td>U202216150</td>
+    <td>✅ Done</td>
+  </tr>
 
-2. **Compilación Automatizada**  
-   Durante el proceso de build, Netlify transforma el código fuente (HTML, CSS, JavaScript, TypeScript) en una versión optimizada y lista para producción. Este proceso incluye:  
-   - Minificación de archivos.  
-   - Optimización de recursos estáticos (imágenes, fuentes).  
-   - Generación de un sitio seguro y compatible con múltiples navegadores.  
+  <!-- US12 -->
+  <tr>
+    <td rowspan="2">US12</td>
+    <td rowspan="2">Landing Page intuitiva</td>
+    <td>T01</td>
+    <td>Diseño de navegación</td>
+    <td>Crear menú de navegación con enlaces funcionales.</td>
+    <td>3</td>
+    <td>Joan Teves</td>
+    <td>U202117303</td>
+    <td>✅ Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Personalización del Navbar</td>
+    <td>Aplicar diseño e identidad visual al menú de navegación.</td>
+    <td>3</td>
+    <td>Antonio Duran</td>
+    <td>U202215721</td>
+    <td>✅ Done</td>
+  </tr>
 
-3. **Despliegue en Red CDN**  
-   Una vez completada la compilación, el contenido de **InventaTrack** se despliega en una **red global de entrega de contenido (CDN)**, lo que garantiza tiempos de carga rápidos y disponibilidad del sistema en cualquier parte del mundo.
-
-4. **Vistas Previas por Rama**  
-   Netlify genera automáticamente una **versión previa del sitio para cada rama o Pull Request**, lo que facilita al equipo revisar los cambios antes de su integración. Esto mejora el trabajo colaborativo y permite detectar errores en etapas tempranas.
-
-5. **Despliegue Continuo**  
-   Cuando una rama es fusionada con la rama principal (`main`), Netlify actualiza el entorno productivo de forma automática. De esta manera, los usuarios siempre interactúan con la versión más reciente y estable del sistema.
-
-### Productos Desplegados
-
-- **Landing Page de InventaTrack**: publicada directamente en Netlify con integración desde GitHub.  
-- **Frontend Web Application**: desplegada en Netlify para garantizar rapidez y escalabilidad.  
-- **Servicios Backend**: configurados para desplegarse en una plataforma complementaria (ej. Render/Heroku/AWS), asegurando la integración con el frontend y la correcta gestión de datos.
+  <!-- US14 -->
+  <tr>
+    <td rowspan="2">US14</td>
+    <td rowspan="2">Landing Page responsiva</td>
+    <td>T01</td>
+    <td>Adaptar contenido principal</td>
+    <td>Aplicar media queries para que el contenido se adapte a distintos dispositivos.</td>
+    <td>3</td>
+    <td>Daiki Oshiro</td>
+    <td>U20201F846</td>
+    <td>✅ Done</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Navbar adaptable</td>
+    <td>Hacer que el menú de navegación funcione correctamente en pantallas móviles.</td>
+    <td>3</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
+    <td>✅ Done</td>
+  </tr>
+</table>
 
 ---
 
-Este esquema de despliegue ha permitido a **InventaTrack** contar con un proceso confiable, automatizado y escalable, asegurando que cada actualización del código fuente se refleje de manera inmediata en los entornos de prueba y producción.
+### 📊 Resumen del Sprint
+- **Total de Historias de Usuario:** 3  
+- **Total de Tareas:** 6  
+- **Horas estimadas:** 18  
+- **Estado general:** ✅ Completado  
