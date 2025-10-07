@@ -19,35 +19,35 @@
     <td><b>Status</b></td>
   </tr>
 
-  <!-- US01 -->
+  <!-- US-Inicio Sesión -->
   <tr>
-    <td rowspan="2">US01</td>
-    <td rowspan="2">Registro de usuarios operativos</td>
+    <td rowspan="2">US03</td>
+    <td rowspan="2">Inicio de sesión</td>
     <td>T01</td>
-    <td>Formulario de registro</td>
-    <td>Maquetar formulario HTML y campos obligatorios.</td>
+    <td>Formulario login</td>
+    <td>Maquetar pantalla de inicio de sesión con campos de correo y contraseña.</td>
     <td>4</td>
     <td>Gonzalo Carhuancote</td>
     <td>U202210720</td>
-    <td>In Progress</td>
+    <td>To Do</td>
   </tr>
   <tr>
     <td>T02</td>
     <td>Validaciones y estilo</td>
-    <td>Aplicar CSS y validaciones de frontend para el registro.</td>
+    <td>Aplicar CSS y validaciones de frontend para credenciales.</td>
     <td>4</td>
     <td>Juan Carlos Alvarado</td>
     <td>U202216150</td>
-    <td>In Progress</td>
+    <td>To Do</td>
   </tr>
 
-  <!-- US03 -->
+  <!-- US-Perfil -->
   <tr>
-    <td rowspan="2">US03</td>
-    <td rowspan="2">Inicio de sesión seguro</td>
+    <td rowspan="2">USXX</td>
+    <td rowspan="2">Perfil de usuario</td>
     <td>T01</td>
-    <td>Formulario de login</td>
-    <td>Diseñar pantalla de inicio de sesión según roles.</td>
+    <td>Maquetación perfil</td>
+    <td>Diseñar sección de perfil con información personal y acciones disponibles.</td>
     <td>4</td>
     <td>Joan Teves</td>
     <td>U202117303</td>
@@ -55,21 +55,21 @@
   </tr>
   <tr>
     <td>T02</td>
-    <td>Validación de credenciales</td>
-    <td>Integrar validaciones frontend y mensajes de error.</td>
+    <td>Estilos y edición</td>
+    <td>Aplicar CSS y permitir edición de datos de perfil.</td>
     <td>4</td>
     <td>Antonio Duran</td>
     <td>U202215721</td>
     <td>To Do</td>
   </tr>
 
-  <!-- US07 -->
+  <!-- US-Inventario -->
   <tr>
-    <td rowspan="2">US07</td>
-    <td rowspan="2">Visualizar stock</td>
+    <td rowspan="3">US07</td>
+    <td rowspan="3">Inventario</td>
     <td>T01</td>
-    <td>Maquetación de tabla de stock</td>
-    <td>Crear tabla HTML con columnas de insumo, cantidad y estado.</td>
+    <td>Tabla de productos</td>
+    <td>Maquetar tabla con columnas de nombre, cantidad, fecha de ingreso y caducidad.</td>
     <td>4</td>
     <td>Daiki Oshiro</td>
     <td>U20201F846</td>
@@ -77,34 +77,64 @@
   </tr>
   <tr>
     <td>T02</td>
-    <td>Estilos y adaptabilidad</td>
-    <td>Aplicar CSS y media queries para dispositivos móviles.</td>
-    <td>4</td>
+    <td>Búsqueda y filtros</td>
+    <td>Implementar búsqueda por nombre y filtro por fechas en el frontend.</td>
+    <td>5</td>
     <td>Gonzalo Carhuancote</td>
     <td>U202210720</td>
     <td>To Do</td>
   </tr>
-
-  <!-- US12 -->
   <tr>
-    <td rowspan="2">US12</td>
-    <td rowspan="2">Historial de movimientos</td>
-    <td>T01</td>
-    <td>Tabla de historial</td>
-    <td>Maquetar sección para visualizar entradas y salidas.</td>
+    <td>T03</td>
+    <td>Estilos responsivos</td>
+    <td>Aplicar CSS y media queries para dispositivos móviles.</td>
     <td>4</td>
     <td>Juan Carlos Alvarado</td>
     <td>U202216150</td>
     <td>To Do</td>
   </tr>
+
+  <!-- US-Reportes -->
   <tr>
-    <td>T02</td>
-    <td>Filtros y estilo</td>
-    <td>Aplicar filtros frontend y estilos responsivos.</td>
+    <td rowspan="2">US14</td>
+    <td rowspan="2">Reportes</td>
+    <td>T01</td>
+    <td>Maquetación dashboard</td>
+    <td>Diseñar sección de reportes mostrando insumos críticos y próximos a vencer.</td>
     <td>4</td>
     <td>Joan Teves</td>
     <td>U202117303</td>
     <td>To Do</td>
   </tr>
-</table>
+  <tr>
+    <td>T02</td>
+    <td>Visualización y gráficos</td>
+    <td>Aplicar CSS y gráficos para visualizar datos de manera clara.</td>
+    <td>5</td>
+    <td>Antonio Duran</td>
+    <td>U202215721</td>
+    <td>To Do</td>
+  </tr>
 
+  <!-- US-Agregar Producto -->
+  <tr>
+    <td rowspan="2">US05</td>
+    <td rowspan="2">Agregar nuevo producto</td>
+    <td>T01</td>
+    <td>Formulario de registro de producto</td>
+    <td>Maquetar formulario HTML para añadir un nuevo insumo.</td>
+    <td>4</td>
+    <td>Daiki Oshiro</td>
+    <td>U20201F846</td>
+    <td>To Do</td>
+  </tr>
+  <tr>
+    <td>T02</td>
+    <td>Validación y estilos</td>
+    <td>Aplicar CSS y validaciones para el registro de insumos.</td>
+    <td>4</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
+    <td>To Do</td>
+  </tr>
+</table>
