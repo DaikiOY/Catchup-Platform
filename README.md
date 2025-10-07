@@ -16,46 +16,37 @@
     <td>US03</td>
     <td>Inicio de sesión</td>
     <td>T01</td>
-    <td>Formulario login</td>
-    <td>Maquetar pantalla de inicio de sesión con campos de correo y contraseña.</td>
+    <td>Autenticación de usuarios</td>
+    <td>Permitir a los usuarios ingresar con correo y contraseña según su rol.</td>
     <td>4</td>
     <td>Gonzalo Carhuancote</td>
     <td>U202210720</td>
     <td>Done</td>
   </tr>
+
+  <!-- US01 - Registro de usuarios -->
   <tr>
-    <td>US03</td>
-    <td>Inicio de sesión</td>
-    <td>T02</td>
-    <td>Validaciones y estilo</td>
-    <td>Aplicar CSS y validaciones para credenciales correctas/incorrectas.</td>
+    <td>US01</td>
+    <td>Registrar usuario operativo</td>
+    <td>T01</td>
+    <td>Registro de usuario</td>
+    <td>Permitir registrar nuevos usuarios operativos con datos básicos.</td>
     <td>4</td>
     <td>Juan Carlos Alvarado</td>
     <td>U202216150</td>
     <td>Done</td>
   </tr>
 
-  <!-- USXX - Perfil de usuario -->
+  <!-- US02 - Registro de gerenciales -->
   <tr>
-    <td>USXX</td>
-    <td>Perfil de usuario</td>
+    <td>US02</td>
+    <td>Registrar usuario gerencial</td>
     <td>T01</td>
-    <td>Maquetación perfil</td>
-    <td>Diseñar sección de perfil con información personal y acciones disponibles.</td>
+    <td>Registro de gerentes</td>
+    <td>Permitir registrar usuarios con rol gerencial para acceder a reportes.</td>
     <td>4</td>
     <td>Joan Teves</td>
     <td>U202117303</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>USXX</td>
-    <td>Perfil de usuario</td>
-    <td>T02</td>
-    <td>Estilos y edición</td>
-    <td>Aplicar CSS y permitir edición de datos de perfil.</td>
-    <td>4</td>
-    <td>Antonio Duran</td>
-    <td>U202215721</td>
     <td>Done</td>
   </tr>
 
@@ -64,11 +55,11 @@
     <td>US07</td>
     <td>Inventario</td>
     <td>T01</td>
-    <td>Tabla de productos</td>
-    <td>Maquetar tabla con columnas de nombre, cantidad, fecha de ingreso y caducidad.</td>
-    <td>4</td>
-    <td>Daiki Oshiro</td>
-    <td>U20201F846</td>
+    <td>Visualizar productos</td>
+    <td>Mostrar listado de productos con cantidad, fecha de ingreso y caducidad.</td>
+    <td>5</td>
+    <td>Antonio Duran</td>
+    <td>U202215721</td>
     <td>Done</td>
   </tr>
   <tr>
@@ -76,69 +67,36 @@
     <td>Inventario</td>
     <td>T02</td>
     <td>Búsqueda y filtros</td>
-    <td>Implementar búsqueda por nombre y filtro por fechas en frontend.</td>
+    <td>Permitir buscar productos por nombre y filtrar por fechas.</td>
     <td>5</td>
-    <td>Gonzalo Carhuancote</td>
-    <td>U202210720</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US07</td>
-    <td>Inventario</td>
-    <td>T03</td>
-    <td>Estilos responsivos</td>
-    <td>Aplicar CSS y media queries para dispositivos móviles.</td>
-    <td>4</td>
-    <td>Juan Carlos Alvarado</td>
-    <td>U202216150</td>
+    <td>Daiki Oshiro</td>
+    <td>U20201F846</td>
     <td>Done</td>
   </tr>
 
   <!-- US14 - Reportes -->
   <tr>
     <td>US14</td>
-    <td>Reportes</td>
+    <td>Reportes de stock</td>
     <td>T01</td>
-    <td>Maquetación dashboard</td>
-    <td>Diseñar sección de reportes mostrando insumos críticos y próximos a vencer.</td>
+    <td>Visualización de insumos críticos</td>
+    <td>Mostrar productos próximos a vencer o con baja cantidad.</td>
     <td>4</td>
-    <td>Joan Teves</td>
-    <td>U202117303</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US14</td>
-    <td>Reportes</td>
-    <td>T02</td>
-    <td>Visualización y gráficos</td>
-    <td>Aplicar CSS y gráficos para visualizar datos de manera clara.</td>
-    <td>5</td>
-    <td>Antonio Duran</td>
-    <td>U202215721</td>
+    <td>Gonzalo Carhuancote</td>
+    <td>U202210720</td>
     <td>Done</td>
   </tr>
 
   <!-- US05 - Agregar producto -->
   <tr>
     <td>US05</td>
-    <td>Agregar nuevo producto</td>
+    <td>Agregar producto</td>
     <td>T01</td>
-    <td>Formulario de registro</td>
-    <td>Maquetar formulario HTML para añadir un nuevo insumo.</td>
+    <td>Registro de nuevos productos</td>
+    <td>Permitir añadir un nuevo producto con toda la información necesaria.</td>
     <td>4</td>
-    <td>Daiki Oshiro</td>
-    <td>U20201F846</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US05</td>
-    <td>Agregar nuevo producto</td>
-    <td>T02</td>
-    <td>Validación y estilos</td>
-    <td>Aplicar CSS y validaciones para el registro de insumos.</td>
-    <td>4</td>
-    <td>Gonzalo Carhuancote</td>
-    <td>U202210720</td>
+    <td>Juan Carlos Alvarado</td>
+    <td>U202216150</td>
     <td>Done</td>
   </tr>
 </table>
