@@ -1,64 +1,61 @@
-## 🧩 Product Backlog y Sprint Backlog – Sprint 1: Landing Page
-
-<table>
-  <tr>
-    <th>Criterio</th>
-    <th>Evaluación</th>
-    <th>Justificación</th>
-  </tr>
-
-  <tr>
-    <td><b>1️⃣ Criterios de aceptación claros y medibles</b></td>
-    <td>✅ Cumple parcialmente bien</td>
-    <td>
-      Cada User Story tiene un propósito definido (“Visualizar página informativa”, “Landing Page intuitiva”, “Landing Page responsiva”), pero no se detallan escenarios tipo “Dado/Cuando/Entonces”. 
-      Aun así, las tareas reflejan entregables concretos (HTML, CSS, responsive design).
-    </td>
-  </tr>
-
-  <tr>
-    <td><b>2️⃣ Cobertura del 100% del alcance definido</b></td>
-    <td>✅ Cumple</td>
-    <td>
-      El Sprint 1 cubre todas las actividades necesarias para una <b>Landing Page funcional y visual</b>, cumpliendo con el objetivo inicial del proyecto.
-    </td>
-  </tr>
-
-  <tr>
-    <td><b>3️⃣ Descomposición en tareas técnicas (4–8 horas)</b></td>
-    <td>✅ Cumple bien</td>
-    <td>
-      Todas las tareas (T01, T02) están correctamente divididas con estimaciones de 3 horas cada una, lo que es razonable y manejable para este primer sprint.
-    </td>
-  </tr>
-
-  <tr>
-    <td><b>4️⃣ Priorización por valor de negocio y dependencias (MoSCoW / WSJF)</b></td>
-    <td>⚠️ Parcialmente cumple</td>
-    <td>
-      Las tareas están ordenadas de forma lógica (maquetación → estilos → navegación → responsive), pero no se detalla el método de priorización. 
-      Se recomienda agregar una nota indicando que se priorizó por <b>valor al usuario y dependencias técnicas</b>.
-    </td>
-  </tr>
+<table align="center" border="1" width="95%" style="text-align:center;">
+    <tr align="left">
+        <td><b>Sprint #</b></td>
+        <td><b>Sprint 1</b></td>
+    </tr>
+    <tr align="left">
+        <td colspan="2"><b>Sprint Planning Background</b></td>
+    </tr>
+    <tr align="left">
+        <td><b>Date</b></td>
+        <td>28/09/2025</td>
+    </tr>
+    <tr align="left">
+        <td><b>Time</b></td>
+        <td>19:00</td>
+    </tr>
+    <tr align="left">
+        <td><b>Location</b></td>
+        <td>Modalidad remota vía Google Meet</td>
+    </tr>
+    <tr align="left">
+        <td><b>Prepared By</b></td>
+        <td>Equipo InventaTrack</td>
+    </tr>
+    <tr align="left">
+        <td><b>Attendees (to planning meeting)</b></td>
+        <td>
+            - Gonzalo Carhuancote – U202210720 <br>
+            - Juan Carlos Alvarado – U202216150 <br>
+            - Joan Teves – U202117303 <br>
+            - Antonio Durán – U202215721 <br>
+            - Daiki Oshiro – U20201F846
+        </td>
+    </tr>
+    <tr align="left">
+        <td><b>Sprint 0</b> <br><b>Review Summary</b></td>
+        <td>
+            En el Sprint 0 se establecieron los objetivos iniciales del proyecto, se definió la arquitectura básica del entorno de desarrollo y se configuraron los repositorios en GitHub. Además, se seleccionaron las herramientas de diseño y se preparó la estructura base del proyecto para iniciar el desarrollo del Sprint 1.
+        </td>
+    </tr>
+    <tr align="left">
+        <td><b>Sprint 0</b> <br><b>Retrospective Summary</b></td>
+        <td>
+            El equipo logró una correcta planificación técnica y coordinación inicial, aunque se identificó la necesidad de mejorar la distribución de tareas y documentación de avances. Para el Sprint 1, se acordó implementar reuniones breves de seguimiento para garantizar el cumplimiento de los entregables y mejorar la comunicación interna.
+        </td>
+    </tr>
+    <tr align="left">
+        <td><b>Sprint 1 Goal</b></td>
+        <td>
+            Desarrollar la <b>Landing Page informativa de InventaTrack</b>, implementando una estructura HTML base, estilos CSS coherentes con la identidad visual del proyecto, un menú de navegación funcional y un diseño completamente responsivo que se adapte a distintos dispositivos.
+        </td>
+    </tr>
+    <tr align="left">
+        <td><b>Sprint 1 Velocity</b></td>
+        <td>6</td>
+    </tr>
+    <tr align="left">
+        <td><b>Sum of Story Points</b></td>
+        <td>20</td>
+    </tr>
 </table>
-
----
-
-### 🧭 Criterios de priorización
-Las User Stories del Sprint 1 se priorizaron considerando:
-- **Valor de negocio:** la Landing Page es el primer punto de contacto con el usuario, generando la primera impresión de la marca.  
-- **Dependencias técnicas:** se necesita completar la estructura (HTML) y estilos (CSS) antes de implementar la navegación y el diseño responsivo.  
-
----
-
-### ✅ Criterios de aceptación generales
-- La página debe cargarse correctamente en computadoras y dispositivos móviles.  
-- El menú de navegación debe redirigir correctamente a cada sección.  
-- El diseño debe mantener la coherencia visual con la identidad de InventaTrack.  
-- No deben presentarse errores visuales o de formato en pantallas pequeñas.  
-
----
-
-### 📊 Conclusión general
-El **Sprint 1 cumple en un 85–90%** con los criterios esperados.  
-Solo requiere añadir una descripción breve del método de priorización y detallar los criterios de aceptación en formato medible para alcanzar la máxima calificación (2/2).
