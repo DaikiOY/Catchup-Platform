@@ -1,19 +1,19 @@
-# 🏁 Sprint Backlog — Sprint 1
+# 🧭 Sprint Backlog — Sprint 1
 
-<p align="center">
-  <img src="assets/Trello1.png" width="100%" height="100%">
-</p>
+<img src="assets/Trello1.png" width="100%" height="100%">
 
-<table align="center" border="1" width="95%" style="text-align:center">
-  <tr>
-    <td colspan="1"><b>Sprint #</b></td>
+<table align="center" border="1" width="95%" style="border-collapse: collapse; text-align:center;">
+  <tr style="background-color:#e8f1ff;">
+    <td><b>Sprint #</b></td>
     <td colspan="8"><b>Sprint 1</b></td>
   </tr>
-  <tr>
+
+  <tr style="background-color:#f2f2f2;">
     <td colspan="2"><b>User Story</b></td>
     <td colspan="7"><b>Work-Item / Task</b></td>
   </tr>
-  <tr>
+
+  <tr style="background-color:#d9e1f2;">
     <td><b>Id</b></td>
     <td><b>Title</b></td>
     <td><b>Id</b></td>
@@ -64,7 +64,7 @@
     <td>Personalización del Navbar</td>
     <td>Aplicar diseño e identidad visual al menú de navegación.</td>
     <td>3</td>
-    <td>Antonio Duran</td>
+    <td>Antonio Durán</td>
     <td>U202215721</td>
     <td>✅ Done</td>
   </tr>
@@ -94,8 +94,11 @@
 
 ---
 
-### 📊 Resumen del Sprint
-- **Total de Historias de Usuario:** 3  
-- **Total de Tareas:** 6  
-- **Horas estimadas:** 18  
-- **Estado general:** ✅ Completado  
+### ✅ Conclusiones del Sprint
+
+- Se completó la **Landing Page informativa, intuitiva y responsiva**.
+- Todas las tareas fueron finalizadas dentro del tiempo estimado.
+- El resultado cumple con los **criterios de aceptación** del Product Backlog.
+- Se validó compatibilidad en **móviles y escritorio**.
+- Se mantiene la **identidad visual de InventaTrack** y base lista para siguientes módulos.
+
