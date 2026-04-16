@@ -159,143 +159,115 @@ workspace "FinTeka" "Diagrama de Contenedores - Compacto y Recto" {
 
 #### Components
 
-workspace {
+workspace "FinTeka" "Arquitectura Jerárquica 6 Niveles Corregida" {
 
     model {
+        # --- NIVEL 1: PERSONAS (Top) ---
+        cliente = person "Cliente" "Usuario que busca asesoría." "Persona"
+        consultor = person "Consultor" "Profesional que atiende." "Persona"
+        admin = person "Administrador" "Gestiona la plataforma." "Persona"
 
-        /************* PERSONAS *************/
-        cliente = person "Cliente" "Usuario que busca asesoría profesional, reserva sesiones y realiza pagos."
-        consultor = person "Consultor" "Profesional que ofrece asesorías y administra su agenda."
-        administrador = person "Administrador" "Gestiona usuarios, categorías, reportes y operación general."
+        # Alineación horizontal Nivel 1
+        cliente -> consultor " " "Alineacion"
+        consultor -> admin " " "Alineacion"
 
-        /************* SISTEMAS EXTERNOS *************/
-        pagos = softwareSystem "Pasarela de Pagos" "Servicio externo para cobros y validación de transacciones."
-        video = softwareSystem "Servicio de Videollamadas" "Plataforma externa para sesiones virtuales."
-        authExterno = softwareSystem "Autenticación Externa" "Proveedor OAuth2 como Google."
+        finteka = softwareSystem "FinTeka" {
+            
+            # --- NIVEL 2: FRONTENDS ---
+            landingPage = container "Landing Page" "Portal informativo." "React" "Nivel2"
+            webApp = container "Web Application" "Interfaz de usuario." "React + TS" "Nivel2"
 
-        /************* SISTEMA PRINCIPAL *************/
-        finteka = softwareSystem "FinTeka" "Plataforma digital que conecta clientes con consultores profesionales." {
-
-            web = container "Aplicación Web" "Interfaz web para clientes, consultores y administradores." "React / Next.js"
-
-            api = container "API Backend" "Expone servicios REST y lógica de negocio principal." "Spring Boot" {
-
-                /************* CONTROLLERS *************/
-                authController = component "Auth Controller" "Registro, login, JWT y sesiones." "Spring MVC"
-                usuarioController = component "Usuario Controller" "Gestión de usuarios." "Spring MVC"
-                perfilController = component "Perfil Controller" "Perfiles profesionales." "Spring MVC"
-                busquedaController = component "Busqueda Controller" "Búsqueda y filtros." "Spring MVC"
-                reservaController = component "Reserva Controller" "Reservas y agenda." "Spring MVC"
-                pagoController = component "Pago Controller" "Cobros y confirmaciones." "Spring MVC"
-                resenaController = component "Reseña Controller" "Valoraciones y reputación." "Spring MVC"
-                adminController = component "Admin Controller" "Moderación y reportes." "Spring MVC"
-
-                /************* SERVICES *************/
-                authService = component "Auth Service" "Seguridad y tokens." "Spring Service"
-                usuarioService = component "Usuario Service" "Lógica de usuarios." "Spring Service"
-                perfilService = component "Perfil Service" "Gestión profesional." "Spring Service"
-                busquedaService = component "Busqueda Service" "Ranking y filtros." "Spring Service"
-                reservaService = component "Reserva Service" "Disponibilidad y reservas." "Spring Service"
-                pagoService = component "Pago Service" "Procesamiento de pagos." "Spring Service"
-                resenaService = component "Reseña Service" "Calificaciones." "Spring Service"
-                adminService = component "Admin Service" "Gestión interna." "Spring Service"
-
-                /************* REPOSITORIES *************/
-                usuarioRepo = component "Usuario Repository" "Persistencia de usuarios." "Spring Data JPA"
-                perfilRepo = component "Perfil Repository" "Persistencia de perfiles." "Spring Data JPA"
-                reservaRepo = component "Reserva Repository" "Persistencia de reservas." "Spring Data JPA"
-                pagoRepo = component "Pago Repository" "Persistencia de pagos." "Spring Data JPA"
-                resenaRepo = component "Reseña Repository" "Persistencia de reseñas." "Spring Data JPA"
-                categoriaRepo = component "Categoria Repository" "Persistencia de categorías." "Spring Data JPA"
+            # --- NIVEL 3: API REST (Contenedor Padre) ---
+            apiRest = container "API REST" "Tecnología: Java / Spring Boot" "Spring Boot" "Technology" {
+                
+                # --- NIVEL 4: CONTEXTOS (Componentes) ---
+                auth = component "Auth" "Gestiona identidad y acceso." "Spring Security" "Context"
+                booking = component "Booking & Scheduling" "Gestión de citas." "Spring Service" "Context"
+                requestVal = component "Request & Validation" "Validación de procesos." "Spring Service" "Context"
+                contact = component "Contact" "Gestión de comunicación." "Spring Service" "Context"
+                
+                # --- NIVEL 5 (A): MOTOR DE NOTIFICACIONES ---
+                notifications = component "Notifications" "Orquestador de mensajes." "Spring Service" "Logic"
             }
-
-            db = container "PostgreSQL" "Base de datos relacional principal." "PostgreSQL"
+            
+            # --- NIVEL 5 (B): INFRAESTRUCTURA ---
+            db = container "Database" "Persistencia: MySQL." "MySQL" "Database"
+            androidIos = container "Android / IOS" "Sistema operativo móvil." "Mobile OS" "ExternalSystem"
         }
 
-        /************* RELACIONES EXTERNAS *************/
-        cliente -> web "Usa desde navegador"
-        consultor -> web "Administra servicios"
-        administrador -> web "Supervisa plataforma"
+        # --- NIVEL 6: SALIDA FINAL ---
+        webNotifications = softwareSystem "Web Notifications" "Servicio externo de alertas." "ExternalSystem"
 
-        web -> api "HTTPS / JSON"
+        # --- RELACIONES JERÁRQUICAS (Flujo descendente) ---
 
-        api -> pagos "Procesa cobros"
-        api -> video "Genera enlaces de reunión"
-        api -> authExterno "Login social"
+        # N1 -> N2
+        cliente -> landingPage "Visita"
+        consultor -> webApp "Usa"
+        admin -> webApp "Gestiona"
 
-        /************* CONTROLLERS -> SERVICES *************/
-        authController -> authService
-        usuarioController -> usuarioService
-        perfilController -> perfilService
-        busquedaController -> busquedaService
-        reservaController -> reservaService
-        pagoController -> pagoService
-        resenaController -> resenaService
-        adminController -> adminService
+        # N2 -> N4 (Acceso directo a componentes internos eliminando la relación padre-hijo)
+        landingPage -> auth "Registra/Valida"
+        webApp -> auth "Autentica"
+        webApp -> booking "Reserva"
+        webApp -> requestVal "Envía peticiones"
+        webApp -> contact "Inicia contacto"
 
-        /************* SERVICES -> REPOSITORIES *************/
-        authService -> usuarioRepo
-        usuarioService -> usuarioRepo
-        perfilService -> perfilRepo
-        busquedaService -> perfilRepo
-        busquedaService -> categoriaRepo
-        reservaService -> reservaRepo
-        reservaService -> perfilRepo
-        pagoService -> pagoRepo
-        resenaService -> resenaRepo
-        adminService -> usuarioRepo
-        adminService -> categoriaRepo
+        # N4 -> N5 (Persistencia y Notificación)
+        requestVal -> db "Persiste"
+        auth -> db "Consulta"
+        booking -> db "Guarda"
+        contact -> androidIos "Notifica"
 
-        /************* REPOSITORIES -> DB *************/
-        usuarioRepo -> db
-        perfilRepo -> db
-        reservaRepo -> db
-        pagoRepo -> db
-        resenaRepo -> db
-        categoriaRepo -> db
+        # N4 -> Notifications (N5)
+        auth -> notifications "Informa"
+        booking -> notifications "Informa"
+        requestVal -> notifications "Informa"
+        contact -> notifications "Informa"
+
+        # N5 -> N6
+        notifications -> webNotifications "Envía alerta"
     }
 
     views {
-
-        component api "DiagramaComponentesFinTeka" {
-            include cliente
-            include consultor
-            include administrador
-
-            include authController
-            include usuarioController
-            include perfilController
-            include busquedaController
-            include reservaController
-            include pagoController
-            include resenaController
-            include adminController
-
-            include authService
-            include usuarioService
-            include perfilService
-            include busquedaService
-            include reservaService
-            include pagoService
-            include resenaService
-            include adminService
-
-            include usuarioRepo
-            include perfilRepo
-            include reservaRepo
-            include pagoRepo
-            include resenaRepo
-            include categoriaRepo
-
-            include db
-            include pagos
-            include video
-            include authExterno
-
-            autolayout tb 400 250
+        component apiRest "Arquitectura_6_Niveles" {
+            include *
+            autolayout tb 150 150
+            description "Diagrama de 6 niveles verticales: De Actores a Notificaciones Web."
         }
 
-        theme default
+        styles {
+            element "Persona" {
+                shape Person
+                background #08427b
+                color #ffffff
+            }
+            element "Nivel2" {
+                background #777777
+                color #ffffff
+            }
+            element "Technology" {
+                background #1168bd
+                color #ffffff
+            }
+            element "Context" {
+                background #85bbf0
+                color #000000
+                shape RoundedBox
+            }
+            element "Database" {
+                shape Cylinder
+                background #225c94
+                color #ffffff
+            }
+            element "ExternalSystem" {
+                background #444444
+                color #ffffff
+            }
+            relationship "Alineacion" {
+                color #ffffff00
+                thickness 0
+            }
+        }
     }
 }
 
