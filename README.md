@@ -272,3 +272,13 @@ workspace {
         theme default
     }
 }
+
+#### Diagramas de Actividad UML
+
+Diagrama 1: Proceso de reserva de un servicio
+
+https://raw.githubusercontent.com/diegoroip/TukunTech/refs/heads/main/media/Miro/TukunTech%20-%20Architecture%20ViewPoints.jpg
+
+Diagrama 2: Proceso de contacto con profesionales
+
+https://raw.githubusercontent.com/diegoroip/TukunTech/refs/heads/main/media/Miro/TukunTech%20-%20Architecture%20ViewPoints%20(1).jpg
