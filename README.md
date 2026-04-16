@@ -68,67 +68,77 @@ workspace {
 
 #### Container
 
-workspace {
+workspace "FinTeka" "Diagrama de Contenedores - Nivel 2" {
 
     model {
+        # --- ACTORES ---
+        cliente = person "Cliente" "Usuario que busca asesoría, reserva sesiones y realiza pagos." "User"
+        consultor = person "Consultor" "Profesional que ofrece servicios y gestiona su agenda." "User"
+        admin = person "Administrador" "Gestiona usuarios, categorías y operación general." "User"
 
-        cliente = person "Cliente" "Usuario que busca asesoría profesional y reserva sesiones."
-        consultor = person "Consultor" "Profesional que ofrece servicios y administra su agenda."
-        administrador = person "Administrador" "Gestiona usuarios, categorías, reportes y operación."
+        # --- SISTEMAS EXTERNOS ---
+        notificaciones = softwareSystem "Sistema de Notificaciones" "Servicio externo para envío de correos y alertas push." "External"
 
-        finteka = softwareSystem "FinTeka" "Plataforma digital que conecta clientes con consultores." {
-
-            web = container "Aplicación Web" "Interfaz principal para clientes, consultores y administradores." "React / Next.js"
-
-            api = container "API Backend" "Expone servicios REST y lógica del negocio." "Spring Boot"
-
-            realtime = container "Servicio en Tiempo Real" "Mensajería instantánea y notificaciones internas." "Spring WebSocket"
-
-            worker = container "Servicio Programado" "Procesa recordatorios y tareas automáticas." "Spring Scheduler"
-
-            bd = container "Base de Datos" "Almacena usuarios, reservas, pagos, perfiles y reseñas." "PostgreSQL"
-
-            cache = container "Memoria Caché" "Optimiza consultas frecuentes y sesiones." "Redis"
-
-            archivos = container "Almacenamiento de Archivos" "Guarda imágenes de perfil y archivos adjuntos." "S3 Compatible"
+        finteka = softwareSystem "FinTeka" {
+            
+            webApp = container "Aplicación Web Cliente" "Interfaz principal para clientes, consultores y administración." "React (SPA) + TypeScript" "Web Browser"
+            
+            authService = container "Servicio de Autenticación" "Gestiona login, registro y validación de seguridad." "Spring Security + JWT"
+            
+            apiPrincipal = container "API Principal" "Lógica de negocio: perfiles, reservas y gestión de profesionales." "Java + Spring Boot"
+            
+            db = container "Base de Datos" "Almacena información de usuarios, citas y configuraciones." "MySQL" "Database"
         }
 
-        pagos = softwareSystem "Pasarela de Pagos" "Servicio externo para procesar pagos."
-        video = softwareSystem "Servicio de Videollamadas" "Servicio externo para reuniones virtuales."
-        oauth = softwareSystem "Autenticación Externa" "Inicio de sesión con Google u otros proveedores."
+        # --- RELACIONES ---
+        # Los 3 actores usan la misma interfaz Web
+        cliente -> webApp "Usa"
+        consultor -> webApp "Usa"
+        admin -> webApp "Usa"
 
-        cliente -> web "Usa la plataforma"
-        consultor -> web "Gestiona perfil y sesiones"
-        administrador -> web "Administra la plataforma"
-
-        web -> api "HTTPS / JSON"
-        web -> realtime "WebSocket"
-
-        api -> bd "Lee y escribe datos"
-        api -> cache "Consulta y almacena caché"
-        api -> archivos "Guarda archivos"
-        api -> pagos "Solicita cobros"
-        api -> oauth "Valida autenticación"
-        api -> video "Crea reuniones virtuales"
-        api -> worker "Solicita tareas automáticas"
-
-        realtime -> cache "Publicación / Suscripción"
-
-        worker -> bd "Consulta sesiones"
-        worker -> cache "Lee colas y tareas"
-
+        # Flujo de la aplicación
+        webApp -> authService "Envía credenciales y solicita tokens" "HTTPS/JSON"
+        webApp -> apiPrincipal "Solicita búsqueda, reservas y gestión" "HTTPS/JSON"
+        
+        # Comunicación entre servicios y persistencia
+        apiPrincipal -> authService "Valida permisos de usuario" "gRPC/Internal"
+        authService -> db "Lee/Escribe credenciales" "JDBC"
+        apiPrincipal -> db "Consulta y persiste datos de negocio" "JDBC"
+        
+        # Integración externa
+        apiPrincipal -> notificaciones "Dispara alertas de reservas y recordatorios" "SMTP/API"
     }
 
     views {
-
-        container finteka "DiagramaContenedores" {
+        container finteka "Contenedores" {
             include *
             autolayout lr
+            description "Diagrama de Contenedores de la plataforma FinTeka."
         }
 
-        theme default
+        styles {
+            element "User" {
+                shape Person
+                background #08427b
+                color #ffffff
+            }
+            element "Container" {
+                background #1168bd
+                color #ffffff
+            }
+            element "Web Browser" {
+                shape WebBrowser
+            }
+            element "Database" {
+                shape Cylinder
+                background #225c94
+            }
+            element "External" {
+                background #999999
+                color #ffffff
+            }
+        }
     }
-
 }
 
 #### Components
