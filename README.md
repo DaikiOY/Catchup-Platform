@@ -19,6 +19,7 @@ En este Context Diagram se muestra a FinTeka como el sistema central que interac
 - **Servicios de autenticación externa:** integración opcional con proveedores como Google u otros servicios para facilitar el inicio de sesión seguro.
 
 Codigo:
+
 workspace {
 
     model {
@@ -31,11 +32,11 @@ workspace {
 
         finteka = softwareSystem "FinTeka" "Plataforma digital que conecta clientes con consultores profesionales."
 
-        pagos = softwareSystem "Pasarela de Pagos" "Sistema externo encargado de procesar pagos seguros y confirmar transacciones."
+        pagos = softwareSystem "PayPal" "Sistema externo de pagos seguros"
 
-        videollamada = softwareSystem "Servicio de Videollamadas" "Sistema externo utilizado para sesiones virtuales entre clientes y consultores."
+        videollamada = softwareSystem "Web Notifications" "Servicio externo push"
 
-        auth = softwareSystem "Autenticación Externa" "Proveedor externo para inicio de sesión con Google u otros servicios."
+        auth = softwareSystem "Android/IOS" "Plataforma operativa móvil"
 
         cliente -> finteka "Busca especialistas, reserva sesiones y realiza pagos"
 
@@ -45,9 +46,9 @@ workspace {
 
         finteka -> pagos "Procesa pagos y valida transacciones"
 
-        finteka -> videollamada "Coordina sesiones virtuales"
+        finteka -> videollamada "Envia recordatorios al usuario"
 
-        finteka -> auth "Valida autenticación externa"
+        finteka -> auth "Coordina mensajes o sesiones virtuales"
 
     }
 
@@ -70,169 +71,171 @@ workspace {
 
 workspace "FinTeka" "Diagrama de Contenedores - Compacto y Recto" {
 
-    model {
-        # --- COLUMNA 1: ACTORES ---
-        cliente = person "Cliente" "Busca asesoría y reserva." "Actor"
-        consultor = person "Consultor" "Gestiona agenda y atiende." "Actor"
-        admin = person "Administrador" "Gestiona la plataforma." "Actor"
+model {
+    # --- COLUMNA 1: ACTORES ---
+    cliente = person "Cliente" "Busca asesoría y reserva." "Actor"
+    consultor = person "Consultor" "Gestiona agenda y atiende." "Actor"
+    admin = person "Administrador" "Gestiona la plataforma." "Actor"
 
-        # Amarre vertical (Invisibles)
-        cliente -> consultor " " "Alineacion"
-        consultor -> admin " " "Alineacion"
+    # Amarre vertical (Invisibles)
+    cliente -> consultor " " "Alineacion"
+    consultor -> admin " " "Alineacion"
 
-        # --- COLUMNA 5: SISTEMAS EXTERNOS ---
-        videollamada = softwareSystem "Servicio Videollamadas" "Zoom/Meet." "External"
-        pagos = softwareSystem "Pasarela de Pagos" "Stripe/PayU." "External"
-        notificaciones = softwareSystem "Notificaciones" "Email/Push." "External"
+    # --- COLUMNA 5: SISTEMAS EXTERNOS ---
+    videollamada = softwareSystem "Android/IOS" "Plataforma operativa móvil" "External"
+    pagos = softwareSystem "Paypal" "Servicio externo de pago seguro." "External"
+    notificaciones = softwareSystem "Web Notifications" "Servicio externo Push." "External"
 
-        # Amarre vertical (Invisibles)
-        videollamada -> pagos " " "Alineacion"
-        pagos -> notificaciones " " "Alineacion"
+    # Amarre vertical (Invisibles)
+    videollamada -> pagos " " "Alineacion"
+    pagos -> notificaciones " " "Alineacion"
 
-        finteka = softwareSystem "FinTeka" {
-            webApp = container "Web Application" "React + TypeScript" "React" "WebBrowser"
-            apiGateway = container "API Gateway" "Ruteo y Seguridad" "Spring Cloud" "Service"
-            
-            authService = container "Auth Service" "Seguridad JWT" "Spring Security" "Service"
-            apiPrincipal = container "API Principal" "Lógica de negocio" "Java / Spring Boot" "Service"
-            
-            db = container "Base de Datos" "MySQL" "MySQL" "Database"
-            cache = container "Cache" "Redis" "Redis" "Database"
-        }
-
-        # --- CONEXIONES ---
-        cliente -> webApp "Usa"
-        consultor -> webApp "Usa"
-        admin -> webApp "Usa"
-
-        webApp -> apiGateway "HTTPS"
-        apiGateway -> authService "Rutea"
-        apiGateway -> apiPrincipal "Rutea"
-
-        authService -> db " "
-        apiPrincipal -> db " "
-        apiPrincipal -> cache " "
-
-        apiPrincipal -> videollamada "Sesiones"
-        apiPrincipal -> pagos "Cobros"
-        apiPrincipal -> notificaciones "Alertas"
+    finteka = softwareSystem "FinTeka" {
+        webApp = container "Web Application" "React + TypeScript" "React" "WebBrowser"
+        apiGateway = container "API Gateway" "Ruteo y Seguridad" "Spring Cloud" "Service"
+        
+        authService = container "Auth Service" "Seguridad JWT" "Spring Security" "Service"
+        apiPrincipal = container "API Principal" "Lógica de negocio" "Java / Spring Boot" "Service"
+        
+        db = container "Base de Datos" "MySQL" "MySQL" "Database"
+        cache = container "Cache" "Redis" "Redis" "Database"
     }
 
-    views {
-        container finteka "Contenedores_Compactos" {
-            include *
-            autolayout lr 150 150 
-        }
+    # --- CONEXIONES ---
+    cliente -> webApp "Usa"
+    consultor -> webApp "Usa"
+    admin -> webApp "Usa"
 
-        styles {
-            element "Actor" {
-                shape Person
-                background #08427b
-                color #ffffff
-            }
-            element "External" {
-                background #777777
-                color #ffffff
-                shape RoundedBox
-            }
-            element "WebBrowser" {
-                shape WebBrowser
-                background #438dd5
-            }
-            element "Service" {
-                shape RoundedBox
-                background #1168bd
-                color #ffffff
-            }
-            element "Database" {
-                shape Cylinder
-                background #225c94
-            }
-            relationship "Alineacion" {
-                color #ffffff
-                thickness 0
-                routing Direct
-            }
+    webApp -> apiGateway "HTTPS"
+    apiGateway -> authService "Rutea"
+    apiGateway -> apiPrincipal "Rutea"
+
+    authService -> db " "
+    apiPrincipal -> db " "
+    apiPrincipal -> cache " "
+
+    apiPrincipal -> videollamada "Sesiones"
+    apiPrincipal -> pagos "Cobros"
+    apiPrincipal -> notificaciones "Alertas"
+}
+
+views {
+    container finteka "Contenedores_Compactos" {
+        include *
+        autolayout lr 150 150 
+    }
+
+    styles {
+        element "Actor" {
+            shape Person
+            background #08427b
+            color #ffffff
+        }
+        element "External" {
+            background #777777
+            color #ffffff
+            shape RoundedBox
+        }
+        element "WebBrowser" {
+            shape WebBrowser
+            background #438dd5
+        }
+        element "Service" {
+            shape RoundedBox
+            background #1168bd
+            color #ffffff
+        }
+        element "Database" {
+            shape Cylinder
+            background #225c94
+        }
+        relationship "Alineacion" {
+            color #ffffff
+            thickness 0
+            routing Direct
         }
     }
+}
 }
 
 #### Components
 
-workspace "FinTeka" "Arquitectura Jerárquica 6 Niveles Corregida" {
+workspace "FinTeka" "Arquitectura Jerárquica Final - Estilo Visual Paradigm" {
 
     model {
-        # --- NIVEL 1: PERSONAS (Top) ---
-        cliente = person "Cliente" "Usuario que busca asesoría." "Persona"
+        # --- NIVEL 1: PERSONAS (Cúspide) ---
+        cliente = person "Cliente" "Busca asesoría y reserva sesiones." "Persona"
         consultor = person "Consultor" "Profesional que atiende." "Persona"
         admin = person "Administrador" "Gestiona la plataforma." "Persona"
-
-        # Alineación horizontal Nivel 1
-        cliente -> consultor " " "Alineacion"
-        consultor -> admin " " "Alineacion"
 
         finteka = softwareSystem "FinTeka" {
             
             # --- NIVEL 2: FRONTENDS ---
             landingPage = container "Landing Page" "Portal informativo." "React" "Nivel2"
-            webApp = container "Web Application" "Interfaz de usuario." "React + TS" "Nivel2"
+            webApp = container "Web Application" "Interfaz de usuario principal." "React + TS" "Nivel2"
 
-            # --- NIVEL 3: API REST (Contenedor Padre) ---
-            apiRest = container "API REST" "Tecnología: Java / Spring Boot" "Spring Boot" "Technology" {
+            # --- NIVEL 3: API REST (Contenedor de Tecnología) ---
+            apiRest = container "API REST" "Tecnología: Java / Spring Boot" "Technology" {
                 
-                # --- NIVEL 4: CONTEXTOS (Componentes) ---
-                auth = component "Auth" "Gestiona identidad y acceso." "Spring Security" "Context"
+                # --- NIVEL 4: CONTEXTOS DE NEGOCIO ---
+                auth = component "Auth" "Seguridad e Identidad." "Spring Security" "Context"
+                payment = component "Payment" "Gestión de transacciones externas." "Stripe" "Context"
                 booking = component "Booking & Scheduling" "Gestión de citas." "Spring Service" "Context"
                 requestVal = component "Request & Validation" "Validación de procesos." "Spring Service" "Context"
                 contact = component "Contact" "Gestión de comunicación." "Spring Service" "Context"
                 
-                # --- NIVEL 5 (A): MOTOR DE NOTIFICACIONES ---
+                # --- NIVEL 5: LÓGICA E INFRAESTRUCTURA ---
                 notifications = component "Notifications" "Orquestador de mensajes." "Spring Service" "Logic"
+                db = component "Database Layer" "Persistencia MySQL." "JPA" "Database"
             }
-            
-            # --- NIVEL 5 (B): INFRAESTRUCTURA ---
-            db = container "Database" "Persistencia: MySQL." "MySQL" "Database"
-            androidIos = container "Android / IOS" "Sistema operativo móvil." "Mobile OS" "ExternalSystem"
         }
 
-        # --- NIVEL 6: SALIDA FINAL ---
-        webNotifications = softwareSystem "Web Notifications" "Servicio externo de alertas." "ExternalSystem"
+        # --- NIVEL 6: SISTEMAS DE SALIDA (Independientes - Color Gris) ---
+        androidIos = softwareSystem "Android / IOS" "Plataforma operativa móvil." "ExternalSystem"
+        webNotifications = softwareSystem "Web Notifications" "Servicio externo push." "ExternalSystem"
+        stores = softwareSystem "Paypal" "Servicio de pago externo seguro." "ExternalSystem"
 
-        # --- RELACIONES JERÁRQUICAS (Flujo descendente) ---
+        # --- RELACIONES JERÁRQUICAS ---
 
-        # N1 -> N2
-        cliente -> landingPage "Visita"
+        # Nivel 1 -> Nivel 2 (Conexión simultánea para asegurar visibilidad)
+        cliente -> landingPage "Consulta"
+        cliente -> webApp "Usa"
+        consultor -> landingPage "Consulta"
         consultor -> webApp "Usa"
-        admin -> webApp "Gestiona"
+        admin -> landingPage "Consulta"
+        admin -> webApp "Usa"
 
-        # N2 -> N4 (Acceso directo a componentes internos eliminando la relación padre-hijo)
-        landingPage -> auth "Registra/Valida"
-        webApp -> auth "Autentica"
+        # Nivel 2 -> Nivel 4 (Acceso a los componentes internos)
+        landingPage -> auth "Registro"
+        webApp -> auth "Login"
+        webApp -> payment "Inicia Pago"
         webApp -> booking "Reserva"
-        webApp -> requestVal "Envía peticiones"
-        webApp -> contact "Inicia contacto"
+        webApp -> requestVal "Solicitud"
+        webApp -> contact "Mensaje"
 
-        # N4 -> N5 (Persistencia y Notificación)
-        requestVal -> db "Persiste"
+        # Nivel 4 -> Nivel 5 (Internos)
         auth -> db "Consulta"
-        booking -> db "Guarda"
-        contact -> androidIos "Notifica"
-
-        # N4 -> Notifications (N5)
+        booking -> db "Persiste"
+        requestVal -> db "Escribe"
+        
         auth -> notifications "Informa"
         booking -> notifications "Informa"
         requestVal -> notifications "Informa"
         contact -> notifications "Informa"
 
-        # N5 -> N6
-        notifications -> webNotifications "Envía alerta"
+        # Nivel 4/5 -> Nivel 6 (Salidas independientes hacia el fondo)
+        payment -> stores "Procesa cobro externo"
+        contact -> androidIos "Notifica al dispositivo"
+        notifications -> webNotifications "Entrega alerta push"
     }
 
     views {
-        component apiRest "Arquitectura_6_Niveles" {
+        component apiRest "Arquitectura_Final_Sin_Conexiones_Base" {
             include *
-            autolayout tb 150 150
-            description "Diagrama de 6 niveles verticales: De Actores a Notificaciones Web."
+            include cliente consultor admin
+            
+            autolayout tb 200 200
+            description "6 Niveles: Actores -> Frontend -> API -> Contextos -> Datos -> Salidas Independientes."
         }
 
         styles {
@@ -243,10 +246,6 @@ workspace "FinTeka" "Arquitectura Jerárquica 6 Niveles Corregida" {
             }
             element "Nivel2" {
                 background #777777
-                color #ffffff
-            }
-            element "Technology" {
-                background #1168bd
                 color #ffffff
             }
             element "Context" {
@@ -262,10 +261,10 @@ workspace "FinTeka" "Arquitectura Jerárquica 6 Niveles Corregida" {
             element "ExternalSystem" {
                 background #444444
                 color #ffffff
+                shape RoundedBox
             }
-            relationship "Alineacion" {
-                color #ffffff00
-                thickness 0
+            relationship "Relationship" {
+                dashed true
             }
         }
     }
