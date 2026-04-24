@@ -12,7 +12,6 @@
     </tr>
   </thead>
   <tbody>
-    <!-- TB1 -->
     <tr>
       <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB1</b></td>
       <td>10/04/2026</td>
@@ -49,8 +48,6 @@
       <td>Montes Maza, Augusto Sebastian</td>
       <td>Elaborar presentación tras revisión del documento.</td>
     </tr>
-
-    <!-- TB2 (continuación en la misma tabla) -->
     <tr>
       <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB2</b></td>
       <td>18/04/2026</td>
