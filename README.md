@@ -1,4 +1,4 @@
-<table>
+<table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
       <th>Versión</th>
@@ -10,7 +10,7 @@
   <tbody>
     <!-- TB1 -->
     <tr>
-      <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB1</b></td>
+      <td rowspan="7"><b>TB1</b></td>
       <td>10/04/2026</td>
       <td>Aguirre Castillo, Sergio Cesar</td>
       <td>Desarrollo del capítulo 3.</td>
@@ -48,40 +48,40 @@
 
     <!-- TB2 -->
     <tr>
-      <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB2</b></td>
+      <td rowspan="7"><b>TB2</b></td>
       <td>18/04/2026</td>
       <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>Ampliación y mejora del capítulo 3 con observaciones del docente.</td>
+      <td>Ampliación y mejora del capítulo 3.</td>
     </tr>
     <tr>
       <td>19/04/2026</td>
       <td>Burga Loarte, Anaely Zarely</td>
-      <td>Corrección y desarrollo de los puntos 2.1, 2.2 y 2.3.</td>
+      <td>Corrección de los puntos 2.1, 2.2 y 2.3.</td>
     </tr>
     <tr>
       <td>19/04/2026</td>
       <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Reestructuración del capítulo 1 y ajuste del punto 3.2.</td>
+      <td>Reestructuración del capítulo 1.</td>
     </tr>
     <tr>
       <td>17/04/2026</td>
       <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Optimización de los puntos 2.3.2 a 2.3.5 según retroalimentación.</td>
+      <td>Mejora de los puntos 2.3.2 a 2.3.5.</td>
     </tr>
     <tr>
       <td>20/04/2026</td>
       <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Revisión integral del documento y correcciones de formato.</td>
+      <td>Revisión general del documento.</td>
     </tr>
     <tr>
       <td>21/04/2026</td>
       <td>Montes Maza, Augusto Sebastian</td>
-      <td>Actualización de conclusiones y recomendaciones finales.</td>
+      <td>Actualización de conclusiones.</td>
     </tr>
     <tr>
       <td>22/04/2026</td>
       <td>Montes Maza, Augusto Sebastian</td>
-      <td>Diseño y elaboración de la presentación final del proyecto.</td>
+      <td>Elaboración de la presentación final.</td>
     </tr>
   </tbody>
 </table>
