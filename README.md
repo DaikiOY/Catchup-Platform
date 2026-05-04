@@ -12,6 +12,7 @@
     </tr>
   </thead>
   <tbody>
+    <!-- TB1 -->
     <tr>
       <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB1</b></td>
       <td>10/04/2026</td>
@@ -48,8 +49,10 @@
       <td>Montes Maza, Augusto Sebastian</td>
       <td>Elaborar presentación tras revisión del documento.</td>
     </tr>
+
+    <!-- TB2 -->
     <tr>
-      <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB2</b></td>
+      <td rowspan="5" style="text-align: center; vertical-align: middle;"><b>TB2</b></td>
       <td>18/04/2026</td>
       <td>Aguirre Castillo, Sergio Cesar</td>
       <td>Ampliación del capítulo 3 según observaciones.</td>
@@ -57,32 +60,50 @@
     <tr>
       <td>19/04/2026</td>
       <td>Burga Loarte, Anaely Zarely</td>
-      <td>Corrección y mejora de los puntos 2.1, 2.2 y 2.3.</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>19/04/2026</td>
       <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Revisión y ajuste del capítulo 1 y punto 3.2.</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td>17/04/2026</td>
+      <td>27/04/2026</td>
       <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Optimización de los puntos 2.3.2 a 2.3.5.</td>
-    </tr>
-    <tr>
-      <td>20/04/2026</td>
-      <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Revisión general del documento.</td>
+      <td>Desarrollo del punto 4.1.3 y 4.1.4</td>
     </tr>
     <tr>
       <td>21/04/2026</td>
       <td>Montes Maza, Augusto Sebastian</td>
-      <td>Actualización de conclusiones y recomendaciones.</td>
+      <td>-</td>
+    </tr>
+
+    <!-- TP1 -->
+    <tr>
+      <td rowspan="5" style="text-align: center; vertical-align: middle;"><b>TP1</b></td>
+      <td>-</td>
+      <td>Aguirre Castillo, Sergio Cesar</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td>22/04/2026</td>
+      <td>-</td>
+      <td>Burga Loarte, Anaely Zarely</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Mamani Marca, Gabriel Cristian</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Oshiro Yamashita, Daiki Oscar</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
       <td>Montes Maza, Augusto Sebastian</td>
-      <td>Elaboración de la presentación final.</td>
+      <td>-</td>
     </tr>
 
   </tbody>
