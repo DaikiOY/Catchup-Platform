@@ -1,7 +1,4 @@
-Aquí tienes el código completo en Markdown utilizando la etiqueta HTML `<table>` (con los respectivos atributos `rowspan` para agrupar las versiones) extendido con los hitos **TB3** y **TB4**:
 
-```markdown
-# Historial de Revisiones del Proyecto
 
 Aquí tienes el cuadro consolidado de revisiones del proyecto utilizando la estructura de tablas HTML en Markdown:
 
