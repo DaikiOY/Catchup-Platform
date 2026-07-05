@@ -1,193 +1,73 @@
-<table>
-  <thead>
-    <tr>
-      <th>Versión</th>
-      <th>Fecha</th>
-      <th>Autor</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TB1</b></td>
-      <td>07/04/2026</td>
-      <td>Oshiro Yamashita, Oscar</td>
-      <td>Desarrollo de los puntos 2.3.2 a 2.3.5</td>
-    </tr>
-    <tr>
-      <td>10/04/2026</td>
-      <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>Desarrollo del capítulo 3.</td>
-    </tr>
-    <tr>
-      <td>12/04/2026</td>
-      <td>Burga Loarte, Anaely Zarely</td>
-      <td>Desarrollo puntos 2.1, 2.3, 2.3.1</td>
-    </tr>
-    <tr>
-      <td>12/04/2026</td>
-      <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Desarrollo el capítulo 1 y punto 3.2</td>
-    </tr>
-    <tr>
-      <td>12/04/2026</td>
-      <td>Oshiro Yamashita, Oscar</td>
-      <td>Revisión general del documento.</td>
-    </tr>
-    <tr>
-      <td>14/04/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Desarrollo de conclusiones y recomendaciones del proyecto.</td>
-    </tr>
-    <tr>
-      <td>14/04/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Elaborar presentación tras revisión del documento.</td>
-    </tr>
-    <tr>
-      <td rowspan="5" style="text-align: center; vertical-align: middle;"><b>TB2</b></td>
-      <td>18/04/2026</td>
-      <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>4.1.1 - 4.1.2 - 4.1.6</td>
-    </tr>
-    <tr>
-      <td>19/04/2026</td>
-      <td>Burga Loarte, Anaely Zarely</td>
-      <td>5.1, 5.1.1, 5.1.2, 5.1.3, 5.1.4, 5.1.5</td>
-    </tr>
-    <tr>
-      <td>19/04/2026</td>
-      <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Desarrollo todo el Architectural Design Backlog 1</td>
-    </tr>
-    <tr>
-      <td>21/04/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Desarrollo del punto 4.2</td>
-    </tr>
-    <tr>
-      <td>27/04/2026</td>
-      <td>Oshiro Yamashita, Oscar</td>
-      <td>Desarrollo del punto 4.1.3 y 4.1.4</td>
-    </tr>
-    <tr>
-      <td rowspan="6" style="text-align: center; vertical-align: middle;"><b>TP1</b></td>
-      <td>04/05/2026</td>
-      <td>Burga Loarte, Anaely Zarely</td>
-      <td>Diagrama basado en 3FN, con entidades, relaciones y claves</td>
-    </tr>
-    <tr>
-      <td>04/05/2026</td>
-      <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Desarrollo de la primera versión backend</td>
-    </tr>
-    <tr>
-      <td>05/05/2026</td>
-      <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>Desarrollo del frontend</td>
-    </tr>
-    <tr>
-      <td>07/05/2026</td>
-      <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Corrección de los diagramas c4</td>
-    </tr>
-    <tr>
-      <td>07/05/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Desarrollo del punto 5.2 y correciones en base a feedback</td>
-    </tr>
-    <tr>
-      <td>09/05/2026</td>
-      <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Desarrollo sprint 1</td>
-    </tr>
-    <tr>
-      <td rowspan="5" style="text-align: center; vertical-align: middle;"><b>TB3</b></td>
-      <td>28/05/2026</td>
-      <td>Burga Loarte, Anaely Zarely</td>
-      <td>Definición de tácticas de arquitectura.</td>
-    </tr>
-    <tr>
-      <td>28/05/2026</td>
-      <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>Mejora de componentes frontend e integración con API Gateway.</td>
-    </tr>
-    <tr>
-      <td>28/05/2026</td>
-      <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Mejora del documento y desarrollo inicial de los microservicios.</td>
-    </tr>
-    <tr>
-      <td>28/05/2026</td>
-      <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Desarrollo y documentación del Sprint 2.</td>
-    </tr>
-    <tr>
-      <td>28/05/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Mejora del documento.</td>
-    </tr>
-    <tr>
-      <td rowspan="5" style="text-align: center; vertical-align: middle;"><b>TB4</b></td>
-      <td>19/06/2026</td>
-      <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>Integración con el frontend y desarrollo de 1 microservicio.</td>
-    </tr>
-    <tr>
-      <td>19/06/2026</td>
-      <td>Burga Loarte, Anaely Zarely</td>
-      <td>Desarrollo de 1 microservicio.</td>
-    </tr>
-    <tr>
-      <td>19/06/2026</td>
-      <td>Mamani Marca, Gabriel Cristian</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>19/06/2026</td>
-      <td>Oshiro Yamashita, Daiki Oscar</td>
-      <td>Mejora del documento y desarrollo del resto de microservicios.</td>
-    </tr>
-    <tr>
-      <td>19/06/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Desarrollo de 1 microservicio.</td>
-    </tr>
-    <tr>
-      <td rowspan="7" style="text-align: center; vertical-align: middle;"><b>TF1</b></td>
-      <td>07/04/2026</td>
-      <td>Oshiro Yamashita, Oscar</td>
-      <td>Desarrollo de los puntos 2.3.2 a 2.3.5</td>
-    </tr>
-    <tr>
-      <td>10/04/2026</td>
-      <td>Aguirre Castillo, Sergio Cesar</td>
-      <td>Desarrollo del capítulo 3.</td>
-    </tr>
-    <tr>
-      <td>12/04/2026</td>
-      <td>Burga Loarte, Anaely Zarely</td>
-      <td>Desarrollo puntos 2.1, 2.3, 2.3.1</td>
-    </tr>
-    <tr>
-      <td>12/04/2026</td>
-      <td>Mamani Marca, Gabriel Cristian</td>
-      <td>Desarrollo el capítulo 1 y punto 3.2</td>
-    </tr>
-    <tr>
-      <td>12/04/2026</td>
-      <td>Oshiro Yamashita, Oscar</td>
-      <td>Revisión general del documento.</td>
-    </tr>
-    <tr>
-      <td>14/04/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Desarrollo de conclusiones y recomendaciones del proyecto.</td>
-    </tr>
-    <tr>
-      <td>14/04/2026</td>
-      <td>Montes Maza, Augusto Sebastian</td>
-      <td>Elaborar presentación tras revisión del documento.</td>
-    </tr>
-  </tbody>
-</table>
+# Drivers de negocio
+
+## 1. Facilitar la conexión entre usuarios y profesionales
+**Descripción:** Permitir que los usuarios encuentren, reserven y gestionen servicios profesionales desde una única plataforma de manera rápida y sencilla.
+
+## 2. Garantizar pagos seguros
+**Descripción:** Asegurar que los pagos de sesiones y suscripciones se procesen correctamente, brindando confianza tanto a usuarios como a profesionales.
+
+## 3. Mejorar la experiencia del usuario
+**Descripción:** Ofrecer una plataforma fácil de usar donde los usuarios puedan administrar su perfil, reservas, pagos y valoraciones sin dificultades.
+
+## 4. Incrementar la confianza en los profesionales
+**Descripción:** Permitir que los usuarios califiquen y valoren a los profesionales para ayudar a otros usuarios a tomar mejores decisiones.
+
+## 5. Automatizar la comunicación
+**Descripción:** Enviar notificaciones sobre reservas, pagos y sesiones para mantener informados a usuarios y profesionales en todo momento.
+
+---
+
+# Atributos de calidad y tácticas
+
+## 1. Seguridad
+
+- **Atributo:** Seguridad
+- **Escenario:** Un usuario intenta iniciar sesión con una contraseña incorrecta.
+- **Origen:** Usuario.
+- **Artefacto:** Servicio de Autenticación (Auth).
+- **Respuesta:** El sistema rechaza el acceso y muestra un mensaje indicando que las credenciales son incorrectas.
+- **Táctica:** Validación de credenciales antes de permitir el acceso.
+
+---
+
+## 2. Rendimiento
+
+- **Atributo:** Rendimiento
+- **Escenario:** Un usuario consulta el saldo de su monedero.
+- **Origen:** Usuario.
+- **Artefacto:** Servicio de Pagos.
+- **Respuesta:** El sistema muestra el saldo en menos de 2 segundos.
+- **Táctica:** Optimización de consultas para reducir el tiempo de respuesta.
+
+---
+
+## 3. Usabilidad
+
+- **Atributo:** Usabilidad
+- **Escenario:** Un usuario registra una nueva reserva.
+- **Origen:** Usuario.
+- **Artefacto:** Servicio de Reservas.
+- **Respuesta:** El sistema confirma la reserva mostrando un mensaje de éxito con la información de la sesión.
+- **Táctica:** Mensajes claros de confirmación y error para facilitar el uso de la plataforma.
+
+---
+
+## 4. Modificabilidad
+
+- **Atributo:** Modificabilidad
+- **Escenario:** Se agrega un nuevo tipo de notificación al sistema.
+- **Origen:** Desarrollador.
+- **Artefacto:** Servicio de Notificaciones.
+- **Respuesta:** El nuevo tipo de notificación puede incorporarse sin afectar el funcionamiento de los demás servicios.
+- **Táctica:** Separación de funcionalidades en microservicios independientes.
+
+---
+
+## 5. Escalabilidad
+
+- **Atributo:** Escalabilidad
+- **Escenario:** Aumenta la cantidad de usuarios realizando reservas al mismo tiempo.
+- **Origen:** Incremento de usuarios.
+- **Artefacto:** Servicio de Reservas.
+- **Respuesta:** El sistema continúa atendiendo las solicitudes sin afectar significativamente el tiempo de respuesta.
+- **Táctica:** Escalado independiente del microservicio de reservas según la demanda.
