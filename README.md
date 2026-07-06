@@ -7,8 +7,6 @@
 | Eficiencia operativa | Optimizar el flujo completo desde la búsqueda del profesional hasta la postulación y seguimiento de la sesión, reduciendo los tiempos de espera y mejorando la experiencia del usuario. |
 | Crecimiento escalable | Permitir que la plataforma crezca en usuarios y funcionalidades sin perder rendimiento. |
 | Fidelizar a los usuarios | Incentivar el uso continuo de la plataforma mediante suscripciones y una experiencia de servicio confiable y eficiente. |
-| Mejorar la experiencia del usuario | Ofrecer una plataforma fácil de usar donde los usuarios puedan administrar su perfil, reservas, pagos y valoraciones sin dificultades. |
-| Incrementar la confianza en los profesionales | Permitir que los usuarios califiquen y valoren a los profesionales para ayudar a otros usuarios a tomar mejores decisiones. |
 | Optimizar la gestión de reservas | Permitir que los usuarios y profesionales administren horarios y sesiones de forma organizada, evitando conflictos en las reservas. |
 | Facilitar la conexión entre usuarios y profesionales | Permitir que los usuarios encuentren, reserven y gestionen servicios profesionales desde una única plataforma de manera rápida y sencilla. |
 
