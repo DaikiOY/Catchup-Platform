@@ -24,3 +24,21 @@
 | Escalabilidad | Aumenta la cantidad de usuarios realizando reservas al mismo tiempo. | Incremento de usuarios | Servicio de Reservas | El sistema continúa atendiendo las solicitudes sin afectar significativamente el tiempo de respuesta. | Escalado independiente del microservicio de reservas según la demanda. |
 | Modificabilidad | Se necesita agregar un nuevo campo al perfil de usuario. | Desarrollador | Servicio de Perfiles | El nuevo campo puede incorporarse sin afectar el funcionamiento de los demás servicios. | Separación de responsabilidades mediante clases independientes. |
 
+----------------------
+
+┌───────────────────────┬────────────────────────────────────────────────────────────────────────┐
+│ Componente / Elemento │ Detalle del Escenario                                                  │
+├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
+│ Fuente de estímulo    │ El equipo de desarrollo de software o analista de negocio de FinTeka.   │
+├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
+│ Estímulo              │ Se requiere agregar un nuevo método de pago internacional (ej. PayPal) │
+│                       │ adicional a la pasarela existente.                                     │
+├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
+│ Artefacto             │ Módulo/Componente de integración de pagos en la arquitectura.           │
+├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
+│ Respuesta             │ Gracias al diseño desacoplado (Strategy/Adapter), el desarrollador     │
+│                       │ integra el proveedor sin alterar el core transaccional actual.         │
+├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
+│ Medida de respuesta   │ La adición, pruebas y despliegue toman menos de 3 días de desarrollo y  │
+│                       │ se alteran 0 componentes existentes del núcleo de reservas.            │
+└───────────────────────┴────────────────────────────────────────────────────────────────────────┘
