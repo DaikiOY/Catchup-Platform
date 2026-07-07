@@ -41,11 +41,11 @@
 
 | Elemento | Descripción |
 |----------|-------------|
-| **Fuente de estímulo** | Usuario final (cliente) o atacante. |
+| **Fuente de estímulo** | Usuario final, cliente |
 | **Estímulo** | Un usuario intenta pagar una sesión con saldo insuficiente en su monedero. |
-| **Artefacto** | Microservicio de pagos, microservicio de monedero/billetera y API Gateway. |
-| **Respuesta** | El sistema valida el saldo disponible en el monedero al recibir la solicitud de pago. Si el saldo es insuficiente, la transacción es rechazada de forma inmediata y se notifica al usuario. Si el saldo es suficiente, se reserva el monto, se procesa el pago y se actualiza el saldo de forma atómica (evitando condiciones de carrera). |
-| **Medida de respuesta** | El sistema deniega el 100% de los intentos de pago con saldo insuficiente, responde en menos de 1.5 segundos y garantiza que ningún cargo se realice sin la verificación previa del saldo, manteniendo la consistencia financiera. |
+| **Artefacto** | Microservicio de pagos y API Gateway. |
+| **Respuesta** | El sistema valida el saldo disponible en el monedero al recibir la solicitud de pago. Si el saldo es insuficiente, la transacción es rechazada de forma inmediata y se notifica al usuario. Si el saldo es suficiente, se reserva el monto, se procesa el pago y se actualiza el saldo de forma atómica. |
+| **Medida de respuesta** | El sistema deniega el 100% de los intentos de pago con saldo insuficiente, responde en menos de 1.5 segundos y garantiza que ningún cargo se realice sin la verificación previa del saldo. |
 
 ---
 
@@ -53,11 +53,11 @@
 
 | Elemento | Descripción |
 |----------|-------------|
-| **Fuente de estímulo** | Usuario final. |
+| **Fuente de estímulo** | Usuarios finales, clientes y profesionales |
 | **Estímulo** | Inician una videollamada programada e interactúan a través de voz, video y chat en tiempo real. |
-| **Artefacto** | Servidor WebRTC/SFU (Selective Forwarding Unit), servicio de señalización, y la red de entrega de contenido (CDN) para medios. |
-| **Respuesta** | El sistema establece la conexión WebRTC, negocia los parámetros de sesión (SDP/ICE) y comienza a transmitir los flujos de audio, video y datos (chat) con baja latencia. Los paquetes se enrutan a través de la SFU más cercana geográficamente y se aplican mecanismos de adaptación de bitrate (congestion control). |
-| **Medida de respuesta** | La latencia de extremo a extremo se mantiene por debajo de 150 ms para audio/video, la pérdida de paquetes se mantiene <1% y el chat se entrega en menos de 200 ms. El sistema soporta hasta 50 participantes por sala sin degradación perceptible. |
+| **Artefacto** | Servicio externo de Google Meets. |
+| **Respuesta** | El sistema genera automáticamente un enlace único de Google Meet al momento de agendar la sesión y lo proporciona a ambos participantes (cliente y profesional). Los usuarios hacen clic en el enlace y son redirigidos a la sala de Google Meet, donde la infraestructura de Google maneja toda la transmisión de audio, video y chat en tiempo real, garantizando la calidad de servicio. |
+| **Medida de respuesta** | El enlace de Google Meet se genera y entrega en menos de 1 segundo desde la confirmación de la reserva. La latencia de la videollamada es gestionada enteramente por Google Meet (estándar <150 ms). |
 
 ---
 
@@ -67,9 +67,9 @@
 |----------|-------------|
 | **Fuente de estímulo** | Usuario nuevo. |
 | **Estímulo** | Un usuario nuevo quiere registrarse en la plataforma. |
-| **Artefacto** | Aplicación frontend (web/móvil), servicio de registro de usuarios y servicio de verificación de email/teléfono. |
-| **Respuesta** | El sistema presenta un formulario de registro claro y sencillo (con validación en tiempo real), permite el registro mediante email/contraseña o proveedores sociales (Google, Apple). Tras enviar los datos, valida la unicidad, envía un código de verificación y, al confirmarlo, crea la cuenta y redirige al usuario a la onboarding inicial. |
-| **Medida de respuesta** | El proceso de registro se completa en menos de 2 minutos (para el 95% de los usuarios). La tasa de éxito del registro es >98% en el primer intento, y el sistema proporciona mensajes de error claros y en lenguaje natural. La interfaz es responsive y accesible (WCAG 2.1 AA). |
+| **Artefacto** | Microservicio de perfiles, formulario de registro de usuarios.|
+| **Respuesta** | El sistema presenta un formulario de registro claro y sencillo (con validación en tiempo real), permite el registro mediante email/contraseña. Tras enviar los datos, los valida valida, crea la cuenta y redirige al usuario a la login inicial. |
+| **Medida de respuesta** | El proceso de registro se completa en menos de 2 minutos para el 95% de los usuarios. La tasa de éxito del registro es >98% en el primer intento, y el sistema proporciona mensajes de error claros si no se concreta la acción. |
 
 ---
 
