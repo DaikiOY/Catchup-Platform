@@ -26,21 +26,84 @@
 
 ----------------------
 
-### 🛠️ Escenario 5: Mantenibilidad / Modificabilidad (Modifiability)
 
-| Fuente de estímulo | Estímulo | Artefacto | Respuesta | Medida de respuesta | Táctica |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| El equipo de desarrollo de software o analista de negocio | Se requiere agregar un nuevo método de pago internacional adicional a la pasarela existente. | Módulo/Componente de integración de pagos en la arquitectura | Gracias al diseño desacoplado, el desarrollador integra el nuevo proveedor sin necesidad de modificar las reglas de negocio base ni el flujo core. | La adición, prueba unitaria y despliegue del nuevo componente se realiza en menos de 3 días de desarrollo, afectando a 0 componentes existentes. | **Inversión de dependencias** (Patrón Strategy / Adapter) y **Encapsulamiento / Bajo Acoplamiento**. |
 
-### ⚡ Escenario 2: Rendimiento / Latencia (Performance)
 
-| Fuente de estímulo | Estímulo | Artefacto | Respuesta | Medida de respuesta | Táctica |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Un cliente y un consultor profesional en una sesión activa | Inician una videollamada programada e interactúan a través de voz, video y chat en tiempo real. | Servicio de videoconferencia y flujo de datos multimedia (WebRTC) | El sistema optimiza dinámicamente el ancho de banda, prioriza el tráfico de audio/video y renderiza la interacción con la menor demora posible. | La latencia de la videollamada es inferior a 150 ms en condiciones normales de red y el chat de texto entrega los mensajes en menos de 1 segundo. | **Asignación dinámica de recursos** (WebRTC SFU/MCU peer-to-peer) y **Priorización de tráfico** (Quality of Service). |
 
-### 🔒 Escenario 6: Seguridad / Integridad Financiera (Security)
 
-| Fuente de estímulo | Estímulo | Artefacto | Respuesta | Medida de respuesta | Táctica |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Un usuario (Cliente) con fondos desactualizados o malintencionado | Intenta reservar y pagar una sesión utilizando un monedero digital interno que no cuenta con saldo suficiente, enviando peticiones concurrentes (Race Condition) o alterando la petición. | Componente de gestión de monedero (Wallet Service) y base de datos transaccional | El sistema bloquea la transacción en el backend, rechaza la reserva, registra un log de auditoría inmutable de la operación fallida y mantiene la integridad del monedero. | El 100% de los intentos de pago con saldo insuficiente son denegados en menos de 500 ms, impidiendo la creación de saldos negativos y garantizando un error 400/422 controlado. | **Validación estricta en el servidor**, **Transacciones Atómicas (ACID)** para mitigar Race Conditions, y **Registro de auditoría (Audit Trail)**. |
+
+
+# Análisis de Atributos de Calidad - Plataforma
+
+---
+
+## 1. Seguridad
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Fuente de estímulo** | Usuario final (cliente) o atacante. |
+| **Estímulo** | Un usuario intenta pagar una sesión con saldo insuficiente en su monedero. |
+| **Artefacto** | Microservicio de pagos, microservicio de monedero/billetera y API Gateway. |
+| **Respuesta** | El sistema valida el saldo disponible en el monedero al recibir la solicitud de pago. Si el saldo es insuficiente, la transacción es rechazada de forma inmediata y se notifica al usuario. Si el saldo es suficiente, se reserva el monto, se procesa el pago y se actualiza el saldo de forma atómica (evitando condiciones de carrera). |
+| **Medida de respuesta** | El sistema deniega el 100% de los intentos de pago con saldo insuficiente, responde en menos de 1.5 segundos y garantiza que ningún cargo se realice sin la verificación previa del saldo, manteniendo la consistencia financiera. |
+
+---
+
+## 2. Rendimiento
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Fuente de estímulo** | Usuario final. |
+| **Estímulo** | Inician una videollamada programada e interactúan a través de voz, video y chat en tiempo real. |
+| **Artefacto** | Servidor WebRTC/SFU (Selective Forwarding Unit), servicio de señalización, y la red de entrega de contenido (CDN) para medios. |
+| **Respuesta** | El sistema establece la conexión WebRTC, negocia los parámetros de sesión (SDP/ICE) y comienza a transmitir los flujos de audio, video y datos (chat) con baja latencia. Los paquetes se enrutan a través de la SFU más cercana geográficamente y se aplican mecanismos de adaptación de bitrate (congestion control). |
+| **Medida de respuesta** | La latencia de extremo a extremo se mantiene por debajo de 150 ms para audio/video, la pérdida de paquetes se mantiene <1% y el chat se entrega en menos de 200 ms. El sistema soporta hasta 50 participantes por sala sin degradación perceptible. |
+
+---
+
+## 3. Usabilidad
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Fuente de estímulo** | Usuario nuevo. |
+| **Estímulo** | Un usuario nuevo quiere registrarse en la plataforma. |
+| **Artefacto** | Aplicación frontend (web/móvil), servicio de registro de usuarios y servicio de verificación de email/teléfono. |
+| **Respuesta** | El sistema presenta un formulario de registro claro y sencillo (con validación en tiempo real), permite el registro mediante email/contraseña o proveedores sociales (Google, Apple). Tras enviar los datos, valida la unicidad, envía un código de verificación y, al confirmarlo, crea la cuenta y redirige al usuario a la onboarding inicial. |
+| **Medida de respuesta** | El proceso de registro se completa en menos de 2 minutos (para el 95% de los usuarios). La tasa de éxito del registro es >98% en el primer intento, y el sistema proporciona mensajes de error claros y en lenguaje natural. La interfaz es responsive y accesible (WCAG 2.1 AA). |
+
+---
+
+## 4. Mantenibilidad
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Fuente de estímulo** | Desarrollador / Equipo de producto. |
+| **Estímulo** | Se necesita agregar un nuevo tipo de servicio de pago (ej. criptomonedas, pago contra entrega, etc.) a la plataforma. |
+| **Artefacto** | Módulo de pagos (que usa patrón Strategy o Factory), API de integración con terceros y base de datos de transacciones. |
+| **Respuesta** | El sistema permite agregar un nuevo proveedor de pago sin modificar el código central del negocio. Se implementa una nueva clase con la interfaz común definida, se registra en el contenedor de inyección de dependencias y la lógica de negocio existente (facturación, notificaciones, etc.) se reutiliza sin cambios. |
+| **Medida de respuesta** | El nuevo método de pago se integra en menos de 2 días-hombre. El tiempo de despliegue es menor a 30 minutos y no requiere reiniciar el resto de los microservicios. La cobertura de pruebas unitarias se mantiene >85%. |
+
+---
+
+## 5. Escalabilidad
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Fuente de estímulo** | Usuarios finales concurrentes. |
+| **Estímulo** | Aumenta la cantidad de usuarios realizando reservas al mismo tiempo (pico de demanda). |
+| **Artefacto** | Balanceador de carga (Load Balancer), microservicio de reservas, base de datos (con replicación/partición) y sistema de colas (message broker). |
+| **Respuesta** | El balanceador de carga distribuye las solicitudes entrantes entre múltiples instancias del microservicio de reservas. Las instancias adicionales se levantan automáticamente mediante autoescalado (horizontal) basado en métricas de CPU y memoria. Las reservas se procesan de forma asíncrona mediante colas para desacoplar la escritura en base de datos. |
+| **Medida de respuesta** | El sistema soporta un incremento del 300% en el tráfico de reservas en menos de 5 minutos (escalado automático). El tiempo de respuesta promedio se mantiene <500 ms para el 95% de las peticiones, sin tiempo de inactividad ni pérdida de datos. La capacidad máxima es de 10,000 reservas simultáneas por minuto. |
+
+---
+
+## 6. Modificabilidad
+
+| Elemento | Descripción |
+|----------|-------------|
+| **Fuente de estímulo** | Desarrollador / Product Owner. |
+| **Estímulo** | Se necesita agregar un nuevo campo al perfil de usuario (ej. "preferencia de idioma" o "número de teléfono secundario"). |
+| **Artefacto** | Microservicio de usuarios, base de datos de perfiles, API de actualización y frontend (formulario de perfil). |
+| **Respuesta** | El sistema permite agregar el nuevo campo modificando únicamente la entidad de usuario, el DTO (Data Transfer Object) y la validación correspondiente. La capa de persistencia se actualiza mediante una migración de base de datos (sin afectar los datos existentes). La API existente (GET/PUT /users/{id}) se extiende para incluir el nuevo campo de forma opcional (backward compatible). El frontend agrega el nuevo campo en el formulario. |
+| **Medida de respuesta** | El cambio se implementa en menos de 4 horas-hombre. La modificación no afecta a otros módulos ni requiere cambios en los consumidores de la API (gracias a la compatibilidad hacia atrás). La migración de base de datos se ejecuta en menos de 5 minutos sin downtime (usando estrategias como expand/contract o migraciones en caliente). |
 
