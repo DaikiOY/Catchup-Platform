@@ -26,19 +26,21 @@
 
 ----------------------
 
-┌───────────────────────┬────────────────────────────────────────────────────────────────────────┐
-│ Componente / Elemento │ Detalle del Escenario                                                  │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
-│ Fuente de estímulo    │ El equipo de desarrollo de software o analista de negocio de FinTeka.   │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
-│ Estímulo              │ Se requiere agregar un nuevo método de pago internacional (ej. PayPal) │
-│                       │ adicional a la pasarela existente.                                     │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
-│ Artefacto             │ Módulo/Componente de integración de pagos en la arquitectura.           │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
-│ Respuesta             │ Gracias al diseño desacoplado (Strategy/Adapter), el desarrollador     │
-│                       │ integra el proveedor sin alterar el core transaccional actual.         │
-├───────────────────────┼────────────────────────────────────────────────────────────────────────┤
-│ Medida de respuesta   │ La adición, pruebas y despliegue toman menos de 3 días de desarrollo y  │
-│                       │ se alteran 0 componentes existentes del núcleo de reservas.            │
-└───────────────────────┴────────────────────────────────────────────────────────────────────────┘
+### 🛠️ Escenario 5: Mantenibilidad / Modificabilidad (Modifiability)
+
+| Fuente de estímulo | Estímulo | Artefacto | Respuesta | Medida de respuesta | Táctica |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| El equipo de desarrollo de software o analista de negocio | Se requiere agregar un nuevo método de pago internacional adicional a la pasarela existente. | Módulo/Componente de integración de pagos en la arquitectura | Gracias al diseño desacoplado, el desarrollador integra el nuevo proveedor sin necesidad de modificar las reglas de negocio base ni el flujo core. | La adición, prueba unitaria y despliegue del nuevo componente se realiza en menos de 3 días de desarrollo, afectando a 0 componentes existentes. | **Inversión de dependencias** (Patrón Strategy / Adapter) y **Encapsulamiento / Bajo Acoplamiento**. |
+
+### ⚡ Escenario 2: Rendimiento / Latencia (Performance)
+
+| Fuente de estímulo | Estímulo | Artefacto | Respuesta | Medida de respuesta | Táctica |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Un cliente y un consultor profesional en una sesión activa | Inician una videollamada programada e interactúan a través de voz, video y chat en tiempo real. | Servicio de videoconferencia y flujo de datos multimedia (WebRTC) | El sistema optimiza dinámicamente el ancho de banda, prioriza el tráfico de audio/video y renderiza la interacción con la menor demora posible. | La latencia de la videollamada es inferior a 150 ms en condiciones normales de red y el chat de texto entrega los mensajes en menos de 1 segundo. | **Asignación dinámica de recursos** (WebRTC SFU/MCU peer-to-peer) y **Priorización de tráfico** (Quality of Service). |
+
+### 🔒 Escenario 6: Seguridad / Integridad Financiera (Security)
+
+| Fuente de estímulo | Estímulo | Artefacto | Respuesta | Medida de respuesta | Táctica |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Un usuario (Cliente) con fondos desactualizados o malintencionado | Intenta reservar y pagar una sesión utilizando un monedero digital interno que no cuenta con saldo suficiente, enviando peticiones concurrentes (Race Condition) o alterando la petición. | Componente de gestión de monedero (Wallet Service) y base de datos transaccional | El sistema bloquea la transacción en el backend, rechaza la reserva, registra un log de auditoría inmutable de la operación fallida y mantiene la integridad del monedero. | El 100% de los intentos de pago con saldo insuficiente son denegados en menos de 500 ms, impidiendo la creación de saldos negativos y garantizando un error 400/422 controlado. | **Validación estricta en el servidor**, **Transacciones Atómicas (ACID)** para mitigar Race Conditions, y **Registro de auditoría (Audit Trail)**. |
+
