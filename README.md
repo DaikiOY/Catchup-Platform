@@ -77,11 +77,11 @@
 
 | Elemento | Descripción |
 |----------|-------------|
-| **Fuente de estímulo** | Desarrollador / Equipo de producto. |
-| **Estímulo** | Se necesita agregar un nuevo tipo de servicio de pago (ej. criptomonedas, pago contra entrega, etc.) a la plataforma. |
-| **Artefacto** | Módulo de pagos (que usa patrón Strategy o Factory), API de integración con terceros y base de datos de transacciones. |
-| **Respuesta** | El sistema permite agregar un nuevo proveedor de pago sin modificar el código central del negocio. Se implementa una nueva clase con la interfaz común definida, se registra en el contenedor de inyección de dependencias y la lógica de negocio existente (facturación, notificaciones, etc.) se reutiliza sin cambios. |
-| **Medida de respuesta** | El nuevo método de pago se integra en menos de 2 días-hombre. El tiempo de despliegue es menor a 30 minutos y no requiere reiniciar el resto de los microservicios. La cobertura de pruebas unitarias se mantiene >85%. |
+| **Fuente de estímulo** | Equipo de Nova Asesors. |
+| **Estímulo** | Se necesita agregar un nuevo tipo de servicio de pago a la plataforma. |
+| **Artefacto** | Microservicio de pagos, servicio externo de pagos. |
+| **Respuesta** | El sistema permite agregar un nuevo proveedor de pago sin modificar el código central del negocio, sin modificar la lógica de negocio existente ni afectar el funcionamiento de los demás microservicios. |
+| **Medida de respuesta** | El nuevo método de pago se integra en menos de 1 día. El tiempo de despliegue es menor a 30 minutos y no requiere reiniciar el resto de los microservicios. |
 
 ---
 
@@ -89,11 +89,11 @@
 
 | Elemento | Descripción |
 |----------|-------------|
-| **Fuente de estímulo** | Usuarios finales concurrentes. |
-| **Estímulo** | Aumenta la cantidad de usuarios realizando reservas al mismo tiempo (pico de demanda). |
-| **Artefacto** | Balanceador de carga (Load Balancer), microservicio de reservas, base de datos (con replicación/partición) y sistema de colas (message broker). |
-| **Respuesta** | El balanceador de carga distribuye las solicitudes entrantes entre múltiples instancias del microservicio de reservas. Las instancias adicionales se levantan automáticamente mediante autoescalado (horizontal) basado en métricas de CPU y memoria. Las reservas se procesan de forma asíncrona mediante colas para desacoplar la escritura en base de datos. |
-| **Medida de respuesta** | El sistema soporta un incremento del 300% en el tráfico de reservas en menos de 5 minutos (escalado automático). El tiempo de respuesta promedio se mantiene <500 ms para el 95% de las peticiones, sin tiempo de inactividad ni pérdida de datos. La capacidad máxima es de 10,000 reservas simultáneas por minuto. |
+| **Fuente de estímulo** | Usuarios finales, clientes y profesionales. |
+| **Estímulo** | Aumenta la cantidad de usuarios realizando reservas al mismo tiempo. |
+| **Artefacto** | Microservicio de reservas, base de datos. |
+| **Respuesta** | El sistema distribuye la carga y continúa procesando las reservas sin afectar el rendimiento ni la disponibilidad del servicio. |
+| **Medida de respuesta** | El sistema soporta un incremento del 200% en el tráfico de reservas. El tiempo de respuesta promedio se mantiene <500 ms para el 95% de las peticiones. |
 
 ---
 
@@ -101,9 +101,8 @@
 
 | Elemento | Descripción |
 |----------|-------------|
-| **Fuente de estímulo** | Desarrollador / Product Owner. |
-| **Estímulo** | Se necesita agregar un nuevo campo al perfil de usuario (ej. "preferencia de idioma" o "número de teléfono secundario"). |
-| **Artefacto** | Microservicio de usuarios, base de datos de perfiles, API de actualización y frontend (formulario de perfil). |
-| **Respuesta** | El sistema permite agregar el nuevo campo modificando únicamente la entidad de usuario, el DTO (Data Transfer Object) y la validación correspondiente. La capa de persistencia se actualiza mediante una migración de base de datos (sin afectar los datos existentes). La API existente (GET/PUT /users/{id}) se extiende para incluir el nuevo campo de forma opcional (backward compatible). El frontend agrega el nuevo campo en el formulario. |
-| **Medida de respuesta** | El cambio se implementa en menos de 4 horas-hombre. La modificación no afecta a otros módulos ni requiere cambios en los consumidores de la API (gracias a la compatibilidad hacia atrás). La migración de base de datos se ejecuta en menos de 5 minutos sin downtime (usando estrategias como expand/contract o migraciones en caliente). |
-
+| **Fuente de estímulo** | Equipo de Nova Asesors. |
+| **Estímulo** | Se necesita agregar un nuevo campo al perfil de usuario. |
+| **Artefacto** | Microservicio de perfil, formulario actualizado de perfil. |
+| **Respuesta** | El sistema permite agregar el nuevo campo modificando únicamente la entidad de usuario, el DTO y la validación correspondiente. El frontend agrega el nuevo campo en el formulario. |
+| **Medida de respuesta** | El cambio se implementa en menos de 4 horas. La modificación no afecta a otros módulos ni requiere cambios, con una tasa de exito del 99%. |
