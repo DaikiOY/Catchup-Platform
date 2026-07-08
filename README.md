@@ -106,3 +106,13 @@
 | **Artefacto** | Microservicio de perfil, formulario actualizado de perfil. |
 | **Respuesta** | El sistema permite agregar el nuevo campo modificando únicamente la entidad de usuario, el DTO y la validación correspondiente. El frontend agrega el nuevo campo en el formulario. |
 | **Medida de respuesta** | El cambio se implementa en menos de 4 horas. La modificación no afecta a otros módulos ni requiere cambios, con una tasa de exito del 99%. |
+
+
+------
+
+
+| ID | Descripción |
+|-----|-------------|
+| **IRF-001** | El sistema debe permitir el registro de nuevos usuarios mediante un formulario digital accesible desde la plataforma web, solicitando como datos mínimos correo electrónico, nombre de usuario y contraseña. Durante el proceso, el sistema deberá validar que la información ingresada cumpla con las reglas establecidas de formato. Una vez completada la validación, la cuenta deberá almacenarse de forma segura en la base de datos y quedar habilitada para el acceso al sistema. |
+| **IRF-008** | El sistema debe implementar roles diferenciados de usuario y consultor, asignando permisos específicos según las funciones de cada tipo de cuenta. |
+| **NRF-001** | El sistema debe enviar una notificación automática de confirmación al usuario una vez completado satisfactoriamente el proceso de registro en la plataforma. |
